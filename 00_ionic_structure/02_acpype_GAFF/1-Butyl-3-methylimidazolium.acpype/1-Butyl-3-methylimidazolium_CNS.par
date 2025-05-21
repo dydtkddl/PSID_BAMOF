@@ -1,0 +1,86 @@
+Remarks 1-Butyl-3-methylimidazolium_CNS.par created by acpype (v: 2023.10.27) on Tue May 20 10:59:58 2025
+
+set echo=false end
+
+{ Bonds: atomType1 atomType2 kb r0 }
+BOND   c3_   h1_    344.2   1.0969
+BOND   c3_   hc_    345.2   1.0962
+BOND   cc_   h5_    367.0   1.0820
+BOND   cc_   h4_    368.7   1.0809
+BOND   cd_   h4_    367.3   1.0818
+BOND   na_   c3_    254.8   1.4639
+BOND   na_   cc_    335.5   1.3803
+BOND   na_   cd_    332.4   1.3830
+BOND   c3_   c3_    228.9   1.5354
+BOND   cc_   cd_    386.2   1.3730
+
+{ Angles: aType1 aType2 aType3 kt t0 }
+ANGLe   na_   c3_   h1_     48.1   108.76
+ANGLe   na_   cc_   h5_     47.8   121.78
+ANGLe   na_   cc_   h4_     48.0   121.01
+ANGLe   na_   cd_   h4_     48.1   120.17
+ANGLe   c3_   c3_   hc_     43.3   109.68
+ANGLe   c3_   c3_   h1_     43.3   109.59
+ANGLe   cc_   cd_   h4_     44.2   127.64
+ANGLe   cd_   cc_   h4_     44.0   129.11
+ANGLe   h1_   c3_   h1_     35.6   108.55
+ANGLe   hc_   c3_   hc_     35.8   107.73
+ANGLe   na_   c3_   c3_     65.0   112.63
+ANGLe   na_   cc_   na_     76.2   109.36
+ANGLe   na_   cc_   cd_     72.8   106.75
+ANGLe   na_   cd_   cc_     72.0   108.99
+ANGLe   c3_   na_   cc_     75.2   126.65
+ANGLe   c3_   c3_   c3_     59.9   112.63
+ANGLe   cc_   na_   cc_     83.1   110.48
+ANGLe   cc_   na_   cd_     79.6   120.21
+ANGLe   cd_   na_   c3_     75.5   125.50
+
+{ Proper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+DIHEdral   cc_   na_   cc_   h5_           1.700    2   180.00
+DIHEdral   cd_   na_   cc_   h5_           1.700    2   180.00
+DIHEdral   h1_   c3_   c3_   hc_           0.156    3     0.00
+DIHEdral   cc_   na_   cc_   h4_           1.700    2   180.00
+DIHEdral   na_   cc_   cd_   h4_           4.000    2   180.00
+DIHEdral   cc_   cd_   na_   c3_           1.700    2   180.00
+DIHEdral   cc_   na_   cc_   cd_           1.700    2   180.00
+DIHEdral   c3_   c3_   c3_   c3_           0.520    3     0.00
+DIHEdral   c3_   na_   cc_   h4_           1.700    2   180.00
+DIHEdral   na_   cc_   na_   cd_           1.700    2   180.00
+DIHEdral   cc_   na_   cd_   h4_           1.700    2   180.00
+DIHEdral   cc_   na_   c3_   c3_           0.000    0     0.00
+DIHEdral   c3_   c3_   c3_   hc_           0.130    3     0.00
+DIHEdral   na_   c3_   c3_   hc_           0.156    3     0.00
+DIHEdral   c3_   na_   cc_   h5_           1.700    2   180.00
+DIHEdral   na_   cc_   na_   c3_           1.700    2   180.00
+DIHEdral   hc_   c3_   c3_   hc_           0.120    3     0.00
+DIHEdral   c3_   na_   cc_   na_           1.700    2   180.00
+DIHEdral   cc_   na_   c3_   h1_           0.000    0     0.00
+DIHEdral   cd_   na_   c3_   h1_           0.000    0     0.00
+DIHEdral   na_   cc_   cd_   na_           4.000    2   180.00
+DIHEdral   na_   cd_   cc_   h4_           4.000    2   180.00
+DIHEdral   h4_   cc_   cd_   h4_           4.000    2   180.00
+DIHEdral   c3_   na_   cc_   cd_           1.700    2   180.00
+DIHEdral   cc_   na_   cc_   na_           1.700    2   180.00
+DIHEdral   c3_   c3_   c3_   h1_           0.156    3     0.00
+DIHEdral   cc_   na_   cd_   cc_           1.700    2   180.00
+DIHEdral   na_   c3_   c3_   c3_           0.156    3     0.00
+DIHEdral   c3_   na_   cd_   h4_           1.700    2   180.00
+
+{ Improper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+IMPRoper   h5_   na_   cc_   na_           1.1    2   180.00
+IMPRoper   cc_   h4_   cd_   na_           1.1    2   180.00
+IMPRoper   cc_   na_   cc_   c3_           1.1    2   180.00
+IMPRoper   c3_   cc_   na_   cd_           1.1    2   180.00
+IMPRoper   na_   cc_   h4_   cd_           1.1    2   180.00
+
+{ Nonbonded: Type Emin sigma; (1-4): Emin/2 sigma }
+NONBonded   na_    0.204200    3.205810    0.102100    3.205810
+NONBonded   c3_    0.107800    3.397710    0.053900    3.397710
+NONBonded   cc_    0.098800    3.315212    0.049400    3.315212
+NONBonded   cd_    0.098800    3.315212    0.049400    3.315212
+NONBonded   h1_    0.020800    2.421997    0.010400    2.421997
+NONBonded   hc_    0.020800    2.600177    0.010400    2.600177
+NONBonded   h5_    0.016100    2.447299    0.008050    2.447299
+NONBonded   h4_    0.016100    2.536389    0.008050    2.536389
+
+set echo=true end

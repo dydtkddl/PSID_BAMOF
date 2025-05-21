@@ -1,0 +1,36 @@
+; npt.mdp - Pressure equilibration (수정 버전)
+
+define          = -DPOSRES
+integrator      = md
+dt              = 0.001
+nsteps          = 250000     ; 500 ps (필요 시 500000 = 1 ns)
+nstxout         = 1000
+nstvout         = 1000
+nstenergy       = 1000
+nstlog          = 1000
+continuation    = yes
+constraint_algorithm = lincs
+constraints     = h-bonds        ; all-bonds 보다 빠르고 안정적
+cutoff-scheme   = Verlet
+rlist           = 1.0
+rcoulomb        = 1.0
+rvdw            = 1.0
+coulombtype     = PME
+pbc             = xyz
+tcoupl          = V-rescale
+tc-grps         = System
+tau_t           = 0.1
+ref_t           = 300
+
+; 🔽 압력 평형화에는 Berendsen 커플링 사용 (수렴 빠름)
+pcoupl          = Berendsen
+; pcoupl = c-rescale
+pcoupltype      = isotropic
+tau_p           = 2.0
+ref_p           = 1.0
+compressibility = 4.5e-5
+
+refcoord_scaling = com
+gen_vel         = no
+
+

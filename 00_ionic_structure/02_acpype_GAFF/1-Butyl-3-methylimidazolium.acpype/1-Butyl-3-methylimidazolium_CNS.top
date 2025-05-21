@@ -1,0 +1,192 @@
+Remarks 1-Butyl-3-methylimidazolium_CNS.top created by acpype (v: 2023.10.27) on Tue May 20 10:59:58 2025
+
+set echo=false end
+
+autogenerate angles=True dihedrals=True end
+
+{ atomType  mass }
+MASS na_     14.010
+MASS c3_     12.010
+MASS cc_     12.010
+MASS cd_     12.010
+MASS h1_      1.008
+MASS hc_      1.008
+MASS h5_      1.008
+MASS h4_      1.008
+
+RESIdue UNL
+
+GROUP
+
+{ atomName  atomType  Charge }
+ATOM N     TYPE= na_   CHARGE=  -0.0151 END
+ATOM N1    TYPE= na_   CHARGE=  -0.0181 END
+ATOM C     TYPE= c3_   CHARGE=   0.0163 END
+ATOM C1    TYPE= c3_   CHARGE=  -0.1084 END
+ATOM C2    TYPE= c3_   CHARGE=  -0.0824 END
+ATOM C3    TYPE= cc_   CHARGE=  -0.0336 END
+ATOM C4    TYPE= cc_   CHARGE=  -0.1163 END
+ATOM C5    TYPE= cd_   CHARGE=  -0.1213 END
+ATOM C6    TYPE= c3_   CHARGE=  -0.0991 END
+ATOM C7    TYPE= c3_   CHARGE=  -0.0054 END
+ATOM H     TYPE= h1_   CHARGE=   0.0947 END
+ATOM H1    TYPE= h1_   CHARGE=   0.0947 END
+ATOM H2    TYPE= hc_   CHARGE=   0.0812 END
+ATOM H3    TYPE= hc_   CHARGE=   0.0812 END
+ATOM H4    TYPE= hc_   CHARGE=   0.0347 END
+ATOM H5    TYPE= hc_   CHARGE=   0.0347 END
+ATOM H6    TYPE= h5_   CHARGE=   0.2560 END
+ATOM H7    TYPE= h4_   CHARGE=   0.2320 END
+ATOM H8    TYPE= h4_   CHARGE=   0.2330 END
+ATOM H9    TYPE= hc_   CHARGE=   0.0514 END
+ATOM H10   TYPE= hc_   CHARGE=   0.0514 END
+ATOM H11   TYPE= hc_   CHARGE=   0.0514 END
+ATOM H12   TYPE= h1_   CHARGE=   0.0957 END
+ATOM H13   TYPE= h1_   CHARGE=   0.0957 END
+ATOM H14   TYPE= h1_   CHARGE=   0.0957 END
+
+{ Bonds: atomName1  atomName2 }
+BOND C     H    
+BOND C     H1   
+BOND C1    H2   
+BOND C1    H3   
+BOND C2    H4   
+BOND C2    H5   
+BOND C3    H6   
+BOND C4    H7   
+BOND C5    H8   
+BOND C6    H9   
+BOND C6    H10  
+BOND C6    H11  
+BOND C7    H12  
+BOND C7    H13  
+BOND C7    H14  
+BOND N     C    
+BOND N     C3   
+BOND N     C4   
+BOND N1    C3   
+BOND N1    C5   
+BOND N1    C7   
+BOND C     C1   
+BOND C1    C2   
+BOND C2    C6   
+BOND C4    C5   
+
+{ Angles: atomName1 atomName2 atomName3}
+ANGLe N     C     H    
+ANGLe N     C     H1   
+ANGLe N     C3    H6   
+ANGLe N     C4    H7   
+ANGLe N1    C3    H6   
+ANGLe N1    C5    H8   
+ANGLe N1    C7    H12  
+ANGLe N1    C7    H13  
+ANGLe N1    C7    H14  
+ANGLe C     C1    H2   
+ANGLe C     C1    H3   
+ANGLe C1    C     H    
+ANGLe C1    C     H1   
+ANGLe C1    C2    H4   
+ANGLe C1    C2    H5   
+ANGLe C2    C1    H2   
+ANGLe C2    C1    H3   
+ANGLe C2    C6    H9   
+ANGLe C2    C6    H10  
+ANGLe C2    C6    H11  
+ANGLe C4    C5    H8   
+ANGLe C5    C4    H7   
+ANGLe C6    C2    H4   
+ANGLe C6    C2    H5   
+ANGLe H     C     H1   
+ANGLe H2    C1    H3   
+ANGLe H4    C2    H5   
+ANGLe H9    C6    H10  
+ANGLe H9    C6    H11  
+ANGLe H10   C6    H11  
+ANGLe H12   C7    H13  
+ANGLe H12   C7    H14  
+ANGLe H13   C7    H14  
+ANGLe N     C     C1   
+ANGLe N     C3    N1   
+ANGLe N     C4    C5   
+ANGLe N1    C5    C4   
+ANGLe C     N     C3   
+ANGLe C     N     C4   
+ANGLe C     C1    C2   
+ANGLe C1    C2    C6   
+ANGLe C3    N     C4   
+ANGLe C3    N1    C5   
+ANGLe C3    N1    C7   
+ANGLe C5    N1    C7   
+
+{ Proper Dihedrals: name1 name2 name3 name4 }
+DIHEdral N     C     C1    H2   
+DIHEdral N     C     C1    H3   
+DIHEdral N     C4    C5    H8   
+DIHEdral N1    C5    C4    H7   
+DIHEdral C     N     C3    H6   
+DIHEdral C     N     C4    H7   
+DIHEdral C     C1    C2    H4   
+DIHEdral C     C1    C2    H5   
+DIHEdral C1    C2    C6    H9   
+DIHEdral C1    C2    C6    H10  
+DIHEdral C1    C2    C6    H11  
+DIHEdral C2    C1    C     H    
+DIHEdral C2    C1    C     H1   
+DIHEdral C3    N     C     H    
+DIHEdral C3    N     C     H1   
+DIHEdral C3    N     C4    H7   
+DIHEdral C3    N1    C5    H8   
+DIHEdral C3    N1    C7    H12  
+DIHEdral C3    N1    C7    H13  
+DIHEdral C3    N1    C7    H14  
+DIHEdral C4    N     C     H    
+DIHEdral C4    N     C     H1   
+DIHEdral C4    N     C3    H6   
+DIHEdral C5    N1    C3    H6   
+DIHEdral C5    N1    C7    H12  
+DIHEdral C5    N1    C7    H13  
+DIHEdral C5    N1    C7    H14  
+DIHEdral C6    C2    C1    H2   
+DIHEdral C6    C2    C1    H3   
+DIHEdral C7    N1    C3    H6   
+DIHEdral C7    N1    C5    H8   
+DIHEdral H     C     C1    H2   
+DIHEdral H     C     C1    H3   
+DIHEdral H1    C     C1    H2   
+DIHEdral H1    C     C1    H3   
+DIHEdral H2    C1    C2    H4   
+DIHEdral H2    C1    C2    H5   
+DIHEdral H3    C1    C2    H4   
+DIHEdral H3    C1    C2    H5   
+DIHEdral H4    C2    C6    H9   
+DIHEdral H4    C2    C6    H10  
+DIHEdral H4    C2    C6    H11  
+DIHEdral H5    C2    C6    H9   
+DIHEdral H5    C2    C6    H10  
+DIHEdral H5    C2    C6    H11  
+DIHEdral H7    C4    C5    H8   
+DIHEdral N     C     C1    C2   
+DIHEdral N     C3    N1    C5   
+DIHEdral N     C3    N1    C7   
+DIHEdral N     C4    C5    N1   
+DIHEdral C     N     C3    N1   
+DIHEdral C4    N     C3    N1   
+DIHEdral C     N     C4    C5   
+DIHEdral C     C1    C2    C6   
+DIHEdral C3    N     C     C1   
+DIHEdral C4    N     C     C1   
+DIHEdral C3    N     C4    C5   
+DIHEdral C3    N1    C5    C4   
+DIHEdral C4    C5    N1    C7   
+
+{ Improper Dihedrals: aName1 aName2 aName3 aName4 }
+IMPRoper H6    N     C3    N1   
+IMPRoper N     C4    H7    C5   
+IMPRoper C4    H8    C5    N1   
+IMPRoper C4    N     C3    C    
+IMPRoper C7    C3    N1    C5   
+
+END {RESIdue UNL}
+
+set echo=true end

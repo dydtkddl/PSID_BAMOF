@@ -1,0 +1,50 @@
+Remarks bis_trifluoromethylsulfonylimide_CNS.par created by acpype (v: 2023.10.27) on Tue May 20 11:01:04 2025
+
+set echo=false end
+
+{ Bonds: atomType1 atomType2 kb r0 }
+BOND   s6_    o_    614.5   1.4657
+BOND   s6_   ne_    393.0   1.5977
+BOND   s6_   c3_    198.5   1.8127
+BOND   sy_    o_    614.7   1.4656
+BOND   sy_   ne_    329.6   1.6589
+BOND   sy_   c3_    198.1   1.8134
+BOND    f_   c3_    334.3   1.3512
+
+{ Angles: aType1 aType2 aType3 kt t0 }
+ANGLe   s6_   ne_   sy_     90.6   117.26
+ANGLe   s6_   c3_    f_     81.2   109.69
+ANGLe   sy_   c3_    f_     81.2   109.69
+ANGLe    f_   c3_    f_    106.9   107.37
+ANGLe    o_   s6_    o_    158.5   120.21
+ANGLe    o_   s6_   ne_    134.8   113.84
+ANGLe    o_   s6_   c3_    119.3   108.51
+ANGLe    o_   sy_    o_    157.8   121.38
+ANGLe    o_   sy_   ne_    133.8   110.07
+ANGLe    o_   sy_   c3_    119.7   107.60
+ANGLe   ne_   s6_   c3_    101.1   108.19
+ANGLe   ne_   sy_   c3_    104.0    99.52
+
+{ Proper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+DIHEdral   c3_   s6_   ne_   sy_           6.667    2   180.00
+DIHEdral   ne_   s6_   c3_    f_           0.144    3     0.00
+DIHEdral   s6_   ne_   sy_    o_  MULT 2   6.800    1   180.00
+                                           0.500    3   180.00
+DIHEdral    f_   c3_   sy_   ne_           0.144    3     0.00
+DIHEdral    o_   s6_   ne_   sy_           6.667    2   180.00
+DIHEdral    o_   s6_   c3_    f_           0.144    3     0.00
+DIHEdral    f_   c3_   sy_    o_           0.144    3     0.00
+DIHEdral   s6_   ne_   sy_   c3_  MULT 2   6.800    1   180.00
+                                           0.500    3   180.00
+
+{ Improper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+
+{ Nonbonded: Type Emin sigma; (1-4): Emin/2 sigma }
+NONBonded   s6_    0.061400    4.058400    0.030700    4.058400
+NONBonded   sy_    0.061400    4.058400    0.030700    4.058400
+NONBonded    f_    0.083200    3.034223    0.041600    3.034223
+NONBonded    o_    0.146300    3.048121    0.073150    3.048121
+NONBonded   ne_    0.094100    3.384168    0.047050    3.384168
+NONBonded   c3_    0.107800    3.397710    0.053900    3.397710
+
+set echo=true end

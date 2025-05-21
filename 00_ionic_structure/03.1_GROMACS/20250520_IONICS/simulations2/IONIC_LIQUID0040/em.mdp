@@ -1,0 +1,15 @@
+integrator  = steep
+emtol       = 1000.0
+emstep      = 0.01
+nsteps      = 50000
+cutoff-scheme = Verlet
+ns_type     = grid
+coulombtype = PME
+rcoulomb    = 1.2 ; #1.0->1.2
+rvdw        = 1.2 ; # 
+
+pbc             = xyz
+nstenergy       = 100
+energygrps      = BMI TFS    ; (선택적: 분석 시 개별 이온 에너지 확인용)
+constraints     = none
+
