@@ -1,0 +1,11 @@
+! SP B3LYP D4 def2-TZVP TightSCF CHELPG
+
+%maxcore 5000
+
+%pal
+nprocs 25
+end
+
+* xyz 0 1
+{XYZ}
+*
