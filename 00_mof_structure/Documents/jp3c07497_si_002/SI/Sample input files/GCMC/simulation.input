@@ -1,0 +1,38 @@
+SimulationType                MonteCarlo
+NumberOfCycles                10000000
+NumberOfEquilibrationCycles   1000000
+PrintEvery                    10000
+RestartFile                     yes
+ContinueAfterCrash no
+WriteBinaryRestartFileEvery     10000
+
+ChargeMethod                     Ewald
+Forcefield                       Local
+EwaldPrecision                   1e-6
+CutOffVDW                        10.0
+
+RandomSeed   1234
+InputFileType cif
+
+Framework 0
+FrameworkName MOF
+UnitCells 1 1 1
+RemoveAtomNumberCodeFromLabel yes
+
+ExternalTemperature 298
+ExternalPressure myp
+
+UseChargesFromCIFFile   yes
+
+Movies  yes
+WriteMoviesEvery        10000
+
+Component 0     MoleculeName                    H2O_TIP4P
+                StartingBead                    0
+                MoleculeDefinition              Local
+                FugacityCoefficient             1.0
+                TranslationProbability          0.25
+                RotationProbability             0.25
+                ReinsertionProbability          0.5
+                SwapProbability                 1.0
+                CreateNumberOfMolecules         0
