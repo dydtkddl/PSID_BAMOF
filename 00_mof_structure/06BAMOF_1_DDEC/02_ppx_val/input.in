@@ -1,0 +1,14 @@
+&INPUTPP
+  prefix = 'MIL125_NH2_convtest'  
+  outdir = './tmp',
+  filplot = 'valence-density',
+  plot_num = 11,
+  spin_component = 0  ! 전체 전자 밀도
+/
+
+&PLOT
+  iflag = 3,
+  output_format = 6,
+  fileout = 'charge-density.cube'
+/
+

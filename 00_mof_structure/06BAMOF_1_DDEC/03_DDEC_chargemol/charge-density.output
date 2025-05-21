@@ -1,0 +1,27 @@
+  
+ ******************** TIME CONTROL ********************
+ Starting Chargemol version 3.5 September 26, 2017.
+ ******************************************************
+  
+ Starting DDEC program
+ 2025/04/13  18:46:27
+ Copyright (c) 2014, 2015, 2016 by Thomas A. Manz and Nidia Gabaldon Limas. Rights reserved.
+  
+ **************** THREAD INFORMATION ******************
+ Job running using OpenMP.
+ The number of parallel threads is:           36
+  
+ ******************************************************
+  
+ Program could not find an input file.
+ Possible solutions: 
+ 1. Specify the name of input file on second line of job_control.txt.
+ NOTE: This step is optional for VASP and cube files, but required for wfx and xsf jobs
+ 2. Specify full directory path as a command line argument.
+ NOTES:
+ (a) Linux directories should end in /.
+    Example: /home/ngabaldo/bin/atomic_densities/
+ (b) Windows directories should end in \.
+    Example: C:\home\ngabaldo\bin\atomic_densities\
+ (c) Some queuing systems may not recognize ~/ as your home directory. In this case, specify an explicit directory path.
+    Example: /home/ngabaldo/bin/atomic_densities/

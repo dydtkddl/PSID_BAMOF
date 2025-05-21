@@ -1,0 +1,47 @@
+qe/**/pwscf.save/*
+git_push.log
+# orca/**/*.densities
+## orca/**/*.densities
+## orca/**/*.gbw
+orca/**/*.tmp
+orca/**/*.tmp.*
+qe/**/*.dat
+qe/**/*.wfc*
+# simulations/**/*.data
+simulations/**/Movies/
+simulations/**/VTK/
+simulations/**/Restart/
+orca/**/*mep*.out
+**/*.bin
+simulations/20250408_RASPA_GUI_PROJECT_1
+qe/**/*.xsf
+qe/**/*.XSF
+qe/**/charge-density
+qe/**/charge_density
+qe/**/valence-density
+qe/**/valence_density
+qe/**/total_density
+qe/**/total-density
+qe/**/charge-density.cube
+qe/**/charge_density.cube
+qe/**/valence-density.cube
+qe/**/valence_density.cube
+qe/**/total_density.cube
+qe/**/total-density.cube
+## simulations/**/Output/
+**/~*
+**/*.tmp
+# \[98\]archive/
+\[98\]archive/\.git
+\[98\]archive/\[03\]양자화학소프트웨어/
+\[98\]archive/\[00\]소프트웨어들/
+\[98\]archive/웹개발꿀팁.zip
+\[98\]archive/*.zip
+\[98\]archive/**/*.zip
+GROMACS
+*.trr
+*.xtc
+*.edr
+# *.log
+*.cpt
+\#*#
