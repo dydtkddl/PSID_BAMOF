@@ -1,0 +1,12 @@
+---- START at 2025-05-12 16:57:22, Target=21/21 ----
+[20/21] __pycache__ FAILED: Command '/home/yongsang/Research/PSID_server_room/simulations/[02]RASPA/bin/simulate simulation.input' died with <Signals.SIGSEGV: 11>.
+[2/21] BAMOF_OPT_with_charge_N2_77.0K_0.01bar_14.0 Done. TimeForThis=155490.2s, Completed=1/21, ETA=2025-06-19 11:58:56
+[4/21] BAMOF_OPT_with_charge_N2_77.0K_0.03bar_14.0 Done. TimeForThis=156323.3s, Completed=2/21, ETA=2025-05-31 16:53:57
+[10/21] BAMOF_OPT_with_charge_N2_77.0K_0.071bar_14.0 Done. TimeForThis=158778.4s, Completed=3/21, ETA=2025-05-25 13:41:31
+[8/21] BAMOF_OPT_with_charge_N2_77.0K_0.051bar_14.0 Done. TimeForThis=159663.7s, Completed=4/21, ETA=2025-05-22 09:47:56
+[14/21] BAMOF_OPT_with_charge_N2_77.0K_0.304bar_14.0 Done. TimeForThis=160720.1s, Completed=5/21, ETA=2025-05-20 12:27:46
+[15/21] BAMOF_OPT_with_charge_N2_77.0K_0.101bar_14.0 Done. TimeForThis=160752.7s, Completed=6/21, ETA=2025-05-19 05:14:36
+[13/21] BAMOF_OPT_with_charge_N2_77.0K_0.172bar_14.0 Done. TimeForThis=161362.6s, Completed=7/21, ETA=2025-05-18 07:25:30
+[7/21] BAMOF_OPT_with_charge_N2_77.0K_0.132bar_14.0 Done. TimeForThis=161371.8s, Completed=8/21, ETA=2025-05-17 14:37:23
+[17/21] BAMOF_OPT_with_charge_N2_77.0K_0.253bar_14.0 Done. TimeForThis=162608.6s, Completed=9/21, ETA=2025-05-17 02:21:02
+[9/21] BAMOF_OPT_with_charge_N2_77.0K_0.202bar_14.0 Done. TimeForThis=163109.2s, Completed=10/21, ETA=2025-05-16 16:06:11

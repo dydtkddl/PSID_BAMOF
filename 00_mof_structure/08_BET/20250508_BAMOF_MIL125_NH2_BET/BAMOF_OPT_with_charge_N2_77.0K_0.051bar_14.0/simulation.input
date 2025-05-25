@@ -1,0 +1,25 @@
+SimulationType                MonteCarlo
+NumberOfCycles                20000
+NumberOfInitializationCycles  10000
+PrintEvery                    1000
+RestartFile                   no
+
+Forcefield                    GarciaPerez2006ForceField
+UseChargesFromCIFFile yes
+
+Framework 0
+FrameworkName BAMOF_OPT_with_charge
+UnitCells 2 2 3
+ExternalTemperature    77.0
+ExternalPressure    5100.0
+
+Component 0 MoleculeName             N2
+            MoleculeDefinition       ExampleDefinitions
+            FugacityCoefficient      1.0
+            TranslationProbability   0.5
+            RotationProbability      0.5
+            ReinsertionProbability   0.5
+            SwapProbability          1.0
+            CreateNumberOfMolecules  0
+
+

@@ -1,0 +1,23 @@
+---- START at 2025-05-09 19:27:23, Target=21/21 ----
+[20/21] __pycache__ FAILED: Command '/home/yongsang/Research/PSID_server_room/simulations/[02]RASPA/bin/simulate simulation.input' died with <Signals.SIGSEGV: 11>.
+[2/21] BAMOF_OPT_with_charge_N2_77.0K_0.01bar_14.0 Done. TimeForThis=21063.4s, Completed=1/21, ETA=2025-05-14 22:19:35
+[8/21] BAMOF_OPT_with_charge_N2_77.0K_0.051bar_14.0 Done. TimeForThis=21455.2s, Completed=2/21, ETA=2025-05-12 10:02:02
+[4/21] BAMOF_OPT_with_charge_N2_77.0K_0.03bar_14.0 Done. TimeForThis=21521.3s, Completed=3/21, ETA=2025-05-11 13:18:12
+[15/21] BAMOF_OPT_with_charge_N2_77.0K_0.101bar_14.0 Done. TimeForThis=21631.2s, Completed=4/21, ETA=2025-05-11 03:00:07
+[7/21] BAMOF_OPT_with_charge_N2_77.0K_0.132bar_14.0 Done. TimeForThis=21647.4s, Completed=5/21, ETA=2025-05-10 20:42:42
+[13/21] BAMOF_OPT_with_charge_N2_77.0K_0.172bar_14.0 Done. TimeForThis=21667.5s, Completed=6/21, ETA=2025-05-10 16:31:19
+[10/21] BAMOF_OPT_with_charge_N2_77.0K_0.071bar_14.0 Done. TimeForThis=21704.6s, Completed=7/21, ETA=2025-05-10 13:32:37
+[9/21] BAMOF_OPT_with_charge_N2_77.0K_0.202bar_14.0 Done. TimeForThis=21712.9s, Completed=8/21, ETA=2025-05-10 11:17:19
+[14/21] BAMOF_OPT_with_charge_N2_77.0K_0.304bar_14.0 Done. TimeForThis=21801.9s, Completed=9/21, ETA=2025-05-10 09:35:14
+[17/21] BAMOF_OPT_with_charge_N2_77.0K_0.253bar_14.0 Done. TimeForThis=21812.2s, Completed=10/21, ETA=2025-05-10 08:10:48
+[21/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.01bar_14.0 Done. TimeForThis=25258.4s, Completed=11/21, ETA=2025-05-10 08:51:04
+[1/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.03bar_14.0 Done. TimeForThis=25604.3s, Completed=12/21, ETA=2025-05-10 07:54:10
+[3/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.202bar_14.0 Done. TimeForThis=25921.4s, Completed=13/21, ETA=2025-05-10 07:05:16
+[6/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.051bar_14.0 Done. TimeForThis=26005.4s, Completed=14/21, ETA=2025-05-10 06:17:31
+[19/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.132bar_14.0 Done. TimeForThis=26129.2s, Completed=15/21, ETA=2025-05-10 05:37:04
+[18/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.071bar_14.0 Done. TimeForThis=26141.1s, Completed=16/21, ETA=2025-05-10 04:59:13
+[12/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.304bar_14.0 Done. TimeForThis=26246.8s, Completed=17/21, ETA=2025-05-10 04:27:45
+[11/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.101bar_14.0 Done. TimeForThis=26267.4s, Completed=18/21, ETA=2025-05-10 03:58:08
+[5/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.172bar_14.0 Done. TimeForThis=26320.9s, Completed=19/21, ETA=2025-05-10 03:32:14
+[16/21] MIL125_NH2_OPT_with_charge_N2_77.0K_0.253bar_14.0 Done. TimeForThis=26373.2s, Completed=20/21, ETA=2025-05-10 03:08:55
+---- ALL DONE at 2025-05-10 02:46:56 ----
