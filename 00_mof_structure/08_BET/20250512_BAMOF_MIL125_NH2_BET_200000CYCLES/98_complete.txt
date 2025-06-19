@@ -1,0 +1,10 @@
+BAMOF_OPT_with_charge_N2_77.0K_0.01bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.03bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.071bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.051bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.304bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.101bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.172bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.132bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.253bar_14.0
+BAMOF_OPT_with_charge_N2_77.0K_0.202bar_14.0
