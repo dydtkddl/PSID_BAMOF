@@ -3,7 +3,7 @@
   restart_mode ='from_scratch' 
   prefix = 'MIL125_NH2_convtest'  
   outdir = './tmp'       
-  pseudo_dir = '/home/yongsang/PSID_SIMULATION_TOOLS/qe/qepseudo/SSSP_1.3.0_PBE_efficiency/'
+  pseudo_dir = '/home/ys/PSID_SIMULATION_TOOLS/qe/qepseudo/SSSP_1.3.0_PBE_efficiency/'
   verbosity = 'high'      
   max_seconds   =  1.72800e+06 
   nstep = 300
