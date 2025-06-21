@@ -7,7 +7,7 @@
  # Source code revision number                                       git:9635df4
  &GLOBAL
    PRINT_LEVEL MEDIUM
-   PROJECT_NAME "BAMOF_cp2k_opt"
+   PROJECT_NAME "MIL_125_NH2_cp2k_opt"
    RUN_TYPE CELL_OPT
  &END GLOBAL
  &MOTION
@@ -22,7 +22,6 @@
    &CELL_OPT
      OPTIMIZER BFGS
      MAX_ITER 300
-     STEP_START_VAL 102
      TYPE DIRECT_CELL_OPT
      KEEP_ANGLES T
      KEEP_SYMMETRY F
