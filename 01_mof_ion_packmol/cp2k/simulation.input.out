@@ -8637,3 +8637,659 @@
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
      5 Broy./Diag. 0.15E+00    2.7     0.00223991     -1553.0998524376  9.36E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     6 Broy./Diag. 0.15E+00    2.7     0.00219189     -1553.1177880639 -1.79E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     7 Broy./Diag. 0.15E+00    2.7     0.00395408     -1553.1293278484 -1.15E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     8 Broy./Diag. 0.15E+00    2.7     0.00254404     -1553.1571956932 -2.79E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     9 Broy./Diag. 0.15E+00    2.7     0.00115491     -1553.1509392518  6.26E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    10 Broy./Diag. 0.15E+00    2.7     0.00019753     -1553.1425769140  8.36E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    11 Broy./Diag. 0.15E+00    2.7     0.00058054     -1553.1319441007  1.06E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    12 Broy./Diag. 0.15E+00    2.7     0.00043096     -1553.1216416138  1.03E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    13 Broy./Diag. 0.15E+00    2.7     0.00012647     -1553.1242171629 -2.58E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    14 Broy./Diag. 0.15E+00    2.7     0.00010504     -1553.1292890212 -5.07E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    15 Broy./Diag. 0.15E+00    2.7     0.00007244     -1553.1335636569 -4.27E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    16 Broy./Diag. 0.15E+00    2.7     0.00003547     -1553.1340664243 -5.03E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    17 Broy./Diag. 0.15E+00    2.8     0.00002895     -1553.1323126466  1.75E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    18 Broy./Diag. 0.15E+00    2.7     0.00004430     -1553.1312357513  1.08E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    19 Broy./Diag. 0.15E+00    2.7     0.00001456     -1553.1311516203  8.41E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    20 Broy./Diag. 0.15E+00    2.8     0.00000587     -1553.1314986667 -3.47E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    21 Broy./Diag. 0.15E+00    2.8     0.00000501     -1553.1317681649 -2.69E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    22 Broy./Diag. 0.15E+00    2.8     0.00000205     -1553.1319607244 -1.93E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    23 Broy./Diag. 0.15E+00    2.8     0.00000208     -1553.1321333861 -1.73E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    24 Broy./Diag. 0.15E+00    2.7     0.00000125     -1553.1322024582 -6.91E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    25 Broy./Diag. 0.15E+00    2.7     0.00000116     -1553.1321651720  3.73E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    26 Broy./Diag. 0.15E+00    2.8     0.00000073     -1553.1320914984  7.37E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    27 Broy./Diag. 0.15E+00    2.7     0.00000128     -1553.1320567718  3.47E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    28 Broy./Diag. 0.15E+00    2.7     0.00000081     -1553.1320677778 -1.10E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    29 Broy./Diag. 0.15E+00    2.8     0.00000041     -1553.1320793522 -1.16E-05
+
+  *** SCF run converged in    29 steps ***
+
+
+  Electronic density on regular grids:       -615.9999999339        0.0000000661
+  Core density on regular grids:              616.9999999711       -0.0000000289
+  Total charge density on r-space grids:        1.0000000373
+  Total charge density g-space grids:           1.0000000373
+
+  Overlap energy of the core charge distribution:               0.00001744336157
+  Self energy of the core charge distribution:              -3596.65937952835657
+  Core Hamiltonian energy:                                   1016.02131943263123
+  Hartree energy:                                            1353.30804532911134
+  Exchange-correlation energy:                               -325.62425231966330
+  Dispersion energy:                                           -0.17732323079191
+  Electronic entropic energy:                                  -0.00050647472105
+  Fermi energy:                                                -0.05069773006059
+
+  Total energy:                                             -1553.13207935220976
+
+ !-----------------------------------------------------------------------------!
+                     Mulliken Population Analysis
+
+ #  Atom  Element  Kind  Atomic population                           Net charge
+       1     Ti       1         10.916285                              1.083715
+       2     Ti       1         10.911077                              1.088923
+       3     Ti       1         10.861957                              1.138043
+       4     Ti       1         10.877943                              1.122057
+       5     Ti       1         10.917682                              1.082318
+       6     Ti       1         10.923790                              1.076210
+       7     Ti       1         10.881717                              1.118283
+       8     Ti       1         10.889621                              1.110379
+       9     H        2          0.932263                              0.067737
+      10     H        2          0.922869                              0.077131
+      11     H        2          0.933983                              0.066017
+      12     H        2          0.923257                              0.076743
+      13     H        2          0.928504                              0.071496
+      14     H        2          0.931024                              0.068976
+      15     H        2          0.921608                              0.078392
+      16     H        2          0.927415                              0.072585
+      17     H        2          0.923053                              0.076947
+      18     H        2          0.928144                              0.071856
+      19     H        2          0.933184                              0.066816
+      20     H        2          0.926104                              0.073896
+      21     H        2          0.816834                              0.183166
+      22     H        2          0.816055                              0.183945
+      23     H        2          0.922123                              0.077877
+      24     H        2          0.927936                              0.072064
+      25     H        2          0.928134                              0.071866
+      26     H        2          0.922135                              0.077865
+      27     H        2          0.920169                              0.079831
+      28     H        2          0.921755                              0.078245
+      29     H        2          0.888012                              0.111988
+      30     H        2          0.875753                              0.124247
+      31     H        2          0.824774                              0.175226
+      32     H        2          0.827838                              0.172162
+      33     H        2          0.877890                              0.122110
+      34     H        2          0.888093                              0.111907
+      35     H        2          0.872936                              0.127064
+      36     H        2          0.886088                              0.113912
+      37     H        2          0.877064                              0.122936
+      38     H        2          0.890163                              0.109837
+      39     H        2          0.941018                              0.058982
+      40     H        2          0.924906                              0.075094
+      41     H        2          0.942157                              0.057843
+      42     H        2          0.932115                              0.067885
+      43     C        3          3.764911                              0.235089
+      44     C        3          3.761717                              0.238283
+      45     C        3          3.764852                              0.235148
+      46     C        3          3.760167                              0.239833
+      47     C        3          4.048063                             -0.048063
+      48     C        3          4.019684                             -0.019684
+      49     C        3          4.049102                             -0.049102
+      50     C        3          4.022982                             -0.022982
+      51     C        3          3.973376                              0.026624
+      52     C        3          4.027154                             -0.027154
+      53     C        3          3.975109                              0.024891
+      54     C        3          4.017807                             -0.017807
+      55     C        3          4.040611                             -0.040611
+      56     C        3          3.974985                              0.025015
+      57     C        3          4.001692                             -0.001692
+      58     C        3          4.034550                             -0.034550
+      59     C        3          4.029224                             -0.029224
+      60     C        3          4.016039                             -0.016039
+      61     C        3          4.020117                             -0.020117
+      62     C        3          4.023004                             -0.023004
+      63     C        3          4.012516                             -0.012516
+      64     C        3          4.040571                             -0.040571
+      65     C        3          4.041277                             -0.041277
+      66     C        3          4.009572                             -0.009572
+      67     C        3          3.769298                              0.230702
+      68     C        3          3.762737                              0.237263
+      69     C        3          3.763142                              0.236858
+      70     C        3          3.770512                              0.229488
+      71     C        3          3.771741                              0.228259
+      72     C        3          3.762015                              0.237985
+      73     C        3          4.006983                             -0.006983
+      74     C        3          4.021833                             -0.021833
+      75     C        3          4.029267                             -0.029267
+      76     C        3          3.995109                              0.004891
+      77     C        3          4.018081                             -0.018081
+      78     C        3          3.994175                              0.005825
+      79     C        3          3.987432                              0.012568
+      80     C        3          4.027602                             -0.027602
+      81     C        3          4.023658                             -0.023658
+      82     C        3          4.006166                             -0.006166
+      83     C        3          4.009241                             -0.009241
+      84     C        3          4.025699                             -0.025699
+      85     C        3          3.964587                              0.035413
+      86     C        3          4.007852                             -0.007852
+      87     C        3          4.022584                             -0.022584
+      88     C        3          3.960259                              0.039741
+      89     N        4          4.997834                              0.002166
+      90     N        4          5.015924                             -0.015924
+      91     N        4          5.015259                             -0.015259
+      92     N        4          5.033148                             -0.033148
+      93     O        5          6.344132                             -0.344132
+      94     O        5          6.295379                             -0.295379
+      95     O        5          6.329421                             -0.329421
+      96     O        5          6.280430                             -0.280430
+      97     O        5          6.304167                             -0.304167
+      98     O        5          6.295612                             -0.295612
+      99     O        5          6.290298                             -0.290298
+     100     O        5          6.279152                             -0.279152
+     101     O        5          6.436599                             -0.436599
+     102     O        5          6.469976                             -0.469976
+     103     O        5          6.461822                             -0.461822
+     104     O        5          6.443600                             -0.443600
+     105     O        5          6.441194                             -0.441194
+     106     O        5          6.464576                             -0.464576
+     107     O        5          6.463501                             -0.463501
+     108     O        5          6.439813                             -0.439813
+     109     O        5          6.357041                             -0.357041
+     110     O        5          6.349367                             -0.349367
+     111     O        5          6.306435                             -0.306435
+     112     O        5          6.336890                             -0.336890
+     113     O        5          6.338160                             -0.338160
+     114     O        5          6.288743                             -0.288743
+     115     O        5          6.342534                             -0.342534
+     116     O        5          6.349128                             -0.349128
+     117     O        5          6.304435                             -0.304435
+     118     O        5          6.293911                             -0.293911
+     119     O        5          6.295088                             -0.295088
+     120     O        5          6.307712                             -0.307712
+     121     O        5          6.536254                             -0.536254
+     122     O        5          6.530486                             -0.530486
+     123     O        5          6.497712                             -0.497712
+     124     O        5          6.495422                             -0.495422
+     125     S        6          5.280908                              0.719092
+     126     S        6          5.278848                              0.721152
+     127     F        7          7.127963                             -0.127963
+     128     F        7          7.126380                             -0.126380
+     129     F        7          7.113198                             -0.113198
+     130     F        7          7.137762                             -0.137762
+     131     F        7          7.123312                             -0.123312
+     132     F        7          7.111450                             -0.111450
+     133     O        5          6.350193                             -0.350193
+     134     O        5          6.386124                             -0.386124
+     135     O        5          6.401535                             -0.401535
+     136     O        5          6.353868                             -0.353868
+     137     N        4          5.462681                             -0.462681
+     138     C        3          3.822097                              0.177903
+     139     C        3          3.828041                              0.171959
+ # Total charge                            616.000000                  1.000000
+
+ !-----------------------------------------------------------------------------!
+
+ !-----------------------------------------------------------------------------!
+                           Hirshfeld Charges
+
+  #Atom  Element  Kind  Ref Charge     Population                    Net charge
+      1       Ti     1      12.000         13.300                        -1.300
+      2       Ti     1      12.000         13.296                        -1.296
+      3       Ti     1      12.000         13.090                        -1.090
+      4       Ti     1      12.000         13.116                        -1.116
+      5       Ti     1      12.000         13.316                        -1.316
+      6       Ti     1      12.000         13.334                        -1.334
+      7       Ti     1      12.000         13.130                        -1.130
+      8       Ti     1      12.000         13.163                        -1.163
+      9       H      2       1.000          0.546                         0.454
+     10       H      2       1.000          0.542                         0.458
+     11       H      2       1.000          0.547                         0.453
+     12       H      2       1.000          0.542                         0.458
+     13       H      2       1.000          0.541                         0.459
+     14       H      2       1.000          0.543                         0.457
+     15       H      2       1.000          0.541                         0.459
+     16       H      2       1.000          0.542                         0.458
+     17       H      2       1.000          0.539                         0.461
+     18       H      2       1.000          0.545                         0.455
+     19       H      2       1.000          0.546                         0.454
+     20       H      2       1.000          0.544                         0.456
+     21       H      2       1.000          0.415                         0.585
+     22       H      2       1.000          0.414                         0.586
+     23       H      2       1.000          0.531                         0.469
+     24       H      2       1.000          0.544                         0.456
+     25       H      2       1.000          0.542                         0.458
+     26       H      2       1.000          0.541                         0.459
+     27       H      2       1.000          0.538                         0.462
+     28       H      2       1.000          0.537                         0.463
+     29       H      2       1.000          0.463                         0.537
+     30       H      2       1.000          0.476                         0.524
+     31       H      2       1.000          0.415                         0.585
+     32       H      2       1.000          0.416                         0.584
+     33       H      2       1.000          0.478                         0.522
+     34       H      2       1.000          0.464                         0.536
+     35       H      2       1.000          0.473                         0.527
+     36       H      2       1.000          0.463                         0.537
+     37       H      2       1.000          0.476                         0.524
+     38       H      2       1.000          0.463                         0.537
+     39       H      2       1.000          0.546                         0.454
+     40       H      2       1.000          0.543                         0.457
+     41       H      2       1.000          0.546                         0.454
+     42       H      2       1.000          0.545                         0.455
+     43       C      3       4.000          3.464                         0.536
+     44       C      3       4.000          3.447                         0.553
+     45       C      3       4.000          3.464                         0.536
+     46       C      3       4.000          3.449                         0.551
+     47       C      3       4.000          4.019                        -0.019
+     48       C      3       4.000          3.979                         0.021
+     49       C      3       4.000          4.018                        -0.018
+     50       C      3       4.000          3.984                         0.016
+     51       C      3       4.000          3.851                         0.149
+     52       C      3       4.000          4.409                        -0.409
+     53       C      3       4.000          3.856                         0.144
+     54       C      3       4.000          4.389                        -0.389
+     55       C      3       4.000          4.416                        -0.416
+     56       C      3       4.000          4.323                        -0.323
+     57       C      3       4.000          4.366                        -0.366
+     58       C      3       4.000          4.406                        -0.406
+     59       C      3       4.000          3.990                         0.010
+     60       C      3       4.000          4.311                        -0.311
+     61       C      3       4.000          4.307                        -0.307
+     62       C      3       4.000          3.989                         0.011
+     63       C      3       4.000          3.972                         0.028
+     64       C      3       4.000          4.011                        -0.011
+     65       C      3       4.000          4.011                        -0.011
+     66       C      3       4.000          3.969                         0.031
+     67       C      3       4.000          3.453                         0.547
+     68       C      3       4.000          3.447                         0.553
+     69       C      3       4.000          3.454                         0.546
+     70       C      3       4.000          3.464                         0.536
+     71       C      3       4.000          3.465                         0.535
+     72       C      3       4.000          3.450                         0.550
+     73       C      3       4.000          4.364                        -0.364
+     74       C      3       4.000          4.376                        -0.376
+     75       C      3       4.000          4.388                        -0.388
+     76       C      3       4.000          4.352                        -0.352
+     77       C      3       4.000          4.382                        -0.382
+     78       C      3       4.000          4.354                        -0.354
+     79       C      3       4.000          4.347                        -0.347
+     80       C      3       4.000          4.394                        -0.394
+     81       C      3       4.000          4.369                        -0.369
+     82       C      3       4.000          4.363                        -0.363
+     83       C      3       4.000          4.362                        -0.362
+     84       C      3       4.000          4.370                        -0.370
+     85       C      3       4.000          3.847                         0.153
+     86       C      3       4.000          4.380                        -0.380
+     87       C      3       4.000          4.396                        -0.396
+     88       C      3       4.000          3.840                         0.160
+     89       N      4       5.000          5.858                        -0.858
+     90       N      4       5.000          5.874                        -0.874
+     91       N      4       5.000          5.885                        -0.885
+     92       N      4       5.000          5.902                        -0.902
+     93       O      5       6.000          6.149                        -0.149
+     94       O      5       6.000          6.093                        -0.093
+     95       O      5       6.000          6.155                        -0.155
+     96       O      5       6.000          6.103                        -0.103
+     97       O      5       6.000          6.098                        -0.098
+     98       O      5       6.000          6.082                        -0.082
+     99       O      5       6.000          6.085                        -0.085
+    100       O      5       6.000          6.090                        -0.090
+    101       O      5       6.000          5.677                         0.323
+    102       O      5       6.000          5.692                         0.308
+    103       O      5       6.000          5.684                         0.316
+    104       O      5       6.000          5.683                         0.317
+    105       O      5       6.000          5.659                         0.341
+    106       O      5       6.000          5.691                         0.309
+    107       O      5       6.000          5.691                         0.309
+    108       O      5       6.000          5.658                         0.342
+    109       O      5       6.000          6.101                        -0.101
+    110       O      5       6.000          6.081                        -0.081
+    111       O      5       6.000          6.131                        -0.131
+    112       O      5       6.000          6.088                        -0.088
+    113       O      5       6.000          6.096                        -0.096
+    114       O      5       6.000          6.090                        -0.090
+    115       O      5       6.000          6.074                        -0.074
+    116       O      5       6.000          6.089                        -0.089
+    117       O      5       6.000          6.037                        -0.037
+    118       O      5       6.000          6.108                        -0.108
+    119       O      5       6.000          6.098                        -0.098
+    120       O      5       6.000          6.038                        -0.038
+    121       O      5       6.000          5.981                         0.019
+    122       O      5       6.000          5.984                         0.016
+    123       O      5       6.000          6.024                        -0.024
+    124       O      5       6.000          6.022                        -0.022
+    125       S      6       6.000          5.547                         0.453
+    126       S      6       6.000          5.553                         0.447
+    127       F      7       7.000          7.311                        -0.311
+    128       F      7       7.000          7.306                        -0.306
+    129       F      7       7.000          7.301                        -0.301
+    130       F      7       7.000          7.337                        -0.337
+    131       F      7       7.000          7.315                        -0.315
+    132       F      7       7.000          7.316                        -0.316
+    133       O      5       6.000          6.377                        -0.377
+    134       O      5       6.000          6.389                        -0.389
+    135       O      5       6.000          6.439                        -0.439
+    136       O      5       6.000          6.383                        -0.383
+    137       N      4       5.000          5.230                        -0.230
+    138       C      3       4.000          3.089                         0.911
+    139       C      3       4.000          3.092                         0.908
+
+  Total Charge                                                            1.050
+ !-----------------------------------------------------------------------------!
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]          -1553.132100891896926
+
+ OPT| **************************************************************************
+ OPT| Step number                                                              2
+ OPT| Optimization method                                                   BFGS
+ OPT| Total energy [hartree]                                    -1553.1321008919
+ OPT| Internal pressure [bar]                                   -3115.6079467444
+ OPT| Effective energy change [hartree]                            -0.0060864872
+ OPT| Predicted energy change [hartree]                            -0.0047783921
+ OPT| Scaling factor                                                0.0000000000
+ OPT| Step size                                                     0.0360827440
+ OPT| Trust radius                                                  0.4724315332
+ OPT| Decrease in energy                                                     YES
+ OPT| Used time [s]                                                       86.821
+ OPT|
+ OPT| Maximum step size                                             0.0360827440
+ OPT| Convergence limit for maximum step size                       0.0030000000
+ OPT| Maximum step size is converged                                          NO
+ OPT|
+ OPT| RMS step size                                                 0.0067403337
+ OPT| Convergence limit for RMS step size                           0.0015000000
+ OPT| RMS step size is converged                                              NO
+ OPT|
+ OPT| Maximum gradient                                              0.0075929533
+ OPT| Convergence limit for maximum gradient                        0.0004500000
+ OPT| Maximum gradient is converged                                           NO
+ OPT|
+ OPT| RMS gradient                                                  0.0019654485
+ OPT| Convergence limit for RMS gradient                            0.0003000000
+ OPT| RMS gradient is converged                                               NO
+ OPT|
+ OPT| Pressure deviation [bar]                                  -3215.6079467444
+ OPT| Pressure tolerance [bar]                                    100.0000000000
+ OPT| Pressure is converged                                                   NO
+ OPT| **************************************************************************
+ OPT| Estimated peak process memory after this step [MiB]                   4278
+
+ --------------------------
+ OPTIMIZATION STEP:      3
+ --------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ CELL| Volume [angstrom^3]:                                          3008.686164
+ CELL| Vector a [angstrom]:      15.998     0.000     0.000   |a| =    15.998078
+ CELL| Vector b [angstrom]:      -7.015    14.363     0.000   |b| =    15.984432
+ CELL| Vector c [angstrom]:      -4.307    -7.230    13.094   |c| =    15.565256
+ CELL| Angle (b,c), alpha [degree]:                                   107.213901
+ CELL| Angle (a,c), beta  [degree]:                                   106.064299
+ CELL| Angle (a,b), gamma [degree]:                                   116.031801
+ CELL| Numerically orthorhombic:                                              NO
+ CELL| Periodicity                                                           XYZ
+
+ -------------------------------------------------------------------------------
+ ----                             MULTIGRID INFO                            ----
+ -------------------------------------------------------------------------------
+ count for grid        1:         359790          cutoff [a.u.]          320.00
+ count for grid        2:         303431          cutoff [a.u.]          106.67
+ count for grid        3:         224964          cutoff [a.u.]           35.56
+ count for grid        4:         136484          cutoff [a.u.]           11.85
+ total gridlevel count  :        1024669
+
+ PW_GRID| Information for grid number                                         13
+ PW_GRID| Grid distributed over                                     7 processors
+ PW_GRID| Real space group dimensions                                     7    1
+ PW_GRID| the grid is blocked:                                                NO
+ PW_GRID| Cutoff [a.u.]                                                    320.0
+ PW_GRID| spherical cutoff:                                                   NO
+ PW_GRID|   Bounds   1           -121     121                Points:         243
+ PW_GRID|   Bounds   2           -121     121                Points:         243
+ PW_GRID|   Bounds   3           -120     119                Points:         240
+ PW_GRID| Volume element (a.u.^3)  0.1433E-02     Volume (a.u.^3)     20303.6209
+ PW_GRID| Grid span                                                    FULLSPACE
+ PW_GRID|   Distribution                         Average         Max         Min
+ PW_GRID|   G-Vectors                          2024537.1     2024676     2024433
+ PW_GRID|   G-Rays                                8331.4        8332        8331
+ PW_GRID|   Real Space Points                  2024537.1     2041200     1982880
+
+ PW_GRID| Information for grid number                                         14
+ PW_GRID| Number of the reference grid                                        13
+ PW_GRID| Grid distributed over                                     7 processors
+ PW_GRID| Real space group dimensions                                     7    1
+ PW_GRID| the grid is blocked:                                                NO
+ PW_GRID| Cutoff [a.u.]                                                    106.7
+ PW_GRID| spherical cutoff:                                                   NO
+ PW_GRID|   Bounds   1            -72      71                Points:         144
+ PW_GRID|   Bounds   2            -72      71                Points:         144
+ PW_GRID|   Bounds   3            -72      71                Points:         144
+ PW_GRID| Volume element (a.u.^3)  0.6800E-02     Volume (a.u.^3)     20303.6209
+ PW_GRID| Grid span                                                    FULLSPACE
+ PW_GRID|   Distribution                         Average         Max         Min
+ PW_GRID|   G-Vectors                           426569.1      426672      426384
+ PW_GRID|   G-Rays                                2962.3        2963        2961
+ PW_GRID|   Real Space Points                   426569.1      435456      414720
+
+ PW_GRID| Information for grid number                                         15
+ PW_GRID| Number of the reference grid                                        13
+ PW_GRID| Grid distributed over                                     7 processors
+ PW_GRID| Real space group dimensions                                     7    1
+ PW_GRID| the grid is blocked:                                                NO
+ PW_GRID| Cutoff [a.u.]                                                     35.6
+ PW_GRID| spherical cutoff:                                                   NO
+ PW_GRID|   Bounds   1            -40      40                Points:          81
+ PW_GRID|   Bounds   2            -40      40                Points:          81
+ PW_GRID|   Bounds   3            -40      39                Points:          80
+ PW_GRID| Volume element (a.u.^3)  0.3868E-01     Volume (a.u.^3)     20303.6209
+ PW_GRID| Grid span                                                    FULLSPACE
+ PW_GRID|   Distribution                         Average         Max         Min
+ PW_GRID|   G-Vectors                            74982.9       75087       74844
+ PW_GRID|   G-Rays                                 925.7         927         924
+ PW_GRID|   Real Space Points                    74982.9       77760       71280
+
+ PW_GRID| Information for grid number                                         16
+ PW_GRID| Number of the reference grid                                        13
+ PW_GRID| Grid distributed over                                     7 processors
+ PW_GRID| Real space group dimensions                                     7    1
+ PW_GRID| the grid is blocked:                                                NO
+ PW_GRID| Cutoff [a.u.]                                                     11.9
+ PW_GRID| spherical cutoff:                                                   NO
+ PW_GRID|   Bounds   1            -24      23                Points:          48
+ PW_GRID|   Bounds   2            -24      23                Points:          48
+ PW_GRID|   Bounds   3            -22      22                Points:          45
+ PW_GRID| Volume element (a.u.^3)  0.1958         Volume (a.u.^3)     20303.6209
+ PW_GRID| Grid span                                                    FULLSPACE
+ PW_GRID|   Distribution                         Average         Max         Min
+ PW_GRID|   G-Vectors                            14811.4       14880       14736
+ PW_GRID|   G-Rays                                 308.6         310         307
+ PW_GRID|   Real Space Points                    14811.4       15120       12960
+
+ POISSON| Solver                                                        PERIODIC
+ POISSON| Periodicity                                                        XYZ
+
+ RS_GRID| Information for grid number                                         13
+ RS_GRID|   Bounds   1           -121     121                Points:         243
+ RS_GRID|   Bounds   2           -121     121                Points:         243
+ RS_GRID|   Bounds   3           -120     119                Points:         240
+ RS_GRID| Real space fully replicated
+ RS_GRID| Group size                                                           1
+
+ RS_GRID| Information for grid number                                         14
+ RS_GRID|   Bounds   1            -72      71                Points:         144
+ RS_GRID|   Bounds   2            -72      71                Points:         144
+ RS_GRID|   Bounds   3            -72      71                Points:         144
+ RS_GRID| Real space fully replicated
+ RS_GRID| Group size                                                           1
+
+ RS_GRID| Information for grid number                                         15
+ RS_GRID|   Bounds   1            -40      40                Points:          81
+ RS_GRID|   Bounds   2            -40      40                Points:          81
+ RS_GRID|   Bounds   3            -40      39                Points:          80
+ RS_GRID| Real space fully replicated
+ RS_GRID| Group size                                                           1
+
+ RS_GRID| Information for grid number                                         16
+ RS_GRID|   Bounds   1            -24      23                Points:          48
+ RS_GRID|   Bounds   2            -24      23                Points:          48
+ RS_GRID|   Bounds   3            -22      22                Points:          45
+ RS_GRID| Real space fully replicated
+ RS_GRID| Group size                                                           1
+
+ Number of electrons:                                                        616
+ Number of occupied orbitals:                                                314
+ Number of molecular orbitals:                                               408
+
+ Number of orbital functions:                                               1639
+ Number of independent orbital functions:                                   1639
+
+ Parameters for the always stable predictor-corrector (ASPC) method:
+
+  ASPC order: 1
+
+  B(1) =   2.500000
+  B(2) =  -2.000000
+  B(3) =   0.500000
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Extrapolation method: ASPC
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     1 Broy./Diag. 0.15E+00    1.9     0.02523724     -1553.1310878853 -1.55E+03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     2 Broy./Diag. 0.15E+00    2.7     0.00719216     -1553.1537062753 -2.26E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     3 Broy./Diag. 0.15E+00    2.7     0.00988470     -1553.1513028569  2.40E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     4 Broy./Diag. 0.15E+00    2.7     0.00311788     -1553.1389753056  1.23E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     5 Broy./Diag. 0.15E+00    2.7     0.00154937     -1553.1285431363  1.04E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     6 Broy./Diag. 0.15E+00    2.8     0.00046292     -1553.1250060365  3.54E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     7 Broy./Diag. 0.15E+00    2.7     0.00026658     -1553.1316249448 -6.62E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     8 Broy./Diag. 0.15E+00    2.8     0.00021445     -1553.1403837918 -8.76E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     9 Broy./Diag. 0.15E+00    2.7     0.00011028     -1553.1410426163 -6.59E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    10 Broy./Diag. 0.15E+00    2.7     0.00014360     -1553.1366018047  4.44E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    11 Broy./Diag. 0.15E+00    2.7     0.00011491     -1553.1316962815  4.91E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    12 Broy./Diag. 0.15E+00    2.7     0.00003800     -1553.1304621373  1.23E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    13 Broy./Diag. 0.15E+00    2.7     0.00002760     -1553.1320934456 -1.63E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    14 Broy./Diag. 0.15E+00    2.8     0.00001935     -1553.1337904135 -1.70E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    15 Broy./Diag. 0.15E+00    2.8     0.00001039     -1553.1343327958 -5.42E-04
