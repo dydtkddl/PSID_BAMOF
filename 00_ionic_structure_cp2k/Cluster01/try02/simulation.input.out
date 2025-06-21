@@ -18,8 +18,8 @@
  DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00 (U)
 
 
-  **** **** ******  **  PROGRAM STARTED AT               2025-06-21 12:43:12.252
- ***** ** ***  *** **   PROGRAM STARTED ON                          187d59e91f06
+  **** **** ******  **  PROGRAM STARTED AT               2025-06-21 13:27:28.041
+ ***** ** ***  *** **   PROGRAM STARTED ON                          f06b712b4f99
  **    ****   ******    PROGRAM STARTED BY                             <unknown>
  ***** **    ** ** **   PROGRAM PROCESS ID                                   634
   **** **  *******  **  PROGRAM STARTED IN                                 /work
@@ -72,12 +72,12 @@
  MEMORY| system memory details [Kb]
  MEMORY|                        rank 0           min           max       average
  MEMORY| MemTotal            263434384     263434384     263434384     263434384
- MEMORY| MemFree               7511248       7511248       7511248       7511248
- MEMORY| Buffers               1233268       1233268       1233268       1233268
- MEMORY| Cached              247150508     247150508     247150508     247150508
- MEMORY| Slab                  4043396       4043396       4043396       4043396
- MEMORY| SReclaimable          3377000       3377000       3377000       3377000
- MEMORY| MemLikelyFree       259272024     259272024     259272024     259272024
+ MEMORY| MemFree              74206992      74206992      74206992      74206992
+ MEMORY| Buffers               1200812       1200812       1200812       1200812
+ MEMORY| Cached              180864596     180864596     180864596     180864596
+ MEMORY| Slab                  3679728       3679728       3679728       3679728
+ MEMORY| SReclaimable          3057736       3057736       3057736       3057736
+ MEMORY| MemLikelyFree       259330136     259330136     259330136     259330136
 
 
  *** Fundamental physical constants (SI units) ***
@@ -132,7 +132,7 @@
  CELL_TOP| Angle (a,c), beta  [degree]:                                90.000000
  CELL_TOP| Angle (a,b), gamma [degree]:                                90.000000
  CELL_TOP| Numerically orthorhombic:                                         YES
- CELL_TOP| Periodicity                                                       XYZ
+ CELL_TOP| Periodicity                                                      NONE
 
  GENERATE|  Preliminary Number of Bonds generated:                             0
  GENERATE|  Achieved consistency in connectivity generation.
@@ -145,7 +145,7 @@
  CELL| Angle (a,c), beta  [degree]:                                    90.000000
  CELL| Angle (a,b), gamma [degree]:                                    90.000000
  CELL| Numerically orthorhombic:                                             YES
- CELL| Periodicity                                                           XYZ
+ CELL| Periodicity                                                          NONE
 
  CELL_REF| Volume [angstrom^3]:                                     27000.000000
  CELL_REF| Vector a [angstrom    30.000     0.000     0.000   |a| =    30.000000
@@ -155,1843 +155,7 @@
  CELL_REF| Angle (a,c), beta  [degree]:                                90.000000
  CELL_REF| Angle (a,b), gamma [degree]:                                90.000000
  CELL_REF| Numerically orthorhombic:                                         YES
- CELL_REF| Periodicity                                                       XYZ
-
- *******************************************************************************
- *******************************************************************************
- **                                                                           **
- **     #####                         ##              ##                      **
- **    ##   ##            ##          ##              ##                      **
- **   ##     ##                       ##            ######                    **
- **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
- **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
- **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
- **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
- **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
- **           ##                                                    ##        **
- **                                                                           **
- **                                                ... make the atoms dance   **
- **                                                                           **
- **            Copyright (C) by CP2K developers group (2000-2025)             **
- **                      J. Chem. Phys. 152, 194103 (2020)                    **
- **                                                                           **
- *******************************************************************************
-
- DFT| Spin restricted Kohn-Sham (RKS) calculation                            RKS
- DFT| Multiplicity                                                             1
- DFT| Number of spin states                                                    1
- DFT| Charge                                                                   0
- DFT| Self-interaction correction (SIC)                                       NO
- DFT| Cutoffs: density                                              1.000000E-10
- DFT|          gradient                                             1.000000E-10
- DFT|          tau                                                  1.000000E-10
- DFT|          cutoff_smoothing_range                               0.000000E+00
- DFT| XC density smoothing                                                  NONE
- DFT| XC derivatives                                                          PW
-
- FUNCTIONAL| PBE:
- FUNCTIONAL| J.P.Perdew, K.Burke, M.Ernzerhof, Phys. Rev. Letter, vol. 77, n 18,
- FUNCTIONAL|  pp. 3865-3868, (1996) {spin unpolarized}                          
-
- vdW POTENTIAL|                                                   Pair Potential
- vdW POTENTIAL|          DFT-D3 (Version 3.1)
- vdW POTENTIAL|          Potential Form: S. Grimme et al, JCP 132: 154104 (2010)
- vdW POTENTIAL|          Zero Damping
- vdW POTENTIAL|          Cutoff Radius [Bohr]:                             20.00
- vdW POTENTIAL|          s6 Scaling Factor:                               1.0000
- vdW POTENTIAL|          sr6 Scaling Factor:                              1.2170
- vdW POTENTIAL|          s8 Scaling Factor:                               0.7220
- vdW POTENTIAL|          Cutoff for CN calculation:                   0.1000E-05
-
- QS| Method:                                                                 GPW
- QS| Density plane wave grid type                        NON-SPHERICAL FULLSPACE
- QS| Number of grid levels:                                                    4
- QS| Density cutoff [a.u.]:                                                320.0
- QS| Multi grid cutoff [a.u.]: 1) grid level                               320.0
- QS|                           2) grid level                               106.7
- QS|                           3) grid level                                35.6
- QS|                           4) grid level                                11.9
- QS| Grid level progression factor:                                          3.0
- QS| Relative density cutoff [a.u.]:                                        20.0
- QS| Interaction thresholds: eps_pgf_orb:                                1.0E-05
- QS|                         eps_filter_matrix:                          0.0E+00
- QS|                         eps_core_charge:                            1.0E-12
- QS|                         eps_rho_gspace:                             1.0E-10
- QS|                         eps_rho_rspace:                             1.0E-10
- QS|                         eps_gvg_rspace:                             1.0E-05
- QS|                         eps_ppl:                                    1.0E-02
- QS|                         eps_ppnl:                                   1.0E-07
-
-
- ATOMIC KIND INFORMATION
-
-  1. Atomic kind: S                                     Number of atoms:       2
-
-     Orbital Basis Set                                        DZVP-MOLOPT-SR-GTH
-
-       Number of orbital shell sets:                                           1
-       Number of orbital shells:                                               5
-       Number of primitive Cartesian functions:                                4
-       Number of Cartesian basis functions:                                   14
-       Number of spherical basis functions:                                   13
-       Norm type:                                                              2
-
-       Normalised Cartesian orbitals:
-
-                        Set   Shell   Orbital            Exponent    Coefficient
-
-                          1       1    2s                2.215855       0.308496
-                                                         1.131471       0.138505
-                                                         0.410168      -0.373736
-                                                         0.140587      -0.040370
-
-                          1       2    3s                2.215855      -0.329528
-                                                         1.131471      -0.517509
-                                                         0.410168       0.787368
-                                                         0.140587      -0.322786
-
-                          1       3    3px               2.215855       0.420434
-                                                         1.131471      -0.319283
-                                                         0.410168      -0.335323
-                                                         0.140587      -0.030976
-                          1       3    3py               2.215855       0.420434
-                                                         1.131471      -0.319283
-                                                         0.410168      -0.335323
-                                                         0.140587      -0.030976
-                          1       3    3pz               2.215855       0.420434
-                                                         1.131471      -0.319283
-                                                         0.410168      -0.335323
-                                                         0.140587      -0.030976
-
-                          1       4    4px               2.215855       0.241296
-                                                         1.131471      -0.170582
-                                                         0.410168      -0.186977
-                                                         0.140587       0.153509
-                          1       4    4py               2.215855       0.241296
-                                                         1.131471      -0.170582
-                                                         0.410168      -0.186977
-                                                         0.140587       0.153509
-                          1       4    4pz               2.215855       0.241296
-                                                         1.131471      -0.170582
-                                                         0.410168      -0.186977
-                                                         0.140587       0.153509
-
-                          1       5    4dx2              2.215855       0.573559
-                                                         1.131471       0.544926
-                                                         0.410168       0.228284
-                                                         0.140587       0.008811
-                          1       5    4dxy              2.215855       0.993434
-                                                         1.131471       0.943840
-                                                         0.410168       0.395400
-                                                         0.140587       0.015260
-                          1       5    4dxz              2.215855       0.993434
-                                                         1.131471       0.943840
-                                                         0.410168       0.395400
-                                                         0.140587       0.015260
-                          1       5    4dy2              2.215855       0.573559
-                                                         1.131471       0.544926
-                                                         0.410168       0.228284
-                                                         0.140587       0.008811
-                          1       5    4dyz              2.215855       0.993434
-                                                         1.131471       0.943840
-                                                         0.410168       0.395400
-                                                         0.140587       0.015260
-                          1       5    4dz2              2.215855       0.573559
-                                                         1.131471       0.544926
-                                                         0.410168       0.228284
-                                                         0.140587       0.008811
-
-       Atomic covalent radius [Angstrom]:                                  1.020
-
-       Atomic van der Waals radius [Angstrom]:                             1.800
-
-     GTH Potential information for                                       GTH-PBE
-
-       Description:                       Goedecker-Teter-Hutter pseudopotential
-                                           Goedecker et al., PRB 54, 1703 (1996)
-                                          Hartwigsen et al., PRB 58, 3641 (1998)
-                                                      Krack, TCA 114, 145 (2005)
-
-       Gaussian exponent of the core charge distribution:               2.834467
-       Electronic configuration (s p d ...):                               2   4
-
-       Parameters of the local part of the GTH pseudopotential:
-
-                          rloc        C1          C2          C3          C4
-                        0.420000   -5.986260
-
-       Parameters of the non-local part of the GTH pseudopotential:
-
-                   l      r(l)      h(i,j,l)
-
-                   0    0.364820   13.143544   -4.241830
-                                   -4.241830    5.476180
-                   1    0.409480    3.700891
-
-  2. Atomic kind: F                                     Number of atoms:       6
-
-     Orbital Basis Set                                        DZVP-MOLOPT-SR-GTH
-
-       Number of orbital shell sets:                                           1
-       Number of orbital shells:                                               5
-       Number of primitive Cartesian functions:                                5
-       Number of Cartesian basis functions:                                   14
-       Number of spherical basis functions:                                   13
-       Norm type:                                                              2
-
-       Normalised Cartesian orbitals:
-
-                        Set   Shell   Orbital            Exponent    Coefficient
-
-                          1       1    2s               13.701521       0.466640
-                                                         5.098269       0.275181
-                                                         1.837941      -0.385817
-                                                         0.631759      -0.323188
-                                                         0.202027      -0.041057
-
-                          1       2    3s               13.701521       0.812914
-                                                         5.098269       0.409868
-                                                         1.837941      -0.484144
-                                                         0.631759      -0.510807
-                                                         0.202027       0.323394
-
-                          1       3    3px              13.701521      -2.132362
-                                                         5.098269      -1.951997
-                                                         1.837941      -1.094976
-                                                         0.631759      -0.344511
-                                                         0.202027      -0.046836
-                          1       3    3py              13.701521      -2.132362
-                                                         5.098269      -1.951997
-                                                         1.837941      -1.094976
-                                                         0.631759      -0.344511
-                                                         0.202027      -0.046836
-                          1       3    3pz              13.701521      -2.132362
-                                                         5.098269      -1.951997
-                                                         1.837941      -1.094976
-                                                         0.631759      -0.344511
-                                                         0.202027      -0.046836
-
-                          1       4    4px              13.701521      -2.306567
-                                                         5.098269      -1.843421
-                                                         1.837941      -1.245905
-                                                         0.631759      -0.318382
-                                                         0.202027       0.198065
-                          1       4    4py              13.701521      -2.306567
-                                                         5.098269      -1.843421
-                                                         1.837941      -1.245905
-                                                         0.631759      -0.318382
-                                                         0.202027       0.198065
-                          1       4    4pz              13.701521      -2.306567
-                                                         5.098269      -1.843421
-                                                         1.837941      -1.245905
-                                                         0.631759      -0.318382
-                                                         0.202027       0.198065
-
-                          1       5    4dx2             13.701521       1.831894
-                                                         5.098269       1.226066
-                                                         1.837941       1.533195
-                                                         0.631759       0.583867
-                                                         0.202027      -0.008805
-                          1       5    4dxy             13.701521       3.172934
-                                                         5.098269       2.123609
-                                                         1.837941       2.655572
-                                                         0.631759       1.011287
-                                                         0.202027      -0.015251
-                          1       5    4dxz             13.701521       3.172934
-                                                         5.098269       2.123609
-                                                         1.837941       2.655572
-                                                         0.631759       1.011287
-                                                         0.202027      -0.015251
-                          1       5    4dy2             13.701521       1.831894
-                                                         5.098269       1.226066
-                                                         1.837941       1.533195
-                                                         0.631759       0.583867
-                                                         0.202027      -0.008805
-                          1       5    4dyz             13.701521       3.172934
-                                                         5.098269       2.123609
-                                                         1.837941       2.655572
-                                                         0.631759       1.011287
-                                                         0.202027      -0.015251
-                          1       5    4dz2             13.701521       1.831894
-                                                         5.098269       1.226066
-                                                         1.837941       1.533195
-                                                         0.631759       0.583867
-                                                         0.202027      -0.008805
-
-       Atomic covalent radius [Angstrom]:                                  0.720
-
-       Atomic van der Waals radius [Angstrom]:                             1.470
-
-     GTH Potential information for                                       GTH-PBE
-
-       Description:                       Goedecker-Teter-Hutter pseudopotential
-                                           Goedecker et al., PRB 54, 1703 (1996)
-                                          Hartwigsen et al., PRB 58, 3641 (1998)
-                                                      Krack, TCA 114, 145 (2005)
-
-       Gaussian exponent of the core charge distribution:              10.823746
-       Electronic configuration (s p d ...):                               2   5
-
-       Parameters of the local part of the GTH pseudopotential:
-
-                          rloc        C1          C2          C3          C4
-                        0.214930  -21.573028    3.199776
-
-       Parameters of the non-local part of the GTH pseudopotential:
-
-                   l      r(l)      h(i,j,l)
-
-                   0    0.194684   23.743540
-                   1    0.186156
-
-  3. Atomic kind: O                                     Number of atoms:       4
-
-     Orbital Basis Set                                        DZVP-MOLOPT-SR-GTH
-
-       Number of orbital shell sets:                                           1
-       Number of orbital shells:                                               5
-       Number of primitive Cartesian functions:                                5
-       Number of Cartesian basis functions:                                   14
-       Number of spherical basis functions:                                   13
-       Norm type:                                                              2
-
-       Normalised Cartesian orbitals:
-
-                        Set   Shell   Orbital            Exponent    Coefficient
-
-                          1       1    2s               10.389228       0.396646
-                                                         3.849621       0.208811
-                                                         1.388401      -0.301641
-                                                         0.496955      -0.274061
-                                                         0.162492      -0.033677
-
-                          1       2    3s               10.389228       0.303673
-                                                         3.849621       0.240943
-                                                         1.388401      -0.313066
-                                                         0.496955      -0.043055
-                                                         0.162492       0.213991
-
-                          1       3    3px              10.389228      -1.530415
-                                                         3.849621      -1.371928
-                                                         1.388401      -0.761951
-                                                         0.496955      -0.253695
-                                                         0.162492      -0.035541
-                          1       3    3py              10.389228      -1.530415
-                                                         3.849621      -1.371928
-                                                         1.388401      -0.761951
-                                                         0.496955      -0.253695
-                                                         0.162492      -0.035541
-                          1       3    3pz              10.389228      -1.530415
-                                                         3.849621      -1.371928
-                                                         1.388401      -0.761951
-                                                         0.496955      -0.253695
-                                                         0.162492      -0.035541
-
-                          1       4    4px              10.389228      -0.565392
-                                                         3.849621      -0.038231
-                                                         1.388401      -0.382373
-                                                         0.496955       0.179070
-                                                         0.162492       0.122714
-                          1       4    4py              10.389228      -0.565392
-                                                         3.849621      -0.038231
-                                                         1.388401      -0.382373
-                                                         0.496955       0.179070
-                                                         0.162492       0.122714
-                          1       4    4pz              10.389228      -0.565392
-                                                         3.849621      -0.038231
-                                                         1.388401      -0.382373
-                                                         0.496955       0.179070
-                                                         0.162492       0.122714
-
-                          1       5    4dx2             10.389228       1.867377
-                                                         3.849621       0.670994
-                                                         1.388401       1.353441
-                                                         0.496955       0.273538
-                                                         0.162492       0.006620
-                          1       5    4dxy             10.389228       3.234392
-                                                         3.849621       1.162195
-                                                         1.388401       2.344229
-                                                         0.496955       0.473781
-                                                         0.162492       0.011466
-                          1       5    4dxz             10.389228       3.234392
-                                                         3.849621       1.162195
-                                                         1.388401       2.344229
-                                                         0.496955       0.473781
-                                                         0.162492       0.011466
-                          1       5    4dy2             10.389228       1.867377
-                                                         3.849621       0.670994
-                                                         1.388401       1.353441
-                                                         0.496955       0.273538
-                                                         0.162492       0.006620
-                          1       5    4dyz             10.389228       3.234392
-                                                         3.849621       1.162195
-                                                         1.388401       2.344229
-                                                         0.496955       0.473781
-                                                         0.162492       0.011466
-                          1       5    4dz2             10.389228       1.867377
-                                                         3.849621       0.670994
-                                                         1.388401       1.353441
-                                                         0.496955       0.273538
-                                                         0.162492       0.006620
-
-       Atomic covalent radius [Angstrom]:                                  0.730
-
-       Atomic van der Waals radius [Angstrom]:                             1.520
-
-     GTH Potential information for                                       GTH-PBE
-
-       Description:                       Goedecker-Teter-Hutter pseudopotential
-                                           Goedecker et al., PRB 54, 1703 (1996)
-                                          Hartwigsen et al., PRB 58, 3641 (1998)
-                                                      Krack, TCA 114, 145 (2005)
-
-       Gaussian exponent of the core charge distribution:               8.360253
-       Electronic configuration (s p d ...):                               2   4
-
-       Parameters of the local part of the GTH pseudopotential:
-
-                          rloc        C1          C2          C3          C4
-                        0.244554  -16.667215    2.487311
-
-       Parameters of the non-local part of the GTH pseudopotential:
-
-                   l      r(l)      h(i,j,l)
-
-                   0    0.220956   18.337458
-                   1    0.211332
-
-  4. Atomic kind: N                                     Number of atoms:       3
-
-     Orbital Basis Set                                        DZVP-MOLOPT-SR-GTH
-
-       Number of orbital shell sets:                                           1
-       Number of orbital shells:                                               5
-       Number of primitive Cartesian functions:                                5
-       Number of Cartesian basis functions:                                   14
-       Number of spherical basis functions:                                   13
-       Norm type:                                                              2
-
-       Normalised Cartesian orbitals:
-
-                        Set   Shell   Orbital            Exponent    Coefficient
-
-                          1       1    2s                7.341988       0.360561
-                                                         2.542637       0.139177
-                                                         0.888575      -0.289383
-                                                         0.333802      -0.182244
-                                                         0.112012      -0.019197
-
-                          1       2    3s                7.341988       0.282000
-                                                         2.542637       0.177875
-                                                         0.888575      -0.278381
-                                                         0.333802       0.008577
-                                                         0.112012       0.154176
-
-                          1       3    3px               7.341988      -1.188719
-                                                         2.542637      -0.973969
-                                                         0.888575      -0.501079
-                                                         0.333802      -0.144894
-                                                         0.112012      -0.013986
-                          1       3    3py               7.341988      -1.188719
-                                                         2.542637      -0.973969
-                                                         0.888575      -0.501079
-                                                         0.333802      -0.144894
-                                                         0.112012      -0.013986
-                          1       3    3pz               7.341988      -1.188719
-                                                         2.542637      -0.973969
-                                                         0.888575      -0.501079
-                                                         0.333802      -0.144894
-                                                         0.112012      -0.013986
-
-                          1       4    4px               7.341988      -0.094798
-                                                         2.542637       0.050069
-                                                         0.888575      -0.114797
-                                                         0.333802       0.144793
-                                                         0.112012       0.066710
-                          1       4    4py               7.341988      -0.094798
-                                                         2.542637       0.050069
-                                                         0.888575      -0.114797
-                                                         0.333802       0.144793
-                                                         0.112012       0.066710
-                          1       4    4pz               7.341988      -0.094798
-                                                         2.542637       0.050069
-                                                         0.888575      -0.114797
-                                                         0.333802       0.144793
-                                                         0.112012       0.066710
-
-                          1       5    4dx2              7.341988       1.354688
-                                                         2.542637       0.690378
-                                                         0.888575       0.855359
-                                                         0.333802       0.091746
-                                                         0.112012       0.001253
-                          1       5    4dxy              7.341988       2.346389
-                                                         2.542637       1.195770
-                                                         0.888575       1.481524
-                                                         0.333802       0.158910
-                                                         0.112012       0.002169
-                          1       5    4dxz              7.341988       2.346389
-                                                         2.542637       1.195770
-                                                         0.888575       1.481524
-                                                         0.333802       0.158910
-                                                         0.112012       0.002169
-                          1       5    4dy2              7.341988       1.354688
-                                                         2.542637       0.690378
-                                                         0.888575       0.855359
-                                                         0.333802       0.091746
-                                                         0.112012       0.001253
-                          1       5    4dyz              7.341988       2.346389
-                                                         2.542637       1.195770
-                                                         0.888575       1.481524
-                                                         0.333802       0.158910
-                                                         0.112012       0.002169
-                          1       5    4dz2              7.341988       1.354688
-                                                         2.542637       0.690378
-                                                         0.888575       0.855359
-                                                         0.333802       0.091746
-                                                         0.112012       0.001253
-
-       Atomic covalent radius [Angstrom]:                                  0.750
-
-       Atomic van der Waals radius [Angstrom]:                             1.550
-
-     GTH Potential information for                                       GTH-PBE
-
-       Description:                       Goedecker-Teter-Hutter pseudopotential
-                                           Goedecker et al., PRB 54, 1703 (1996)
-                                          Hartwigsen et al., PRB 58, 3641 (1998)
-                                                      Krack, TCA 114, 145 (2005)
-
-       Gaussian exponent of the core charge distribution:               6.208322
-       Electronic configuration (s p d ...):                               2   3
-
-       Parameters of the local part of the GTH pseudopotential:
-
-                          rloc        C1          C2          C3          C4
-                        0.283791  -12.415226    1.868096
-
-       Parameters of the non-local part of the GTH pseudopotential:
-
-                   l      r(l)      h(i,j,l)
-
-                   0    0.255405   13.630263
-                   1    0.245495
-
-  5. Atomic kind: C                                     Number of atoms:      10
-
-     Orbital Basis Set                                        DZVP-MOLOPT-SR-GTH
-
-       Number of orbital shell sets:                                           1
-       Number of orbital shells:                                               5
-       Number of primitive Cartesian functions:                                5
-       Number of Cartesian basis functions:                                   14
-       Number of spherical basis functions:                                   13
-       Norm type:                                                              2
-
-       Normalised Cartesian orbitals:
-
-                        Set   Shell   Orbital            Exponent    Coefficient
-
-                          1       1    2s                5.605331       0.322515
-                                                         2.113016       0.213043
-                                                         0.769911      -0.209686
-                                                         0.348157      -0.219794
-                                                         0.128212      -0.022789
-
-                          1       2    3s                5.605331       0.552234
-                                                         2.113016       0.082072
-                                                         0.769911       0.007843
-                                                         0.348157       0.136893
-                                                         0.128212       0.074283
-
-                          1       3    3px               5.605331      -0.703879
-                                                         2.113016      -0.642521
-                                                         0.769911      -0.374851
-                                                         0.348157      -0.139743
-                                                         0.128212      -0.027849
-                          1       3    3py               5.605331      -0.703879
-                                                         2.113016      -0.642521
-                                                         0.769911      -0.374851
-                                                         0.348157      -0.139743
-                                                         0.128212      -0.027849
-                          1       3    3pz               5.605331      -0.703879
-                                                         2.113016      -0.642521
-                                                         0.769911      -0.374851
-                                                         0.348157      -0.139743
-                                                         0.128212      -0.027849
-
-                          1       4    4px               5.605331      -0.480376
-                                                         2.113016      -0.552894
-                                                         0.769911      -0.316145
-                                                         0.348157       0.210505
-                                                         0.128212       0.076095
-                          1       4    4py               5.605331      -0.480376
-                                                         2.113016      -0.552894
-                                                         0.769911      -0.316145
-                                                         0.348157       0.210505
-                                                         0.128212       0.076095
-                          1       4    4pz               5.605331      -0.480376
-                                                         2.113016      -0.552894
-                                                         0.769911      -0.316145
-                                                         0.348157       0.210505
-                                                         0.128212       0.076095
-
-                          1       5    4dx2              5.605331       0.640026
-                                                         2.113016       0.274300
-                                                         0.769911       0.446711
-                                                         0.348157       0.028674
-                                                         0.128212       0.029790
-                          1       5    4dxy              5.605331       1.108557
-                                                         2.113016       0.475102
-                                                         0.769911       0.773726
-                                                         0.348157       0.049666
-                                                         0.128212       0.051599
-                          1       5    4dxz              5.605331       1.108557
-                                                         2.113016       0.475102
-                                                         0.769911       0.773726
-                                                         0.348157       0.049666
-                                                         0.128212       0.051599
-                          1       5    4dy2              5.605331       0.640026
-                                                         2.113016       0.274300
-                                                         0.769911       0.446711
-                                                         0.348157       0.028674
-                                                         0.128212       0.029790
-                          1       5    4dyz              5.605331       1.108557
-                                                         2.113016       0.475102
-                                                         0.769911       0.773726
-                                                         0.348157       0.049666
-                                                         0.128212       0.051599
-                          1       5    4dz2              5.605331       0.640026
-                                                         2.113016       0.274300
-                                                         0.769911       0.446711
-                                                         0.348157       0.028674
-                                                         0.128212       0.029790
-
-       Atomic covalent radius [Angstrom]:                                  0.770
-
-       Atomic van der Waals radius [Angstrom]:                             1.700
-
-     GTH Potential information for                                       GTH-PBE
-
-       Description:                       Goedecker-Teter-Hutter pseudopotential
-                                           Goedecker et al., PRB 54, 1703 (1996)
-                                          Hartwigsen et al., PRB 58, 3641 (1998)
-                                                      Krack, TCA 114, 145 (2005)
-
-       Gaussian exponent of the core charge distribution:               4.364419
-       Electronic configuration (s p d ...):                               2   2
-
-       Parameters of the local part of the GTH pseudopotential:
-
-                          rloc        C1          C2          C3          C4
-                        0.338471   -8.803674    1.339211
-
-       Parameters of the non-local part of the GTH pseudopotential:
-
-                   l      r(l)      h(i,j,l)
-
-                   0    0.302576    9.622487
-                   1    0.291507
-
-  6. Atomic kind: H                                     Number of atoms:      15
-
-     Orbital Basis Set                                        DZVP-MOLOPT-SR-GTH
-
-       Number of orbital shell sets:                                           1
-       Number of orbital shells:                                               3
-       Number of primitive Cartesian functions:                                5
-       Number of Cartesian basis functions:                                    5
-       Number of spherical basis functions:                                    5
-       Norm type:                                                              2
-
-       Normalised Cartesian orbitals:
-
-                        Set   Shell   Orbital            Exponent    Coefficient
-
-                          1       1    2s               10.068468      -0.133023
-                                                         2.680223      -0.177618
-                                                         0.791502      -0.258419
-                                                         0.239116      -0.107525
-                                                         0.082193      -0.014019
-
-                          1       2    3s               10.068468       0.344673
-                                                         2.680223       1.819821
-                                                         0.791502      -0.999069
-                                                         0.239116       0.017430
-                                                         0.082193       0.082660
-
-                          1       3    3px              10.068468       0.155326
-                                                         2.680223       0.367157
-                                                         0.791502       0.311480
-                                                         0.239116       0.080105
-                                                         0.082193       0.033440
-                          1       3    3py              10.068468       0.155326
-                                                         2.680223       0.367157
-                                                         0.791502       0.311480
-                                                         0.239116       0.080105
-                                                         0.082193       0.033440
-                          1       3    3pz              10.068468       0.155326
-                                                         2.680223       0.367157
-                                                         0.791502       0.311480
-                                                         0.239116       0.080105
-                                                         0.082193       0.033440
-
-       Atomic covalent radius [Angstrom]:                                  0.320
-
-       Atomic van der Waals radius [Angstrom]:                             1.090
-
-     GTH Potential information for                                       GTH-PBE
-
-       Description:                       Goedecker-Teter-Hutter pseudopotential
-                                           Goedecker et al., PRB 54, 1703 (1996)
-                                          Hartwigsen et al., PRB 58, 3641 (1998)
-                                                      Krack, TCA 114, 145 (2005)
-
-       Gaussian exponent of the core charge distribution:              12.500000
-       Electronic configuration (s p d ...):                                   1
-
-       Parameters of the local part of the GTH pseudopotential:
-
-                          rloc        C1          C2          C3          C4
-                        0.200000   -4.178900    0.724463
-
-
- MOLECULE KIND INFORMATION
-
-
- All atoms are their own molecule, skipping detailed information
-
-
- TOTAL NUMBERS AND MAXIMUM NUMBERS
-
-  Total number of            - Atomic kinds:                                   6
-                             - Atoms:                                         40
-                             - Shell sets:                                    40
-                             - Shells:                                       170
-                             - Primitive Cartesian functions:                198
-                             - Cartesian basis functions:                    425
-                             - Spherical basis functions:                    400
-
-  Maximum angular momentum of- Orbital basis functions:                        2
-                             - Local part of the GTH pseudopotential:          2
-                             - Non-local part of the GTH pseudopotential:      2
-
-
- MODULE QUICKSTEP: ATOMIC COORDINATES IN ANGSTROM
-
-   Atom Kind Element         X             Y             Z       Z(eff)     Mass
-      1    1 S    16      3.294323      1.918181      2.959141   6.0000  32.0650
-      2    1 S    16      0.532318      1.828291      3.731245   6.0000  32.0650
-      3    2 F     9      5.172768      3.547565      3.954005   7.0000  18.9984
-      4    2 F     9      3.356641      3.923781      4.897745   7.0000  18.9984
-      5    2 F     9      4.420923      2.135795      5.525289   7.0000  18.9984
-      6    2 F     9      1.283951      2.124475      6.205053   7.0000  18.9984
-      7    2 F     9     -0.896591      2.124516      5.841546   7.0000  18.9984
-      8    2 F     9      0.329928      0.227027      5.943459   7.0000  18.9984
-      9    3 O     8      3.022181      2.903976      1.906502   6.0000  15.9994
-     10    3 O     8      4.239919      0.898158      2.534522   6.0000  15.9994
-     11    3 O     8     -0.403363      1.028286      2.930874   6.0000  15.9994
-     12    3 O     8      0.612197      3.273585      3.464889   6.0000  15.9994
-     13    4 N     7      2.031263      1.113691      3.550389   5.0000  14.0067
-     14    5 C     6      4.097793      2.881348      4.455786   4.0000  12.0107
-     15    5 C     6      0.258617      1.533390      5.545803   4.0000  12.0107
-     16    4 N     7      1.412126      0.000000     -0.000000   5.0000  14.0067
-     17    4 N     7      0.711834      2.096818      0.039339   5.0000  14.0067
-     18    5 C     6      2.207664     -1.222765      0.130249   4.0000  12.0107
-     19    5 C     6      2.079559     -1.944543      1.460372   4.0000  12.0107
-     20    5 C     6      2.880196     -3.259627      1.396067   4.0000  12.0107
-     21    5 C     6      1.833972      1.314475     -0.000000   4.0000  12.0107
-     22    5 C     6      0.000000      0.000000     -0.000000   4.0000  12.0107
-     23    5 C     6     -0.435938      1.316874      0.116189   4.0000  12.0107
-     24    5 C     6      2.873539     -4.159980      2.649630   4.0000  12.0107
-     25    5 C     6      0.832079      3.593061     -0.007529   4.0000  12.0107
-     26    6 H     1      3.245319     -0.872535      0.038541   1.0000   1.0079
-     27    6 H     1      2.014905     -1.851674     -0.746231   1.0000   1.0079
-     28    6 H     1      2.523429     -1.435325      2.322100   1.0000   1.0079
-     29    6 H     1      1.067114     -2.290007      1.698510   1.0000   1.0079
-     30    6 H     1      3.925924     -2.976500      1.186325   1.0000   1.0079
-     31    6 H     1      2.629794     -3.898793      0.543503   1.0000   1.0079
-     32    6 H     1      2.853640      1.656632     -0.088349   1.0000   1.0079
-     33    6 H     1     -0.567726     -0.922274      0.042398   1.0000   1.0079
-     34    6 H     1     -1.437336      1.718583      0.065863   1.0000   1.0079
-     35    6 H     1      1.860457     -4.568535      2.792273   1.0000   1.0079
-     36    6 H     1      3.549683     -5.004825      2.453502   1.0000   1.0079
-     37    6 H     1      3.246098     -3.497330      3.438740   1.0000   1.0079
-     38    6 H     1      0.555829      3.957492      0.996551   1.0000   1.0079
-     39    6 H     1      0.264495      4.044369     -0.830736   1.0000   1.0079
-     40    6 H     1      1.857058      3.803956     -0.323346   1.0000   1.0079
-
-
-
- SCF PARAMETERS         Density guess:                                    ATOMIC
-                        --------------------------------------------------------
-                        max_scf:                                             200
-                        max_scf_history:                                       0
-                        max_diis:                                              4
-                        --------------------------------------------------------
-                        eps_scf:                                        5.00E-07
-                        eps_scf_history:                                0.00E+00
-                        eps_diis:                                       1.00E-01
-                        eps_eigval:                                     1.00E-05
-                        --------------------------------------------------------
-                        level_shift [a.u.]:                             0.000000
-                        added MOs                                       100    0
-                        --------------------------------------------------------
-                        Mixing method:                            BROYDEN_MIXING
-                                                charge density mixing in g-space
-                        --------------------------------------------------------
-                        Smear method:                                FERMI_DIRAC
-                        Electronic temperature [K]:                        300.0
-                        Electronic temperature [a.u.]:                  9.50E-04
-                        Accuracy threshold:                             1.00E-10
-                        --------------------------------------------------------
-                        No outer SCF
-
- PW_GRID| Information for grid number                                          1
- PW_GRID| Grid distributed over                                     7 processors
- PW_GRID| Real space group dimensions                                     7    1
- PW_GRID| the grid is blocked:                                                NO
- PW_GRID| Cutoff [a.u.]                                                    320.0
- PW_GRID| spherical cutoff:                                                   NO
- PW_GRID|   Bounds   1           -240     239                Points:         480
- PW_GRID|   Bounds   2           -240     239                Points:         480
- PW_GRID|   Bounds   3           -240     239                Points:         480
- PW_GRID| Volume element (a.u.^3)  0.1648E-02     Volume (a.u.^3)    182205.0337
- PW_GRID| Grid span                                                    FULLSPACE
- PW_GRID|   Distribution                         Average         Max         Min
- PW_GRID|   G-Vectors                         15798857.1    15799200    15798720
- PW_GRID|   G-Rays                               32914.3       32915       32914
- PW_GRID|   Real Space Points                 15798857.1    15897600    15667200
-
- PW_GRID| Information for grid number                                          2
- PW_GRID| Number of the reference grid                                         1
- PW_GRID| Grid distributed over                                     7 processors
- PW_GRID| Real space group dimensions                                     7    1
- PW_GRID| the grid is blocked:                                                NO
- PW_GRID| Cutoff [a.u.]                                                    106.7
- PW_GRID| spherical cutoff:                                                   NO
- PW_GRID|   Bounds   1           -135     134                Points:         270
- PW_GRID|   Bounds   2           -135     134                Points:         270
- PW_GRID|   Bounds   3           -135     134                Points:         270
- PW_GRID| Volume element (a.u.^3)  0.9257E-02     Volume (a.u.^3)    182205.0337
- PW_GRID| Grid span                                                    FULLSPACE
- PW_GRID|   Distribution                         Average         Max         Min
- PW_GRID|   G-Vectors                          2811857.1     2812050     2811510
- PW_GRID|   G-Rays                               10414.3       10415       10413
- PW_GRID|   Real Space Points                  2811857.1     2843100     2770200
-
- PW_GRID| Information for grid number                                          3
- PW_GRID| Number of the reference grid                                         1
- PW_GRID| Grid distributed over                                     7 processors
- PW_GRID| Real space group dimensions                                     7    1
- PW_GRID| the grid is blocked:                                                NO
- PW_GRID| Cutoff [a.u.]                                                     35.6
- PW_GRID| spherical cutoff:                                                   NO
- PW_GRID|   Bounds   1            -80      79                Points:         160
- PW_GRID|   Bounds   2            -80      79                Points:         160
- PW_GRID|   Bounds   3            -80      79                Points:         160
- PW_GRID| Volume element (a.u.^3)  0.4448E-01     Volume (a.u.^3)    182205.0337
- PW_GRID| Grid span                                                    FULLSPACE
- PW_GRID|   Distribution                         Average         Max         Min
- PW_GRID|   G-Vectors                           585142.9      585440      584800
- PW_GRID|   G-Rays                                3657.1        3659        3655
- PW_GRID|   Real Space Points                   585142.9      588800      563200
-
- PW_GRID| Information for grid number                                          4
- PW_GRID| Number of the reference grid                                         1
- PW_GRID| Grid distributed over                                     7 processors
- PW_GRID| Real space group dimensions                                     7    1
- PW_GRID| the grid is blocked:                                                NO
- PW_GRID| Cutoff [a.u.]                                                     11.9
- PW_GRID| spherical cutoff:                                                   NO
- PW_GRID|   Bounds   1            -45      44                Points:          90
- PW_GRID|   Bounds   2            -45      44                Points:          90
- PW_GRID|   Bounds   3            -45      44                Points:          90
- PW_GRID| Volume element (a.u.^3)  0.2499         Volume (a.u.^3)    182205.0337
- PW_GRID| Grid span                                                    FULLSPACE
- PW_GRID|   Distribution                         Average         Max         Min
- PW_GRID|   G-Vectors                           104142.9      104310      103950
- PW_GRID|   G-Rays                                1157.1        1159        1155
- PW_GRID|   Real Space Points                   104142.9      105300       97200
-
- POISSON| Solver                                                        PERIODIC
- POISSON| Periodicity                                                        XYZ
-
- RS_GRID| Information for grid number                                          1
- RS_GRID|   Bounds   1           -240     239                Points:         480
- RS_GRID|   Bounds   2           -240     239                Points:         480
- RS_GRID|   Bounds   3           -240     239                Points:         480
- RS_GRID| Real space distribution over                                  7 groups
- RS_GRID| Real space distribution along direction                              3
- RS_GRID| Border size                                                         27
- RS_GRID|   Distribution                         Average         Max         Min
- RS_GRID|   Planes                                 122.6         123         122
-
- RS_GRID| Information for grid number                                          2
- RS_GRID|   Bounds   1           -135     134                Points:         270
- RS_GRID|   Bounds   2           -135     134                Points:         270
- RS_GRID|   Bounds   3           -135     134                Points:         270
- RS_GRID| Real space distribution over                                  7 groups
- RS_GRID| Real space distribution along direction                              3
- RS_GRID| Border size                                                         22
- RS_GRID|   Distribution                         Average         Max         Min
- RS_GRID|   Planes                                  82.6          83          82
-
- RS_GRID| Information for grid number                                          3
- RS_GRID|   Bounds   1            -80      79                Points:         160
- RS_GRID|   Bounds   2            -80      79                Points:         160
- RS_GRID|   Bounds   3            -80      79                Points:         160
- RS_GRID| Real space fully replicated
- RS_GRID| Group size                                                           1
-
- RS_GRID| Information for grid number                                          4
- RS_GRID|   Bounds   1            -45      44                Points:          90
- RS_GRID|   Bounds   2            -45      44                Points:          90
- RS_GRID|   Bounds   3            -45      44                Points:          90
- RS_GRID| Real space fully replicated
- RS_GRID| Group size                                                           1
-
- BFGS| Use rational function optimization for step estimation:                NO
- BFGS| Use model Hessian for initial guess:                                  YES
- BFGS| Restart Hessian:                                                       NO
- BFGS| Trust radius:                                                       0.472
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *******************************************************************************
- ***                     STARTING GEOMETRY OPTIMIZATION                      ***
- ***                                   BFGS                                  ***
- *******************************************************************************
-
- Number of electrons:                                                        148
- Number of occupied orbitals:                                                 74
- Number of molecular orbitals:                                               174
-
- Number of orbital functions:                                                400
- Number of independent orbital functions:                                    400
-
- Extrapolation method: initial_guess
-
- Atomic guess: The first density matrix is obtained in terms of atomic orbitals
-               and electronic configurations assigned to each atomic kind
-
- Guess for atomic kind: S
-
- Electronic structure
-    Total number of core electrons                                         10.00
-    Total number of valence electrons                                       6.00
-    Total number of electrons                                              16.00
-    Multiplicity                                                   not specified
-    S   [  2.00  2.00] 2.00
-    P   [  6.00] 4.00
-
-
- *******************************************************************************
-                  Iteration          Convergence                     Energy [au]
- *******************************************************************************
-                          1        0.506127E-01                  -9.947327174035
-                          2        0.268535E-01                  -9.947806097329
-                          3        0.416209E-04                  -9.948003730091
-                          4        0.374461E-07                  -9.948003730535
-
- Energy components [Hartree]           Total Energy ::           -9.948003730535
-                                        Band Energy ::           -2.105895662988
-                                     Kinetic Energy ::            3.753358161068
-                                   Potential Energy ::          -13.701361891603
-                                      Virial (-V/T) ::            3.650427511480
-                                        Core Energy ::          -16.361135329452
-                                          XC Energy ::           -2.059734796104
-                                     Coulomb Energy ::            8.472866395021
-                       Total Pseudopotential Energy ::          -20.171145086058
-                       Local Pseudopotential Energy ::          -22.366310416427
-                    Nonlocal Pseudopotential Energy ::            2.195165330369
-                                        Confinement ::            0.566515955377
-
- Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
-
-                       1     0          2.000      -0.599768          -16.320517
-
-                       1     1          4.000      -0.226590           -6.165825
-
-
- Total Electron Density at R=0:                                         0.000005
-
- Guess for atomic kind: F
-
- Electronic structure
-    Total number of core electrons                                          2.00
-    Total number of valence electrons                                       7.00
-    Total number of electrons                                               9.00
-    Multiplicity                                                   not specified
-    S   [  2.00] 2.00
-    P      5.00
-
-
- *******************************************************************************
-                  Iteration          Convergence                     Energy [au]
- *******************************************************************************
-                          1         1.27670                     -23.767682627776
-                          2         1.00587                     -23.792509619348
-                          3        0.422975E-01                 -23.938936406232
-                          4        0.659061E-03                 -23.939146915818
-                          5        0.314489E-03                 -23.939146955472
-                          6        0.205787E-03                 -23.939146962157
-                          7        0.178888E-05                 -23.939146967162
-                          8        0.363113E-06                 -23.939146967163
-
- Energy components [Hartree]           Total Energy ::          -23.939146967163
-                                        Band Energy ::           -4.144744434921
-                                     Kinetic Energy ::           18.766429891734
-                                   Potential Energy ::          -42.705576858897
-                                      Virial (-V/T) ::            2.275636714350
-                                        Core Energy ::          -40.734808518017
-                                          XC Energy ::           -4.364157245549
-                                     Coulomb Energy ::           21.159818796404
-                       Total Pseudopotential Energy ::          -59.535269785357
-                       Local Pseudopotential Energy ::          -61.232885401575
-                    Nonlocal Pseudopotential Energy ::            1.697615616218
-                                        Confinement ::            0.340313756054
-
- Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
-
-                       1     0          2.000      -1.083668          -29.488103
-
-                       1     1          5.000      -0.395482          -10.761605
-
-
- Total Electron Density at R=0:                                         0.000149
-
- Guess for atomic kind: O
-
- Electronic structure
-    Total number of core electrons                                          2.00
-    Total number of valence electrons                                       6.00
-    Total number of electrons                                               8.00
-    Multiplicity                                                   not specified
-    S   [  2.00] 2.00
-    P      4.00
-
-
- *******************************************************************************
-                  Iteration          Convergence                     Energy [au]
- *******************************************************************************
-                          1        0.702811                     -15.577904332270
-                          2        0.612408                     -15.588447180504
-                          3        0.955344E-02                 -15.655871208406
-                          4        0.223754E-02                 -15.655885053552
-                          5        0.157183E-02                 -15.655885461027
-                          6        0.124953E-02                 -15.655885607150
-                          7        0.312011E-06                 -15.655885858066
-
- Energy components [Hartree]           Total Energy ::          -15.655885858066
-                                        Band Energy ::           -2.983128125584
-                                     Kinetic Energy ::           11.754765134683
-                                   Potential Energy ::          -27.410650992749
-                                      Virial (-V/T) ::            2.331875684345
-                                        Core Energy ::          -26.153522949071
-                                          XC Energy ::           -3.157392363346
-                                     Coulomb Energy ::           13.655029454351
-                       Total Pseudopotential Energy ::          -37.943026860963
-                       Local Pseudopotential Energy ::          -39.220419683052
-                    Nonlocal Pseudopotential Energy ::            1.277392822089
-                                        Confinement ::            0.347387772086
-
- Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
-
-                       1     0          2.000      -0.861522          -23.443215
-
-                       1     1          4.000      -0.315021           -8.572154
-
-
- Total Electron Density at R=0:                                         0.000093
-
- Guess for atomic kind: N
-
- Electronic structure
-    Total number of core electrons                                          2.00
-    Total number of valence electrons                                       5.00
-    Total number of electrons                                               7.00
-    Multiplicity                                                   not specified
-    S   [  2.00] 2.00
-    P      3.00
-
-
- *******************************************************************************
-                  Iteration          Convergence                     Energy [au]
- *******************************************************************************
-                          1        0.314603                      -9.513311037226
-                          2        0.240982                      -9.524715106536
-                          3        0.171660E-02                  -9.545365478140
-                          4        0.189497E-03                  -9.545366407342
-                          5        0.115171E-03                  -9.545366414563
-                          6        0.842367E-04                  -9.545366416530
-                          7        0.416372E-07                  -9.545366418792
-
- Energy components [Hartree]           Total Energy ::           -9.545366418792
-                                        Band Energy ::           -2.053285301135
-                                     Kinetic Energy ::            6.740378038236
-                                   Potential Energy ::          -16.285744457028
-                                      Virial (-V/T) ::            2.416147041701
-                                        Core Energy ::          -15.542519058333
-                                          XC Energy ::           -2.163416690174
-                                     Coulomb Energy ::            8.160569329715
-                       Total Pseudopotential Energy ::          -22.320027271038
-                       Local Pseudopotential Energy ::          -23.240219346165
-                    Nonlocal Pseudopotential Energy ::            0.920192075127
-                                        Confinement ::            0.371301744695
-
- Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
-
-                       1     0          2.000      -0.663125          -18.044549
-
-                       1     1          3.000      -0.242345           -6.594545
-
-
- Total Electron Density at R=0:                                         0.000019
-
- Guess for atomic kind: C
-
- Electronic structure
-    Total number of core electrons                                          2.00
-    Total number of valence electrons                                       4.00
-    Total number of electrons                                               6.00
-    Multiplicity                                                   not specified
-    S   [  2.00] 2.00
-    P      2.00
-
-
- *******************************************************************************
-                  Iteration          Convergence                     Energy [au]
- *******************************************************************************
-                          1        0.261814E-01                  -5.246264729087
-                          2        0.905236E-02                  -5.246529568708
-                          3        0.681743E-04                  -5.246565167452
-                          4        0.792827E-08                  -5.246565169473
-
- Energy components [Hartree]           Total Energy ::           -5.246565169473
-                                        Band Energy ::           -1.058732595430
-                                     Kinetic Energy ::            3.518928170589
-                                   Potential Energy ::           -8.765493340062
-                                      Virial (-V/T) ::            2.490955460053
-                                        Core Energy ::           -8.429377169956
-                                          XC Energy ::           -1.450183342358
-                                     Coulomb Energy ::            4.632995342842
-                       Total Pseudopotential Energy ::          -11.978048809389
-                       Local Pseudopotential Energy ::          -12.816738187351
-                    Nonlocal Pseudopotential Energy ::            0.838689377962
-                                        Confinement ::            0.297434688432
-
- Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
-
-                       1     0          2.000      -0.410911          -11.181458
-
-                       1     1          2.000      -0.118455           -3.223332
-
-
- Total Electron Density at R=0:                                         0.001337
-
- Guess for atomic kind: H
-
- Electronic structure
-    Total number of core electrons                                          0.00
-    Total number of valence electrons                                       1.00
-    Total number of electrons                                               1.00
-    Multiplicity                                                   not specified
-    S      1.00
-
-
- *******************************************************************************
-                  Iteration          Convergence                     Energy [au]
- *******************************************************************************
-                          1        0.250972E-02                  -0.375256815885
-                          2        0.570752E-04                  -0.375258666164
-                          3        0.832404E-09                  -0.375258667122
-
- Energy components [Hartree]           Total Energy ::           -0.375258667122
-                                        Band Energy ::           -0.076317618391
-                                     Kinetic Energy ::            0.771356566341
-                                   Potential Energy ::           -1.146615233463
-                                      Virial (-V/T) ::            1.486491829455
-                                        Core Energy ::           -0.456090715790
-                                          XC Energy ::           -0.314218627334
-                                     Coulomb Energy ::            0.395050676003
-                       Total Pseudopotential Energy ::           -1.238482237174
-                       Local Pseudopotential Energy ::           -1.238482237174
-                    Nonlocal Pseudopotential Energy ::            0.000000000000
-                                        Confinement ::            0.110349550431
-
- Orbital energies  State     L     Occupation   Energy[a.u.]          Energy[eV]
-
-                       1     0          1.000      -0.076318           -2.076708
-
-
- Total Electron Density at R=0:                                         0.425022
- Re-scaling the density matrix to get the right number of electrons
-                  # Electrons              Trace(P)               Scaling factor
-                          148               148.000                        1.000
-
-
- SCF WAVEFUNCTION OPTIMIZATION
-
-  Step     Update method      Time    Convergence         Total energy    Change
-  ------------------------------------------------------------------------------
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     1 NoMix/Dav.  0.15E+00   12.1     2.59483131      -312.2014930041 -3.12E+02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     2 Broy./Dav.  0.15E+00   15.8     2.58638392      -294.8543272406  1.73E+01
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     3 Broy./Dav.  0.15E+00   15.6     0.20210769      -318.8126371401 -2.40E+01
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     4 Broy./Dav.  0.15E+00   16.2     0.21780369      -321.6460986993 -2.83E+00
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     5 Broy./Dav.  0.15E+00   16.0     0.04667870      -325.2019181378 -3.56E+00
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     6 Broy./Dav.  0.15E+00   16.2     0.04416473      -326.3750050941 -1.17E+00
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     7 Broy./Dav.  0.15E+00   15.7     0.02032605      -325.9603351769  4.15E-01
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     8 Broy./Dav.  0.15E+00   15.1     0.01186290      -325.4522614152  5.08E-01
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-     9 Broy./Dav.  0.15E+00   14.9     0.00832087      -325.2110109527  2.41E-01
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    10 Broy./Dav.  0.15E+00   15.6     0.00591575      -325.2577449909 -4.67E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    11 Broy./Dav.  0.15E+00   15.6     0.00851528      -325.2787858399 -2.10E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    12 Broy./Dav.  0.15E+00   15.3     0.00666891      -325.3974532245 -1.19E-01
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    13 Broy./Dav.  0.15E+00   14.8     0.00318785      -325.5468504551 -1.49E-01
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    14 Broy./Dav.  0.15E+00   14.7     0.00359689      -325.6224871426 -7.56E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    15 Broy./Dav.  0.15E+00   15.2     0.00187152      -325.6456955681 -2.32E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    16 Broy./Dav.  0.15E+00   14.9     0.00210909      -325.5903595611  5.53E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    17 Broy./Dav.  0.15E+00   14.5     0.00244812      -325.5399830095  5.04E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    18 Broy./Dav.  0.15E+00   14.9     0.00099457      -325.5182994375  2.17E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    19 Broy./Dav.  0.15E+00   14.9     0.00093529      -325.5034183040  1.49E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    20 Broy./Dav.  0.15E+00   15.2     0.00145149      -325.5066033839 -3.19E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    21 Broy./Dav.  0.15E+00   15.3     0.00067688      -325.5188413977 -1.22E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    22 Broy./Dav.  0.15E+00   15.1     0.00080701      -325.5401431912 -2.13E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    23 Broy./Dav.  0.15E+00   15.8     0.00078090      -325.5532462213 -1.31E-02
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    24 Broy./Dav.  0.15E+00   17.7     0.00060515      -325.5486195470  4.63E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    25 Broy./Dav.  0.15E+00   15.1     0.00057171      -325.5400183043  8.60E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    26 Broy./Dav.  0.15E+00   14.4     0.00035760      -325.5325071682  7.51E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    27 Broy./Dav.  0.15E+00   14.7     0.00026246      -325.5295210443  2.99E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    28 Broy./Dav.  0.15E+00   14.7     0.00038757      -325.5263463829  3.17E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    29 Broy./Dav.  0.15E+00   15.1     0.00033368      -325.5263703232 -2.39E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    30 Broy./Dav.  0.15E+00   15.2     0.00024571      -325.5314167436 -5.05E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    31 Broy./Dav.  0.15E+00   15.1     0.00019625      -325.5360860200 -4.67E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    32 Broy./Dav.  0.15E+00   15.1     0.00013530      -325.5373211540 -1.24E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    33 Broy./Dav.  0.15E+00   16.3     0.00016461      -325.5362858029  1.04E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    34 Broy./Dav.  0.15E+00   15.7     0.00015308      -325.5345173344  1.77E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    35 Broy./Dav.  0.15E+00   15.3     0.00015075      -325.5331185219  1.40E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    36 Broy./Dav.  0.15E+00   15.1     0.00014881      -325.5308376506  2.28E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    37 Broy./Dav.  0.15E+00   15.1     0.00013464      -325.5296714487  1.17E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    38 Broy./Dav.  0.15E+00   15.1     0.00007679      -325.5300802779 -4.09E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    39 Broy./Dav.  0.15E+00   15.9     0.00009383      -325.5316354317 -1.56E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    40 Broy./Dav.  0.15E+00   16.8     0.00008857      -325.5328486316 -1.21E-03
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    41 Broy./Dav.  0.15E+00   15.6     0.00008635      -325.5331668770 -3.18E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    42 Broy./Dav.  0.15E+00   15.4     0.00008264      -325.5333544578 -1.88E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    43 Broy./Dav.  0.15E+00   15.9     0.00005410      -325.5334102258 -5.58E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    44 Broy./Dav.  0.15E+00   16.0     0.00005085      -325.5331409928  2.69E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    45 Broy./Dav.  0.15E+00   16.4     0.00005891      -325.5325226162  6.18E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    46 Broy./Dav.  0.15E+00   16.2     0.00003590      -325.5322172611  3.05E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    47 Broy./Dav.  0.15E+00   16.3     0.00003765      -325.5323526900 -1.35E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    48 Broy./Dav.  0.15E+00   16.1     0.00004450      -325.5324583881 -1.06E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    49 Broy./Dav.  0.15E+00   15.5     0.00003299      -325.5324726144 -1.42E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    50 Broy./Dav.  0.15E+00   15.5     0.00003312      -325.5324032577  6.94E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    51 Broy./Dav.  0.15E+00   15.5     0.00002486      -325.5325763035 -1.73E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    52 Broy./Dav.  0.15E+00   15.5     0.00002533      -325.5326612514 -8.49E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    53 Broy./Dav.  0.15E+00   15.5     0.00002970      -325.5326083295  5.29E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    54 Broy./Dav.  0.15E+00   15.9     0.00002254      -325.5325434843  6.48E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    55 Broy./Dav.  0.15E+00   16.5     0.00001485      -325.5326180178 -7.45E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    56 Broy./Dav.  0.15E+00   16.1     0.00002012      -325.5327228961 -1.05E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    57 Broy./Dav.  0.15E+00   15.9     0.00001501      -325.5326979548  2.49E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    58 Broy./Dav.  0.15E+00   16.6     0.00001418      -325.5325939900  1.04E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    59 Broy./Dav.  0.15E+00   15.7     0.00001166      -325.5325766936  1.73E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    60 Broy./Dav.  0.15E+00   16.0     0.00005883      -325.5325942144 -1.75E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    61 Broy./Dav.  0.15E+00   16.5     0.00007678      -325.5325852899  8.92E-06
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    62 Broy./Dav.  0.15E+00   16.4     0.00002532      -325.5325327193  5.26E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    63 Broy./Dav.  0.15E+00   16.4     0.00001895      -325.5324787255  5.40E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    64 Broy./Dav.  0.15E+00   16.4     0.00002050      -325.5325398934 -6.12E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    65 Broy./Dav.  0.15E+00   16.5     0.00003178      -325.5326457381 -1.06E-04
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    66 Broy./Dav.  0.15E+00   15.7     0.00003076      -325.5327162867 -7.05E-05
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-
- *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
-
-    67 Broy./Dav.  0.15E+00   15.8     0.00004055      -325.5326984902  1.78E-05
- DBCSR| CPU Multiplication driver                                           XSMM (U)
- DBCSR| Multrec recursion limit                                              512 (U)
- DBCSR| Multiplication stack size                                           1000 (D)
- DBCSR| Maximum elements for images                                    UNLIMITED (U)
- DBCSR| Multiplicative factor virtual images                                   1 (U)
- DBCSR| Use multiplication densification                                       T (D)
- DBCSR| Multiplication size stacks                                             3 (U)
- DBCSR| Use memory pool for CPU allocation                                     F (U)
- DBCSR| Number of 3D layers                                               SINGLE (U)
- DBCSR| Use MPI memory allocation                                              F (U)
- DBCSR| Use RMA algorithm                                                      F (U)
- DBCSR| Use Communication thread                                               T (U)
- DBCSR| Communication thread load                                             75 (D)
- DBCSR| MPI: My process id                                                     0
- DBCSR| MPI: Number of processes                                               7
- DBCSR| OMP: Current number of threads                                         4
- DBCSR| OMP: Max number of threads                                             4
- DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00 (U)
-
-
-  **** **** ******  **  PROGRAM STARTED AT               2025-06-21 13:06:30.072
- ***** ** ***  *** **   PROGRAM STARTED ON                          069f723c1828
- **    ****   ******    PROGRAM STARTED BY                             <unknown>
- ***** **    ** ** **   PROGRAM PROCESS ID                                   634
-  **** **  *******  **  PROGRAM STARTED IN                                 /work
-
- CP2K| version string:                                       CP2K version 2025.1
- CP2K| source code revision number:                                  git:9635df4
- CP2K| cp2kflags: omp libint fftw3 libxc libgrpp pexsi elpa parallel scalapack c
- CP2K|            osma quip xsmm plumed2 spglib libdftd4 sirius libvori libbqb l
- CP2K|            libtorch libvdwxc hdf5 trexio
- CP2K| is freely available from                            https://www.cp2k.org/
- CP2K| Program compiled at                          Tue Jan 14 12:16:35 UTC 2025
- CP2K| Program compiled on                                          7282285e16d1
- CP2K| Program compiled for                                                local
- CP2K| Data directory path                                        /opt/cp2k/data
- CP2K| Input file name                                          simulation.input
-
- GLOBAL| Force Environment number                                              1
- GLOBAL| Basis set file name                                        BASIS_MOLOPT
- GLOBAL| Potential file name                                      GTH_POTENTIALS
- GLOBAL| MM Potential file name                                     MM_POTENTIAL
- GLOBAL| Coordinate file name                                      __STD_INPUT__
- GLOBAL| Method name                                                        CP2K
- GLOBAL| Project name                                          TFS_BMI_cluster01
- GLOBAL| Run type                                                        GEO_OPT
- GLOBAL| FFT library                                                       FFTW3
- GLOBAL| Diagonalization library                                            ELPA
- GLOBAL| DGEMM library                                                      BLAS
- GLOBAL| Minimum number of eigenvectors for ELPA usage                        16
- GLOBAL| Orthonormality check for eigenvectors                          DISABLED
- GLOBAL| Matrix multiplication library                                     COSMA
- GLOBAL| All-to-all communication in single precision                          F
- GLOBAL| FFTs using library dependent lengths                                  F
- GLOBAL| Grid backend                                                       AUTO
- GLOBAL| Global print level                                               MEDIUM
- GLOBAL| MPI I/O enabled                                                       T
- GLOBAL| Total number of message passing processes                             7
- GLOBAL| Number of threads for this process                                    4
- GLOBAL| This output is from process                                           0
- GLOBAL| OpenMP stack size per thread (OMP_STACKSIZE)                        16M
- GLOBAL| CPU model name                 Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz
- GLOBAL| CPUID                                                              1003
- GLOBAL| Compiled for CPUID                                                    0
-
- *** HINT in environment.F:928 :: The compiler target flags (generic) used ***
- *** to build this binary cannot exploit all extensions of this CPU model  ***
- *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
- *** CFLAGS (ARCH file).                                                   ***
-
-
- MEMORY| system memory details [Kb]
- MEMORY|                        rank 0           min           max       average
- MEMORY| MemTotal            263434384     263434384     263434384     263434384
- MEMORY| MemFree              72402388      72402388      72402388      72402388
- MEMORY| Buffers               1202544       1202544       1202544       1202544
- MEMORY| Cached              182655792     182655792     182655792     182655792
- MEMORY| Slab                  3692908       3692908       3692908       3692908
- MEMORY| SReclaimable          3070116       3070116       3070116       3070116
- MEMORY| MemLikelyFree       259330840     259330840     259330840     259330840
-
-
- *** Fundamental physical constants (SI units) ***
-
- *** Literature: B. J. Mohr and B. N. Taylor,
- ***             CODATA recommended values of the fundamental physical
- ***             constants: 2006, Web Version 5.1
- ***             http://physics.nist.gov/constants
-
- Speed of light in vacuum [m/s]                             2.99792458000000E+08
- Magnetic constant or permeability of vacuum [N/A**2]       1.25663706143592E-06
- Electric constant or permittivity of vacuum [F/m]          8.85418781762039E-12
- Planck constant (h) [J*s]                                  6.62606896000000E-34
- Planck constant (h-bar) [J*s]                              1.05457162825177E-34
- Elementary charge [C]                                      1.60217648700000E-19
- Electron mass [kg]                                         9.10938215000000E-31
- Electron g factor [ ]                                     -2.00231930436220E+00
- Proton mass [kg]                                           1.67262163700000E-27
- Fine-structure constant                                    7.29735253760000E-03
- Rydberg constant [1/m]                                     1.09737315685270E+07
- Avogadro constant [1/mol]                                  6.02214179000000E+23
- Boltzmann constant [J/K]                                   1.38065040000000E-23
- Atomic mass unit [kg]                                      1.66053878200000E-27
- Bohr radius [m]                                            5.29177208590000E-11
-
- *** Conversion factors ***
-
- [u] -> [a.u.]                                              1.82288848426455E+03
- [Angstrom] -> [Bohr] = [a.u.]                              1.88972613288564E+00
- [a.u.] = [Bohr] -> [Angstrom]                              5.29177208590000E-01
- [a.u.] -> [s]                                              2.41888432650478E-17
- [a.u.] -> [fs]                                             2.41888432650478E-02
- [a.u.] -> [J]                                              4.35974393937059E-18
- [a.u.] -> [N]                                              8.23872205491840E-08
- [a.u.] -> [K]                                              3.15774647902944E+05
- [a.u.] -> [kJ/mol]                                         2.62549961709828E+03
- [a.u.] -> [kcal/mol]                                       6.27509468713739E+02
- [a.u.] -> [Pa]                                             2.94210107994716E+13
- [a.u.] -> [bar]                                            2.94210107994716E+08
- [a.u.] -> [atm]                                            2.90362800883016E+08
- [a.u.] -> [eV]                                             2.72113838565563E+01
- [a.u.] -> [Hz]                                             6.57968392072181E+15
- [a.u.] -> [1/cm] (wave numbers)                            2.19474631370540E+05
- [a.u./Bohr**2] -> [1/cm]                                   5.14048714338585E+03
- 
-
- CELL_TOP| Volume [angstrom^3]:                                     27000.000000
- CELL_TOP| Vector a [angstrom    30.000     0.000     0.000   |a| =    30.000000
- CELL_TOP| Vector b [angstrom     0.000    30.000     0.000   |b| =    30.000000
- CELL_TOP| Vector c [angstrom     0.000     0.000    30.000   |c| =    30.000000
- CELL_TOP| Angle (b,c), alpha [degree]:                                90.000000
- CELL_TOP| Angle (a,c), beta  [degree]:                                90.000000
- CELL_TOP| Angle (a,b), gamma [degree]:                                90.000000
- CELL_TOP| Numerically orthorhombic:                                         YES
- CELL_TOP| Periodicity                                                       XYZ
-
- GENERATE|  Preliminary Number of Bonds generated:                             0
- GENERATE|  Achieved consistency in connectivity generation.
-
- CELL| Volume [angstrom^3]:                                         27000.000000
- CELL| Vector a [angstrom]:      30.000     0.000     0.000   |a| =    30.000000
- CELL| Vector b [angstrom]:       0.000    30.000     0.000   |b| =    30.000000
- CELL| Vector c [angstrom]:       0.000     0.000    30.000   |c| =    30.000000
- CELL| Angle (b,c), alpha [degree]:                                    90.000000
- CELL| Angle (a,c), beta  [degree]:                                    90.000000
- CELL| Angle (a,b), gamma [degree]:                                    90.000000
- CELL| Numerically orthorhombic:                                             YES
- CELL| Periodicity                                                           XYZ
-
- CELL_REF| Volume [angstrom^3]:                                     27000.000000
- CELL_REF| Vector a [angstrom    30.000     0.000     0.000   |a| =    30.000000
- CELL_REF| Vector b [angstrom     0.000    30.000     0.000   |b| =    30.000000
- CELL_REF| Vector c [angstrom     0.000     0.000    30.000   |c| =    30.000000
- CELL_REF| Angle (b,c), alpha [degree]:                                90.000000
- CELL_REF| Angle (a,c), beta  [degree]:                                90.000000
- CELL_REF| Angle (a,b), gamma [degree]:                                90.000000
- CELL_REF| Numerically orthorhombic:                                         YES
- CELL_REF| Periodicity                                                       XYZ
+ CELL_REF| Periodicity                                                      NONE
 
  *******************************************************************************
  *******************************************************************************
@@ -2852,6 +1016,10 @@
  POISSON| Solver                                                        PERIODIC
  POISSON| Periodicity                                                        XYZ
 
+ *** WARNING in pw_env_methods.F:744 :: The selected periodicities in the ***
+ *** sections &CELL and &POISSON do not match                             ***
+
+
  RS_GRID| Information for grid number                                          1
  RS_GRID|   Bounds   1           -240     239                Points:         480
  RS_GRID|   Bounds   2           -240     239                Points:         480
@@ -3174,59 +1342,59 @@
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     1 NoMix/Diag. 0.15E+00   11.2     1.05336843      -324.1800442060 -3.24E+02
+     1 NoMix/Diag. 0.15E+00   13.1     1.05336843      -324.1800442060 -3.24E+02
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     2 Broy./Diag. 0.15E+00   14.7     0.14436280      -309.6161084146  1.46E+01
+     2 Broy./Diag. 0.15E+00   17.7     0.14436280      -309.6161084146  1.46E+01
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     3 Broy./Diag. 0.15E+00   15.4     0.25335745      -318.6073974297 -8.99E+00
+     3 Broy./Diag. 0.15E+00   16.3     0.25335745      -318.6073974297 -8.99E+00
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     4 Broy./Diag. 0.15E+00   14.3     0.04576601      -325.8784725943 -7.27E+00
+     4 Broy./Diag. 0.15E+00   16.5     0.04576601      -325.8784725943 -7.27E+00
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     5 Broy./Diag. 0.15E+00   14.8     0.03050840      -325.1237222343  7.55E-01
+     5 Broy./Diag. 0.15E+00   15.3     0.03050840      -325.1237222343  7.55E-01
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     6 Broy./Diag. 0.15E+00   15.1     0.01509996      -325.7688069483 -6.45E-01
+     6 Broy./Diag. 0.15E+00   15.6     0.01509996      -325.7688069483 -6.45E-01
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     7 Broy./Diag. 0.15E+00   15.2     0.00833381      -325.5478680496  2.21E-01
+     7 Broy./Diag. 0.15E+00   16.6     0.00833381      -325.5478680496  2.21E-01
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     8 Broy./Diag. 0.15E+00   16.4     0.00553785      -325.5264646545  2.14E-02
+     8 Broy./Diag. 0.15E+00   15.9     0.00553785      -325.5264646545  2.14E-02
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-     9 Broy./Diag. 0.15E+00   15.5     0.00193967      -325.5047364227  2.17E-02
+     9 Broy./Diag. 0.15E+00   15.8     0.00193967      -325.5047364227  2.17E-02
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    10 Broy./Diag. 0.15E+00   15.8     0.00293735      -325.4881557639  1.66E-02
+    10 Broy./Diag. 0.15E+00   15.7     0.00293735      -325.4881557639  1.66E-02
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    11 Broy./Diag. 0.15E+00   15.3     0.00088594      -325.5267792338 -3.86E-02
+    11 Broy./Diag. 0.15E+00   15.6     0.00088594      -325.5267792338 -3.86E-02
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    12 Broy./Diag. 0.15E+00   15.2     0.00160914      -325.5241032947  2.68E-03
+    12 Broy./Diag. 0.15E+00   15.9     0.00160914      -325.5241032947  2.68E-03
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    13 Broy./Diag. 0.15E+00   15.1     0.00091977      -325.5266080446 -2.50E-03
+    13 Broy./Diag. 0.15E+00   15.6     0.00091977      -325.5266080446 -2.50E-03
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    14 Broy./Diag. 0.15E+00   15.1     0.00084295      -325.5287778473 -2.17E-03
+    14 Broy./Diag. 0.15E+00   15.4     0.00084295      -325.5287778473 -2.17E-03
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
@@ -3234,11 +1402,11 @@
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    16 Broy./Diag. 0.15E+00   15.6     0.00023268      -325.5409497758 -5.80E-03
+    16 Broy./Diag. 0.15E+00   15.0     0.00023268      -325.5409497758 -5.80E-03
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    17 Broy./Diag. 0.15E+00   15.2     0.00032166      -325.5375842175  3.37E-03
+    17 Broy./Diag. 0.15E+00   14.9     0.00032166      -325.5375842175  3.37E-03
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
@@ -3246,15 +1414,15 @@
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    19 Broy./Diag. 0.15E+00   16.1     0.00016568      -325.5339192805 -4.65E-04
+    19 Broy./Diag. 0.15E+00   15.2     0.00016568      -325.5339192805 -4.65E-04
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    20 Broy./Diag. 0.15E+00   15.4     0.00023355      -325.5341847618 -2.65E-04
+    20 Broy./Diag. 0.15E+00   16.1     0.00023355      -325.5341847618 -2.65E-04
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
-    21 Broy./Diag. 0.15E+00   15.3     0.00021669      -325.5329903777  1.19E-03
+    21 Broy./Diag. 0.15E+00   15.6     0.00021669      -325.5329903777  1.19E-03
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
@@ -3263,3 +1431,1518 @@
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
     23 Broy./Diag. 0.15E+00   15.1     0.00022852      -325.5317625010 -3.62E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    24 Broy./Diag. 0.15E+00   15.0     0.00007361      -325.5333119720 -1.55E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    25 Broy./Diag. 0.15E+00   15.0     0.00009902      -325.5328693424  4.43E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    26 Broy./Diag. 0.15E+00   15.1     0.00011499      -325.5323645963  5.05E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    27 Broy./Diag. 0.15E+00   14.9     0.00005123      -325.5325362318 -1.72E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    28 Broy./Diag. 0.15E+00   15.0     0.00005268      -325.5327382723 -2.02E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    29 Broy./Diag. 0.15E+00   15.3     0.00007082      -325.5327574046 -1.91E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    30 Broy./Diag. 0.15E+00   15.7     0.00002461      -325.5323626151  3.95E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    31 Broy./Diag. 0.15E+00   15.4     0.00004082      -325.5327746434 -4.12E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    32 Broy./Diag. 0.15E+00   14.8     0.00001947      -325.5330320867 -2.57E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    33 Broy./Diag. 0.15E+00   15.4     0.00002323      -325.5330254717  6.61E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    34 Broy./Diag. 0.15E+00   15.4     0.00002182      -325.5328349200  1.91E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    35 Broy./Diag. 0.15E+00   15.4     0.00001644      -325.5326651126  1.70E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    36 Broy./Diag. 0.15E+00   15.4     0.00001680      -325.5326026095  6.25E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    37 Broy./Diag. 0.15E+00   15.3     0.00002418      -325.5324119904  1.91E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    38 Broy./Diag. 0.15E+00   15.3     0.00001026      -325.5323770327  3.50E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    39 Broy./Diag. 0.15E+00   17.1     0.00001582      -325.5324273677 -5.03E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    40 Broy./Diag. 0.15E+00   17.1     0.00000967      -325.5325803867 -1.53E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    41 Broy./Diag. 0.15E+00   15.7     0.00000917      -325.5326840680 -1.04E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    42 Broy./Diag. 0.15E+00   14.9     0.00000946      -325.5327129778 -2.89E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    43 Broy./Diag. 0.15E+00   15.5     0.00000825      -325.5327209159 -7.94E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    44 Broy./Diag. 0.15E+00   14.9     0.00000495      -325.5327191462  1.77E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    45 Broy./Diag. 0.15E+00   15.5     0.00000664      -325.5326507696  6.84E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    46 Broy./Diag. 0.15E+00   16.0     0.00000457      -325.5325999001  5.09E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    47 Broy./Diag. 0.15E+00   16.4     0.00000423      -325.5325704725  2.94E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    48 Broy./Diag. 0.15E+00   16.1     0.00000386      -325.5325791590 -8.69E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    49 Broy./Diag. 0.15E+00   15.3     0.00000323      -325.5325917870 -1.26E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    50 Broy./Diag. 0.15E+00   15.2     0.00000350      -325.5326069552 -1.52E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    51 Broy./Diag. 0.15E+00   15.3     0.00000368      -325.5326366837 -2.97E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    52 Broy./Diag. 0.15E+00   15.0     0.00000215      -325.5326562309 -1.95E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    53 Broy./Diag. 0.15E+00   15.1     0.00000341      -325.5326571016 -8.71E-07
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    54 Broy./Diag. 0.15E+00   15.1     0.00000249      -325.5326465979  1.05E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    55 Broy./Diag. 0.15E+00   15.4     0.00000232      -325.5326375691  9.03E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    56 Broy./Diag. 0.15E+00   15.2     0.00000189      -325.5326338692  3.70E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    57 Broy./Diag. 0.15E+00   15.0     0.00000209      -325.5326210770  1.28E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    58 Broy./Diag. 0.15E+00   15.0     0.00000126      -325.5326169317  4.15E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    59 Broy./Diag. 0.15E+00   15.4     0.00000208      -325.5326215953 -4.66E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    60 Broy./Diag. 0.15E+00   15.2     0.00000110      -325.5326322324 -1.06E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    61 Broy./Diag. 0.15E+00   14.8     0.00000159      -325.5326357979 -3.57E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    62 Broy./Diag. 0.15E+00   15.2     0.00000091      -325.5326357835  1.44E-08
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    63 Broy./Diag. 0.15E+00   14.8     0.00000106      -325.5326405927 -4.81E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    64 Broy./Diag. 0.15E+00   15.3     0.00000082      -325.5326431506 -2.56E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    65 Broy./Diag. 0.15E+00   15.4     0.00000132      -325.5326351722  7.98E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    66 Broy./Diag. 0.15E+00   16.8     0.00000060      -325.5326292352  5.94E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    67 Broy./Diag. 0.15E+00   17.6     0.00000108      -325.5326279737  1.26E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    68 Broy./Diag. 0.15E+00   15.6     0.00000063      -325.5326319233 -3.95E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    69 Broy./Diag. 0.15E+00   15.4     0.00000079      -325.5326301341  1.79E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    70 Broy./Diag. 0.15E+00   15.4     0.00000048      -325.5326291005  1.03E-06
+
+  *** SCF run converged in    70 steps ***
+
+
+  Electronic density on regular grids:       -147.9999999996        0.0000000004
+  Core density on regular grids:              147.9999999928       -0.0000000072
+  Total charge density on r-space grids:       -0.0000000068
+  Total charge density g-space grids:          -0.0000000068
+
+  Overlap energy of the core charge distribution:               0.00000528046411
+  Self energy of the core charge distribution:               -829.39757698133815
+  Core Hamiltonian energy:                                    238.43435778403656
+  Hartree energy:                                             342.56257415355134
+  Exchange-correlation energy:                                -77.10052067117793
+  Dispersion energy:                                           -0.03146866607410
+  Electronic entropic energy:                                  -0.00000000000000
+  Fermi energy:                                                -0.11293474569730
+
+  Total energy:                                              -325.53262910053820
+
+ !-----------------------------------------------------------------------------!
+                     Mulliken Population Analysis
+
+ #  Atom  Element  Kind  Atomic population                           Net charge
+       1     S        1          5.289865                              0.710135
+       2     S        1          5.269906                              0.730094
+       3     F        2          7.123075                             -0.123075
+       4     F        2          7.114246                             -0.114246
+       5     F        2          7.095428                             -0.095428
+       6     F        2          7.095967                             -0.095967
+       7     F        2          7.078526                             -0.078526
+       8     F        2          7.106353                             -0.106353
+       9     O        3          6.395121                             -0.395121
+      10     O        3          6.402604                             -0.402604
+      11     O        3          6.385039                             -0.385039
+      12     O        3          6.370351                             -0.370351
+      13     N        4          5.525873                             -0.525873
+      14     C        5          3.806941                              0.193059
+      15     C        5          3.819255                              0.180745
+      16     N        4          4.885014                              0.114986
+      17     N        4          4.857336                              0.142664
+      18     C        5          4.128410                             -0.128410
+      19     C        5          4.148006                             -0.148006
+      20     C        5          4.145381                             -0.145381
+      21     C        5          3.902204                              0.097796
+      22     C        5          3.994410                              0.005590
+      23     C        5          3.982709                              0.017291
+      24     C        5          4.266477                             -0.266477
+      25     C        5          4.168890                             -0.168890
+      26     H        6          0.896666                              0.103334
+      27     H        6          0.901961                              0.098039
+      28     H        6          0.897607                              0.102393
+      29     H        6          0.911688                              0.088312
+      30     H        6          0.905688                              0.094312
+      31     H        6          0.916722                              0.083278
+      32     H        6          0.919690                              0.080310
+      33     H        6          0.927213                              0.072787
+      34     H        6          0.925466                              0.074534
+      35     H        6          0.914573                              0.085427
+      36     H        6          0.908498                              0.091502
+      37     H        6          0.910412                              0.089588
+      38     H        6          0.893326                              0.106674
+      39     H        6          0.908603                              0.091397
+      40     H        6          0.904499                              0.095501
+ # Total charge                            148.000000                 -0.000000
+
+ !-----------------------------------------------------------------------------!
+
+ !-----------------------------------------------------------------------------!
+                           Hirshfeld Charges
+
+  #Atom  Element  Kind  Ref Charge     Population                    Net charge
+      1       S      1       6.000          5.607                         0.393
+      2       S      1       6.000          5.575                         0.425
+      3       F      2       7.000          7.305                        -0.305
+      4       F      2       7.000          7.299                        -0.299
+      5       F      2       7.000          7.279                        -0.279
+      6       F      2       7.000          7.296                        -0.296
+      7       F      2       7.000          7.269                        -0.269
+      8       F      2       7.000          7.292                        -0.292
+      9       O      3       6.000          6.461                        -0.461
+     10       O      3       6.000          6.425                        -0.425
+     11       O      3       6.000          6.414                        -0.414
+     12       O      3       6.000          6.409                        -0.409
+     13       N      4       5.000          5.281                        -0.281
+     14       C      5       4.000          3.085                         0.915
+     15       C      5       4.000          3.073                         0.927
+     16       N      4       5.000          5.163                        -0.163
+     17       N      4       5.000          5.146                        -0.146
+     18       C      5       4.000          4.650                        -0.650
+     19       C      5       4.000          4.781                        -0.781
+     20       C      5       4.000          4.879                        -0.879
+     21       C      5       4.000          4.128                        -0.128
+     22       C      5       4.000          4.325                        -0.325
+     23       C      5       4.000          4.278                        -0.278
+     24       C      5       4.000          5.288                        -1.288
+     25       C      5       4.000          5.018                        -1.018
+     26       H      6       1.000          0.554                         0.446
+     27       H      6       1.000          0.554                         0.446
+     28       H      6       1.000          0.544                         0.456
+     29       H      6       1.000          0.560                         0.440
+     30       H      6       1.000          0.569                         0.431
+     31       H      6       1.000          0.570                         0.430
+     32       H      6       1.000          0.518                         0.482
+     33       H      6       1.000          0.532                         0.468
+     34       H      6       1.000          0.528                         0.472
+     35       H      6       1.000          0.557                         0.443
+     36       H      6       1.000          0.555                         0.445
+     37       H      6       1.000          0.553                         0.447
+     38       H      6       1.000          0.530                         0.470
+     39       H      6       1.000          0.550                         0.450
+     40       H      6       1.000          0.546                         0.454
+
+  Total Charge                                                            0.051
+ !-----------------------------------------------------------------------------!
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -325.532636128340926
+
+ OPT| **************************************************************************
+ OPT| Step number                                                              0
+ OPT| Optimization method                                                   BFGS
+ OPT| Total energy [hartree]                                     -325.5326361283
+ OPT| Used time [s]                                                     1105.970
+ OPT| **************************************************************************
+ OPT| Estimated peak process memory [MiB]                                  10085
+
+ --------------------------
+ OPTIMIZATION STEP:      1
+ --------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Number of electrons:                                                        148
+ Number of occupied orbitals:                                                 74
+ Number of molecular orbitals:                                                75
+
+ Number of orbital functions:                                                400
+ Number of independent orbital functions:                                    400
+
+ Parameters for the always stable predictor-corrector (ASPC) method:
+
+  ASPC order: 0
+
+  B(1) =   1.000000
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Extrapolation method: ASPC
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     1 Broy./Diag. 0.15E+00   10.4     0.13326068      -325.4782438094 -3.25E+02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     2 Broy./Diag. 0.15E+00   14.4     0.01680229      -325.8620933407 -3.84E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     3 Broy./Diag. 0.15E+00   15.0     0.02613104      -325.6513210802  2.11E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     4 Broy./Diag. 0.15E+00   15.3     0.00607835      -325.4879010384  1.63E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     5 Broy./Diag. 0.15E+00   15.3     0.00259246      -325.5391866590 -5.13E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     6 Broy./Diag. 0.15E+00   15.8     0.00125732      -325.5569887305 -1.78E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     7 Broy./Diag. 0.15E+00   15.5     0.00029333      -325.5556808424  1.31E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     8 Broy./Diag. 0.15E+00   15.9     0.00023861      -325.5544797933  1.20E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     9 Broy./Diag. 0.15E+00   16.1     0.00008601      -325.5564840990 -2.00E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    10 Broy./Diag. 0.15E+00   16.0     0.00025727      -325.5547171400  1.77E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    11 Broy./Diag. 0.15E+00   15.5     0.00009861      -325.5552635564 -5.46E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    12 Broy./Diag. 0.15E+00   15.7     0.00007796      -325.5573899405 -2.13E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    13 Broy./Diag. 0.15E+00   15.7     0.00009620      -325.5590519973 -1.66E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    14 Broy./Diag. 0.15E+00   15.5     0.00003838      -325.5595548657 -5.03E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    15 Broy./Diag. 0.15E+00   15.3     0.00004136      -325.5593295228  2.25E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    16 Broy./Diag. 0.15E+00   15.8     0.00002515      -325.5593554921 -2.60E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    17 Broy./Diag. 0.15E+00   15.9     0.00001816      -325.5596754158 -3.20E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    18 Broy./Diag. 0.15E+00   15.8     0.00001480      -325.5595789787  9.64E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    19 Broy./Diag. 0.15E+00   15.7     0.00002370      -325.5593328620  2.46E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    20 Broy./Diag. 0.15E+00   15.5     0.00000812      -325.5593406129 -7.75E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    21 Broy./Diag. 0.15E+00   15.7     0.00002161      -325.5595137554 -1.73E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    22 Broy./Diag. 0.15E+00   15.5     0.00000734      -325.5596532800 -1.40E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    23 Broy./Diag. 0.15E+00   15.7     0.00000709      -325.5595563774  9.69E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    24 Broy./Diag. 0.15E+00   15.6     0.00000811      -325.5595493133  7.06E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    25 Broy./Diag. 0.15E+00   15.6     0.00000624      -325.5596798246 -1.31E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    26 Broy./Diag. 0.15E+00   15.7     0.00000387      -325.5597459754 -6.62E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    27 Broy./Diag. 0.15E+00   15.8     0.00000610      -325.5597138824  3.21E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    28 Broy./Diag. 0.15E+00   15.7     0.00000237      -325.5596822181  3.17E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    29 Broy./Diag. 0.15E+00   15.5     0.00000409      -325.5597043445 -2.21E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    30 Broy./Diag. 0.15E+00   16.1     0.00000320      -325.5597313364 -2.70E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    31 Broy./Diag. 0.15E+00   16.4     0.00000139      -325.5596931718  3.82E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    32 Broy./Diag. 0.15E+00   16.2     0.00000196      -325.5596712698  2.19E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    33 Broy./Diag. 0.15E+00   15.9     0.00000176      -325.5596911690 -1.99E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    34 Broy./Diag. 0.15E+00   15.9     0.00000124      -325.5597164777 -2.53E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    35 Broy./Diag. 0.15E+00   15.8     0.00000174      -325.5597148407  1.64E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    36 Broy./Diag. 0.15E+00   15.5     0.00000101      -325.5597059903  8.85E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    37 Broy./Diag. 0.15E+00   15.7     0.00000103      -325.5597149092 -8.92E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    38 Broy./Diag. 0.15E+00   15.5     0.00000086      -325.5597264867 -1.16E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    39 Broy./Diag. 0.15E+00   15.6     0.00000055      -325.5597218026  4.68E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    40 Broy./Diag. 0.15E+00   15.3     0.00000051      -325.5597151273  6.68E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    41 Broy./Diag. 0.15E+00   15.3     0.00000054      -325.5597175510 -2.42E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    42 Broy./Diag. 0.15E+00   15.4     0.00000042      -325.5597247744 -7.22E-06
+
+  *** SCF run converged in    42 steps ***
+
+
+  Electronic density on regular grids:       -147.9999999996        0.0000000004
+  Core density on regular grids:              147.9999999928       -0.0000000072
+  Total charge density on r-space grids:       -0.0000000068
+  Total charge density g-space grids:          -0.0000000068
+
+  Overlap energy of the core charge distribution:               0.00000491402611
+  Self energy of the core charge distribution:               -829.39757698133815
+  Core Hamiltonian energy:                                    238.32715178565709
+  Hartree energy:                                             342.61991853788447
+  Exchange-correlation energy:                                -77.07768596896202
+  Dispersion energy:                                           -0.03153706170757
+  Electronic entropic energy:                                  -0.00000000000000
+  Fermi energy:                                                -0.11473840916725
+
+  Total energy:                                              -325.55972477444004
+
+ !-----------------------------------------------------------------------------!
+                     Mulliken Population Analysis
+
+ #  Atom  Element  Kind  Atomic population                           Net charge
+       1     S        1          5.306421                              0.693579
+       2     S        1          5.270397                              0.729603
+       3     F        2          7.116445                             -0.116445
+       4     F        2          7.095604                             -0.095604
+       5     F        2          7.107128                             -0.107128
+       6     F        2          7.104984                             -0.104984
+       7     F        2          7.113812                             -0.113812
+       8     F        2          7.129622                             -0.129622
+       9     O        3          6.406078                             -0.406078
+      10     O        3          6.388867                             -0.388867
+      11     O        3          6.389516                             -0.389516
+      12     O        3          6.371339                             -0.371339
+      13     N        4          5.469467                             -0.469467
+      14     C        5          3.798585                              0.201415
+      15     C        5          3.820343                              0.179657
+      16     N        4          4.880539                              0.119461
+      17     N        4          4.853000                              0.147000
+      18     C        5          4.126328                             -0.126328
+      19     C        5          4.149615                             -0.149615
+      20     C        5          4.153192                             -0.153192
+      21     C        5          3.911389                              0.088611
+      22     C        5          3.989458                              0.010542
+      23     C        5          3.994265                              0.005735
+      24     C        5          4.265231                             -0.265231
+      25     C        5          4.172522                             -0.172522
+      26     H        6          0.900406                              0.099594
+      27     H        6          0.900018                              0.099982
+      28     H        6          0.892904                              0.107096
+      29     H        6          0.909824                              0.090176
+      30     H        6          0.904378                              0.095622
+      31     H        6          0.910985                              0.089015
+      32     H        6          0.920304                              0.079696
+      33     H        6          0.928613                              0.071387
+      34     H        6          0.922462                              0.077538
+      35     H        6          0.912938                              0.087062
+      36     H        6          0.908098                              0.091902
+      37     H        6          0.905779                              0.094221
+      38     H        6          0.893209                              0.106791
+      39     H        6          0.904770                              0.095230
+      40     H        6          0.901165                              0.098835
+ # Total charge                            148.000000                 -0.000000
+
+ !-----------------------------------------------------------------------------!
+
+ !-----------------------------------------------------------------------------!
+                           Hirshfeld Charges
+
+  #Atom  Element  Kind  Ref Charge     Population                    Net charge
+      1       S      1       6.000          5.606                         0.394
+      2       S      1       6.000          5.579                         0.421
+      3       F      2       7.000          7.297                        -0.297
+      4       F      2       7.000          7.282                        -0.282
+      5       F      2       7.000          7.295                        -0.295
+      6       F      2       7.000          7.300                        -0.300
+      7       F      2       7.000          7.298                        -0.298
+      8       F      2       7.000          7.312                        -0.312
+      9       O      3       6.000          6.468                        -0.468
+     10       O      3       6.000          6.410                        -0.410
+     11       O      3       6.000          6.408                        -0.408
+     12       O      3       6.000          6.404                        -0.404
+     13       N      4       5.000          5.250                        -0.250
+     14       C      5       4.000          3.083                         0.917
+     15       C      5       4.000          3.090                         0.910
+     16       N      4       5.000          5.159                        -0.159
+     17       N      4       5.000          5.142                        -0.142
+     18       C      5       4.000          4.667                        -0.667
+     19       C      5       4.000          4.791                        -0.791
+     20       C      5       4.000          4.822                        -0.822
+     21       C      5       4.000          4.140                        -0.140
+     22       C      5       4.000          4.316                        -0.316
+     23       C      5       4.000          4.296                        -0.296
+     24       C      5       4.000          5.307                        -1.307
+     25       C      5       4.000          5.012                        -1.012
+     26       H      6       1.000          0.551                         0.449
+     27       H      6       1.000          0.561                         0.439
+     28       H      6       1.000          0.549                         0.451
+     29       H      6       1.000          0.558                         0.442
+     30       H      6       1.000          0.559                         0.441
+     31       H      6       1.000          0.563                         0.437
+     32       H      6       1.000          0.521                         0.479
+     33       H      6       1.000          0.530                         0.470
+     34       H      6       1.000          0.529                         0.471
+     35       H      6       1.000          0.556                         0.444
+     36       H      6       1.000          0.559                         0.441
+     37       H      6       1.000          0.554                         0.446
+     38       H      6       1.000          0.532                         0.468
+     39       H      6       1.000          0.548                         0.452
+     40       H      6       1.000          0.544                         0.456
+
+  Total Charge                                                            0.051
+ !-----------------------------------------------------------------------------!
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -325.559729227191838
+
+ OPT| **************************************************************************
+ OPT| Step number                                                              1
+ OPT| Optimization method                                                   BFGS
+ OPT| Total energy [hartree]                                     -325.5597292272
+ OPT| Effective energy change [hartree]                            -0.0270930989
+ OPT| Predicted energy change [hartree]                            -0.0514892351
+ OPT| Scaling factor                                                0.0000000000
+ OPT| Step size                                                     0.2070839224
+ OPT| Trust radius                                                  0.4724315332
+ OPT| Decrease in energy                                                     YES
+ OPT| Used time [s]                                                      671.558
+ OPT|
+ OPT| Maximum step size                                             0.2070839224
+ OPT| Convergence limit for maximum step size                       0.0010000000
+ OPT| Maximum step size is converged                                          NO
+ OPT|
+ OPT| RMS step size                                                 0.0851478763
+ OPT| Convergence limit for RMS step size                           0.0005000000
+ OPT| RMS step size is converged                                              NO
+ OPT|
+ OPT| Maximum gradient                                              0.0252565866
+ OPT| Convergence limit for maximum gradient                        0.0004500000
+ OPT| Maximum gradient is converged                                           NO
+ OPT|
+ OPT| RMS gradient                                                  0.0090951396
+ OPT| Convergence limit for RMS gradient                            0.0003000000
+ OPT| RMS gradient is converged                                               NO
+ OPT| **************************************************************************
+ OPT| Estimated peak process memory after this step [MiB]                  10135
+
+ --------------------------
+ OPTIMIZATION STEP:      2
+ --------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Number of electrons:                                                        148
+ Number of occupied orbitals:                                                 74
+ Number of molecular orbitals:                                                75
+
+ Number of orbital functions:                                                400
+ Number of independent orbital functions:                                    400
+
+ Parameters for the always stable predictor-corrector (ASPC) method:
+
+  ASPC order: 0
+
+  B(1) =   2.000000
+  B(2) =  -1.000000
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Extrapolation method: ASPC
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     1 Broy./Diag. 0.15E+00   10.2     0.19484598      -325.4246253330 -3.25E+02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     2 Broy./Diag. 0.15E+00   13.9     0.01915916      -325.2865926168  1.38E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     3 Broy./Diag. 0.15E+00   14.6     0.03178956      -325.5275151347 -2.41E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     4 Broy./Diag. 0.15E+00   14.6     0.00826853      -325.7180071849 -1.90E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     5 Broy./Diag. 0.15E+00   15.2     0.00236033      -325.6034964087  1.15E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     6 Broy./Diag. 0.15E+00   15.8     0.00150227      -325.5735496746  2.99E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     7 Broy./Diag. 0.15E+00   15.6     0.00035608      -325.5753650338 -1.82E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     8 Broy./Diag. 0.15E+00   15.7     0.00038425      -325.5800004537 -4.64E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     9 Broy./Diag. 0.15E+00   15.9     0.00009075      -325.5803135643 -3.13E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    10 Broy./Diag. 0.15E+00   16.2     0.00032498      -325.5812931636 -9.80E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    11 Broy./Diag. 0.15E+00   16.5     0.00013763      -325.5797519020  1.54E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    12 Broy./Diag. 0.15E+00   16.0     0.00011717      -325.5770779520  2.67E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    13 Broy./Diag. 0.15E+00   16.2     0.00010776      -325.5754967925  1.58E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    14 Broy./Diag. 0.15E+00   15.3     0.00004478      -325.5752859408  2.11E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    15 Broy./Diag. 0.15E+00   15.4     0.00004518      -325.5756013399 -3.15E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    16 Broy./Diag. 0.15E+00   15.5     0.00003536      -325.5756108082 -9.47E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    17 Broy./Diag. 0.15E+00   15.8     0.00001696      -325.5753213690  2.89E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    18 Broy./Diag. 0.15E+00   16.0     0.00001752      -325.5753843407 -6.30E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    19 Broy./Diag. 0.15E+00   16.0     0.00002274      -325.5754988408 -1.15E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    20 Broy./Diag. 0.15E+00   15.5     0.00001182      -325.5753449645  1.54E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    21 Broy./Diag. 0.15E+00   15.6     0.00002523      -325.5751338264  2.11E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    22 Broy./Diag. 0.15E+00   15.3     0.00000737      -325.5749970695  1.37E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    23 Broy./Diag. 0.15E+00   15.3     0.00001068      -325.5751442772 -1.47E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    24 Broy./Diag. 0.15E+00   15.8     0.00000829      -325.5751788392 -3.46E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    25 Broy./Diag. 0.15E+00   15.6     0.00000591      -325.5750499148  1.29E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    26 Broy./Diag. 0.15E+00   15.5     0.00000437      -325.5749876776  6.22E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    27 Broy./Diag. 0.15E+00   15.6     0.00000579      -325.5750031115 -1.54E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    28 Broy./Diag. 0.15E+00   15.4     0.00000236      -325.5750190120 -1.59E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    29 Broy./Diag. 0.15E+00   15.0     0.00000497      -325.5749665503  5.25E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    30 Broy./Diag. 0.15E+00   15.6     0.00000273      -325.5749262923  4.03E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    31 Broy./Diag. 0.15E+00   15.2     0.00000165      -325.5749716347 -4.53E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    32 Broy./Diag. 0.15E+00   15.9     0.00000213      -325.5750052458 -3.36E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    33 Broy./Diag. 0.15E+00   15.8     0.00000152      -325.5749905800  1.47E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    34 Broy./Diag. 0.15E+00   15.9     0.00000125      -325.5749731561  1.74E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    35 Broy./Diag. 0.15E+00   15.5     0.00000193      -325.5749811863 -8.03E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    36 Broy./Diag. 0.15E+00   15.5     0.00000087      -325.5749923603 -1.12E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    37 Broy./Diag. 0.15E+00   16.1     0.00000099      -325.5749759088  1.65E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    38 Broy./Diag. 0.15E+00   15.5     0.00000084      -325.5749560528  1.99E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    39 Broy./Diag. 0.15E+00   15.4     0.00000064      -325.5749596640 -3.61E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    40 Broy./Diag. 0.15E+00   15.2     0.00000053      -325.5749656510 -5.99E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    41 Broy./Diag. 0.15E+00   15.6     0.00000050      -325.5749625785  3.07E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    42 Broy./Diag. 0.15E+00   15.6     0.00000040      -325.5749567020  5.88E-06
+
+  *** SCF run converged in    42 steps ***
+
+
+  Electronic density on regular grids:       -147.9999999996        0.0000000004
+  Core density on regular grids:              147.9999999928       -0.0000000072
+  Total charge density on r-space grids:       -0.0000000068
+  Total charge density g-space grids:          -0.0000000068
+
+  Overlap energy of the core charge distribution:               0.00000536069233
+  Self energy of the core charge distribution:               -829.39757698133815
+  Core Hamiltonian energy:                                    238.53322699103882
+  Hartree energy:                                             342.46139091701281
+  Exchange-correlation energy:                                -77.14052595774875
+  Dispersion energy:                                           -0.03147703163982
+  Electronic entropic energy:                                  -0.00000000000000
+  Fermi energy:                                                -0.11081280473678
+
+  Total energy:                                              -325.57495670198290
+
+ !-----------------------------------------------------------------------------!
+                     Mulliken Population Analysis
+
+ #  Atom  Element  Kind  Atomic population                           Net charge
+       1     S        1          5.298574                              0.701426
+       2     S        1          5.286815                              0.713185
+       3     F        2          7.115754                             -0.115754
+       4     F        2          7.104079                             -0.104079
+       5     F        2          7.107767                             -0.107767
+       6     F        2          7.097588                             -0.097588
+       7     F        2          7.100159                             -0.100159
+       8     F        2          7.111051                             -0.111051
+       9     O        3          6.404116                             -0.404116
+      10     O        3          6.395290                             -0.395290
+      11     O        3          6.394884                             -0.394884
+      12     O        3          6.367398                             -0.367398
+      13     N        4          5.486380                             -0.486380
+      14     C        5          3.804864                              0.195136
+      15     C        5          3.813061                              0.186939
+      16     N        4          4.874910                              0.125090
+      17     N        4          4.849478                              0.150522
+      18     C        5          4.122797                             -0.122797
+      19     C        5          4.145881                             -0.145881
+      20     C        5          4.152842                             -0.152842
+      21     C        5          3.909561                              0.090439
+      22     C        5          3.991399                              0.008601
+      23     C        5          3.988748                              0.011252
+      24     C        5          4.265050                             -0.265050
+      25     C        5          4.176791                             -0.176791
+      26     H        6          0.899697                              0.100303
+      27     H        6          0.900821                              0.099179
+      28     H        6          0.896367                              0.103633
+      29     H        6          0.911639                              0.088361
+      30     H        6          0.906172                              0.093828
+      31     H        6          0.913510                              0.086490
+      32     H        6          0.920103                              0.079897
+      33     H        6          0.929814                              0.070186
+      34     H        6          0.924133                              0.075867
+      35     H        6          0.913677                              0.086323
+      36     H        6          0.909603                              0.090397
+      37     H        6          0.907067                              0.092933
+      38     H        6          0.894048                              0.105952
+      39     H        6          0.906549                              0.093451
+      40     H        6          0.901564                              0.098436
+ # Total charge                            148.000000                 -0.000000
+
+ !-----------------------------------------------------------------------------!
+
+ !-----------------------------------------------------------------------------!
+                           Hirshfeld Charges
+
+  #Atom  Element  Kind  Ref Charge     Population                    Net charge
+      1       S      1       6.000          5.609                         0.391
+      2       S      1       6.000          5.575                         0.425
+      3       F      2       7.000          7.297                        -0.297
+      4       F      2       7.000          7.292                        -0.292
+      5       F      2       7.000          7.294                        -0.294
+      6       F      2       7.000          7.295                        -0.295
+      7       F      2       7.000          7.285                        -0.285
+      8       F      2       7.000          7.298                        -0.298
+      9       O      3       6.000          6.466                        -0.466
+     10       O      3       6.000          6.412                        -0.412
+     11       O      3       6.000          6.420                        -0.420
+     12       O      3       6.000          6.409                        -0.409
+     13       N      4       5.000          5.260                        -0.260
+     14       C      5       4.000          3.084                         0.916
+     15       C      5       4.000          3.080                         0.920
+     16       N      4       5.000          5.150                        -0.150
+     17       N      4       5.000          5.139                        -0.139
+     18       C      5       4.000          4.662                        -0.662
+     19       C      5       4.000          4.793                        -0.793
+     20       C      5       4.000          4.838                        -0.838
+     21       C      5       4.000          4.137                        -0.137
+     22       C      5       4.000          4.316                        -0.316
+     23       C      5       4.000          4.291                        -0.291
+     24       C      5       4.000          5.305                        -1.305
+     25       C      5       4.000          5.021                        -1.021
+     26       H      6       1.000          0.551                         0.449
+     27       H      6       1.000          0.557                         0.443
+     28       H      6       1.000          0.548                         0.452
+     29       H      6       1.000          0.560                         0.440
+     30       H      6       1.000          0.564                         0.436
+     31       H      6       1.000          0.566                         0.434
+     32       H      6       1.000          0.519                         0.481
+     33       H      6       1.000          0.531                         0.469
+     34       H      6       1.000          0.528                         0.472
+     35       H      6       1.000          0.558                         0.442
+     36       H      6       1.000          0.556                         0.444
+     37       H      6       1.000          0.555                         0.445
+     38       H      6       1.000          0.533                         0.467
+     39       H      6       1.000          0.550                         0.450
+     40       H      6       1.000          0.543                         0.457
+
+  Total Charge                                                            0.051
+ !-----------------------------------------------------------------------------!
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -325.574955220009940
+
+ OPT| **************************************************************************
+ OPT| Step number                                                              2
+ OPT| Optimization method                                                   BFGS
+ OPT| Total energy [hartree]                                     -325.5749552200
+ OPT| Effective energy change [hartree]                            -0.0152259928
+ OPT| Predicted energy change [hartree]                            -0.0167245862
+ OPT| Scaling factor                                                0.0000000000
+ OPT| Step size                                                     0.1016519923
+ OPT| Trust radius                                                  0.4724315332
+ OPT| Decrease in energy                                                     YES
+ OPT| Used time [s]                                                      667.133
+ OPT|
+ OPT| Maximum step size                                             0.1016519923
+ OPT| Convergence limit for maximum step size                       0.0010000000
+ OPT| Maximum step size is converged                                          NO
+ OPT|
+ OPT| RMS step size                                                 0.0373693835
+ OPT| Convergence limit for RMS step size                           0.0005000000
+ OPT| RMS step size is converged                                              NO
+ OPT|
+ OPT| Maximum gradient                                              0.0143335259
+ OPT| Convergence limit for maximum gradient                        0.0004500000
+ OPT| Maximum gradient is converged                                           NO
+ OPT|
+ OPT| RMS gradient                                                  0.0038238325
+ OPT| Convergence limit for RMS gradient                            0.0003000000
+ OPT| RMS gradient is converged                                               NO
+ OPT| **************************************************************************
+ OPT| Estimated peak process memory after this step [MiB]                  10184
+
+ --------------------------
+ OPTIMIZATION STEP:      3
+ --------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Number of electrons:                                                        148
+ Number of occupied orbitals:                                                 74
+ Number of molecular orbitals:                                                75
+
+ Number of orbital functions:                                                400
+ Number of independent orbital functions:                                    400
+
+ Parameters for the always stable predictor-corrector (ASPC) method:
+
+  ASPC order: 1
+
+  B(1) =   2.500000
+  B(2) =  -2.000000
+  B(3) =   0.500000
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Extrapolation method: ASPC
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     1 Broy./Diag. 0.15E+00   10.6     0.16229044      -325.4665297191 -3.25E+02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     2 Broy./Diag. 0.15E+00   14.7     0.01338604      -325.7217207320 -2.55E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     3 Broy./Diag. 0.15E+00   15.8     0.02721857      -325.6589572806  6.28E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     4 Broy./Diag. 0.15E+00   14.8     0.00914506      -325.6367989578  2.22E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     5 Broy./Diag. 0.15E+00   15.0     0.00332086      -325.5764684111  6.03E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     6 Broy./Diag. 0.15E+00   16.1     0.00136951      -325.5598023404  1.67E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     7 Broy./Diag. 0.15E+00   15.9     0.00052308      -325.5614612331 -1.66E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     8 Broy./Diag. 0.15E+00   16.1     0.00043779      -325.5711304235 -9.67E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     9 Broy./Diag. 0.15E+00   16.8     0.00009926      -325.5795755457 -8.45E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    10 Broy./Diag. 0.15E+00   16.3     0.00026585      -325.5763005670  3.27E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    11 Broy./Diag. 0.15E+00   16.2     0.00016090      -325.5743557891  1.94E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    12 Broy./Diag. 0.15E+00   16.7     0.00015123      -325.5756999821 -1.34E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    13 Broy./Diag. 0.15E+00   16.6     0.00006946      -325.5772136838 -1.51E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    14 Broy./Diag. 0.15E+00   15.9     0.00004348      -325.5777105724 -4.97E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    15 Broy./Diag. 0.15E+00   16.0     0.00004582      -325.5773598522  3.51E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    16 Broy./Diag. 0.15E+00   16.0     0.00003188      -325.5772761424  8.37E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    17 Broy./Diag. 0.15E+00   15.2     0.00001204      -325.5777784797 -5.02E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    18 Broy./Diag. 0.15E+00   15.6     0.00002486      -325.5777392706  3.92E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    19 Broy./Diag. 0.15E+00   15.9     0.00001304      -325.5773401386  3.99E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    20 Broy./Diag. 0.15E+00   15.8     0.00001082      -325.5771861235  1.54E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    21 Broy./Diag. 0.15E+00   15.9     0.00002012      -325.5773244964 -1.38E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    22 Broy./Diag. 0.15E+00   16.0     0.00000885      -325.5775143515 -1.90E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    23 Broy./Diag. 0.15E+00   16.3     0.00001240      -325.5774527674  6.16E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    24 Broy./Diag. 0.15E+00   16.5     0.00000906      -325.5774204702  3.23E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    25 Broy./Diag. 0.15E+00   15.8     0.00000643      -325.5775266032 -1.06E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    26 Broy./Diag. 0.15E+00   15.5     0.00000632      -325.5775654567 -3.89E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    27 Broy./Diag. 0.15E+00   15.7     0.00000609      -325.5775028806  6.26E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    28 Broy./Diag. 0.15E+00   15.1     0.00000333      -325.5774460367  5.68E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    29 Broy./Diag. 0.15E+00   15.2     0.00000567      -325.5774558055 -9.77E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    30 Broy./Diag. 0.15E+00   15.5     0.00000264      -325.5774919596 -3.62E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    31 Broy./Diag. 0.15E+00   14.9     0.00000322      -325.5774803114  1.16E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    32 Broy./Diag. 0.15E+00   14.9     0.00000258      -325.5774697153  1.06E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    33 Broy./Diag. 0.15E+00   14.8     0.00000187      -325.5774881743 -1.85E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    34 Broy./Diag. 0.15E+00   15.0     0.00000203      -325.5775015756 -1.34E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    35 Broy./Diag. 0.15E+00   14.9     0.00000278      -325.5774910362  1.05E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    36 Broy./Diag. 0.15E+00   14.9     0.00000120      -325.5774764412  1.46E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    37 Broy./Diag. 0.15E+00   14.9     0.00000213      -325.5774802190 -3.78E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    38 Broy./Diag. 0.15E+00   14.7     0.00000114      -325.5774915368 -1.13E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    39 Broy./Diag. 0.15E+00   15.2     0.00000111      -325.5774870172  4.52E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    40 Broy./Diag. 0.15E+00   15.4     0.00000099      -325.5774841249  2.89E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    41 Broy./Diag. 0.15E+00   14.9     0.00000095      -325.5774900801 -5.96E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    42 Broy./Diag. 0.15E+00   15.1     0.00000061      -325.5774964572 -6.38E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    43 Broy./Diag. 0.15E+00   14.8     0.00000100      -325.5774941153  2.34E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    44 Broy./Diag. 0.15E+00   14.9     0.00000045      -325.5774891853  4.93E-06
+
+  *** SCF run converged in    44 steps ***
+
+
+  Electronic density on regular grids:       -147.9999999996        0.0000000004
+  Core density on regular grids:              147.9999999928       -0.0000000072
+  Total charge density on r-space grids:       -0.0000000068
+  Total charge density g-space grids:          -0.0000000068
+
+  Overlap energy of the core charge distribution:               0.00000554852547
+  Self energy of the core charge distribution:               -829.39757698133815
+  Core Hamiltonian energy:                                    238.65671415905476
+  Hartree energy:                                             342.37056232116032
+  Exchange-correlation energy:                                -77.17574226317276
+  Dispersion energy:                                           -0.03145196955161
+  Electronic entropic energy:                                  -0.00000000000000
+  Fermi energy:                                                -0.10960989572409
+
+  Total energy:                                              -325.57748918532195
+
+ !-----------------------------------------------------------------------------!
+                     Mulliken Population Analysis
+
+ #  Atom  Element  Kind  Atomic population                           Net charge
+       1     S        1          5.293267                              0.706733
+       2     S        1          5.283580                              0.716420
+       3     F        2          7.114493                             -0.114493
+       4     F        2          7.103594                             -0.103594
+       5     F        2          7.103839                             -0.103839
+       6     F        2          7.102288                             -0.102288
+       7     F        2          7.108045                             -0.108045
+       8     F        2          7.110579                             -0.110579
+       9     O        3          6.397820                             -0.397820
+      10     O        3          6.395612                             -0.395612
+      11     O        3          6.389770                             -0.389770
+      12     O        3          6.363147                             -0.363147
+      13     N        4          5.492016                             -0.492016
+      14     C        5          3.811389                              0.188611
+      15     C        5          3.818584                              0.181416
+      16     N        4          4.871379                              0.128621
+      17     N        4          4.846459                              0.153541
+      18     C        5          4.123196                             -0.123196
+      19     C        5          4.145259                             -0.145259
+      20     C        5          4.151323                             -0.151323
+      21     C        5          3.909107                              0.090893
+      22     C        5          3.992695                              0.007305
+      23     C        5          3.990241                              0.009759
+      24     C        5          4.262846                             -0.262846
+      25     C        5          4.176593                             -0.176593
+      26     H        6          0.899233                              0.100767
+      27     H        6          0.901461                              0.098539
+      28     H        6          0.897775                              0.102225
+      29     H        6          0.911837                              0.088163
+      30     H        6          0.906444                              0.093556
+      31     H        6          0.912309                              0.087691
+      32     H        6          0.921569                              0.078431
+      33     H        6          0.929626                              0.070374
+      34     H        6          0.924789                              0.075211
+      35     H        6          0.914307                              0.085693
+      36     H        6          0.910164                              0.089836
+      37     H        6          0.908781                              0.091219
+      38     H        6          0.894467                              0.105533
+      39     H        6          0.907868                              0.092132
+      40     H        6          0.902247                              0.097753
+ # Total charge                            148.000000                 -0.000000
+
+ !-----------------------------------------------------------------------------!
+
+ !-----------------------------------------------------------------------------!
+                           Hirshfeld Charges
+
+  #Atom  Element  Kind  Ref Charge     Population                    Net charge
+      1       S      1       6.000          5.605                         0.395
+      2       S      1       6.000          5.575                         0.425
+      3       F      2       7.000          7.297                        -0.297
+      4       F      2       7.000          7.293                        -0.293
+      5       F      2       7.000          7.290                        -0.290
+      6       F      2       7.000          7.298                        -0.298
+      7       F      2       7.000          7.291                        -0.291
+      8       F      2       7.000          7.299                        -0.299
+      9       O      3       6.000          6.463                        -0.463
+     10       O      3       6.000          6.413                        -0.413
+     11       O      3       6.000          6.416                        -0.416
+     12       O      3       6.000          6.410                        -0.410
+     13       N      4       5.000          5.264                        -0.264
+     14       C      5       4.000          3.083                         0.917
+     15       C      5       4.000          3.082                         0.918
+     16       N      4       5.000          5.153                        -0.153
+     17       N      4       5.000          5.140                        -0.140
+     18       C      5       4.000          4.663                        -0.663
+     19       C      5       4.000          4.789                        -0.789
+     20       C      5       4.000          4.843                        -0.843
+     21       C      5       4.000          4.135                        -0.135
+     22       C      5       4.000          4.317                        -0.317
+     23       C      5       4.000          4.295                        -0.295
+     24       C      5       4.000          5.295                        -1.295
+     25       C      5       4.000          5.017                        -1.017
+     26       H      6       1.000          0.552                         0.448
+     27       H      6       1.000          0.557                         0.443
+     28       H      6       1.000          0.546                         0.454
+     29       H      6       1.000          0.561                         0.439
+     30       H      6       1.000          0.565                         0.435
+     31       H      6       1.000          0.567                         0.433
+     32       H      6       1.000          0.521                         0.479
+     33       H      6       1.000          0.531                         0.469
+     34       H      6       1.000          0.529                         0.471
+     35       H      6       1.000          0.558                         0.442
+     36       H      6       1.000          0.555                         0.445
+     37       H      6       1.000          0.554                         0.446
+     38       H      6       1.000          0.533                         0.467
+     39       H      6       1.000          0.550                         0.450
+     40       H      6       1.000          0.544                         0.456
+
+  Total Charge                                                            0.051
+ !-----------------------------------------------------------------------------!
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy [hartree]           -325.577494769297061
+
+ OPT| **************************************************************************
+ OPT| Step number                                                              3
+ OPT| Optimization method                                                   BFGS
+ OPT| Total energy [hartree]                                     -325.5774947693
+ OPT| Effective energy change [hartree]                            -0.0025395493
+ OPT| Predicted energy change [hartree]                            -0.0031617786
+ OPT| Scaling factor                                                0.0000000000
+ OPT| Step size                                                     0.0514684422
+ OPT| Trust radius                                                  0.4724315332
+ OPT| Decrease in energy                                                     YES
+ OPT| Used time [s]                                                      698.718
+ OPT|
+ OPT| Maximum step size                                             0.0514684422
+ OPT| Convergence limit for maximum step size                       0.0010000000
+ OPT| Maximum step size is converged                                          NO
+ OPT|
+ OPT| RMS step size                                                 0.0197766265
+ OPT| Convergence limit for RMS step size                           0.0005000000
+ OPT| RMS step size is converged                                              NO
+ OPT|
+ OPT| Maximum gradient                                              0.0061998071
+ OPT| Convergence limit for maximum gradient                        0.0004500000
+ OPT| Maximum gradient is converged                                           NO
+ OPT|
+ OPT| RMS gradient                                                  0.0023212626
+ OPT| Convergence limit for RMS gradient                            0.0003000000
+ OPT| RMS gradient is converged                                               NO
+ OPT| **************************************************************************
+ OPT| Estimated peak process memory after this step [MiB]                  10236
+
+ --------------------------
+ OPTIMIZATION STEP:      4
+ --------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Number of electrons:                                                        148
+ Number of occupied orbitals:                                                 74
+ Number of molecular orbitals:                                                75
+
+ Number of orbital functions:                                                400
+ Number of independent orbital functions:                                    400
+
+ Parameters for the always stable predictor-corrector (ASPC) method:
+
+  ASPC order: 2
+
+  B(1) =   2.800000
+  B(2) =  -2.800000
+  B(3) =   1.200000
+  B(4) =  -0.200000
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Extrapolation method: ASPC
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     1 Broy./Diag. 0.15E+00    9.7     0.12670107      -325.5281699534 -3.26E+02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     2 Broy./Diag. 0.15E+00   13.5     0.00494457      -325.3541641466  1.74E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     3 Broy./Diag. 0.15E+00   14.0     0.01257338      -325.5262231704 -1.72E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     4 Broy./Diag. 0.15E+00   14.2     0.00393648      -325.6770260047 -1.51E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     5 Broy./Diag. 0.15E+00   14.5     0.00115706      -325.6016770953  7.53E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     6 Broy./Diag. 0.15E+00   14.5     0.00080755      -325.5778004200  2.39E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     7 Broy./Diag. 0.15E+00   14.8     0.00023964      -325.5786491196 -8.49E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     8 Broy./Diag. 0.15E+00   14.8     0.00022366      -325.5811648572 -2.52E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     9 Broy./Diag. 0.15E+00   14.9     0.00007618      -325.5817331723 -5.68E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    10 Broy./Diag. 0.15E+00   14.8     0.00025224      -325.5814450703  2.88E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    11 Broy./Diag. 0.15E+00   14.7     0.00007732      -325.5799331002  1.51E-03
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    12 Broy./Diag. 0.15E+00   14.9     0.00004576      -325.5800165599 -8.35E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    13 Broy./Diag. 0.15E+00   14.8     0.00006600      -325.5798857447  1.31E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    14 Broy./Diag. 0.15E+00   14.6     0.00002297      -325.5794812721  4.04E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    15 Broy./Diag. 0.15E+00   14.9     0.00003121      -325.5793450941  1.36E-04
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    16 Broy./Diag. 0.15E+00   14.6     0.00001976      -325.5794109455 -6.59E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    17 Broy./Diag. 0.15E+00   14.9     0.00001353      -325.5794855014 -7.46E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    18 Broy./Diag. 0.15E+00   14.8     0.00000993      -325.5794352517  5.02E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    19 Broy./Diag. 0.15E+00   15.0     0.00002213      -325.5793934792  4.18E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    20 Broy./Diag. 0.15E+00   15.3     0.00000788      -325.5794177319 -2.43E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    21 Broy./Diag. 0.15E+00   15.2     0.00001970      -325.5794425898 -2.49E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    22 Broy./Diag. 0.15E+00   15.4     0.00000649      -325.5793937368  4.89E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    23 Broy./Diag. 0.15E+00   15.0     0.00000833      -325.5793707349  2.30E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    24 Broy./Diag. 0.15E+00   15.1     0.00000476      -325.5793634531  7.28E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    25 Broy./Diag. 0.15E+00   15.6     0.00000545      -325.5793567990  6.65E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    26 Broy./Diag. 0.15E+00   15.1     0.00000338      -325.5793334473  2.34E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    27 Broy./Diag. 0.15E+00   15.9     0.00000470      -325.5793168748  1.66E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    28 Broy./Diag. 0.15E+00   16.1     0.00000152      -325.5793162346  6.40E-07
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    29 Broy./Diag. 0.15E+00   15.2     0.00000382      -325.5793173661 -1.13E-06
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
