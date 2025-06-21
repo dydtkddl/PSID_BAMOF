@@ -32,8 +32,9 @@
        EPS_SCF  4.9999999999999998E-007
        SCF_GUESS ATOMIC
        ADDED_MOS 100
-       &DIAGONALIZATION T
-         ALGORITHM STANDARD
+       &DIAGONALIZATION
+        ! ALGORITHM STANDARD
+        	ALGORITHM DAVIDSON
        &END DIAGONALIZATION
        &SMEAR T
          METHOD FERMI_DIRAC
@@ -80,7 +81,7 @@
    &END DFT
   &SUBSYS
     &CELL
-      ABC      60.0 60.0 60.0    ! 충분히 큰 셀
+      ABC      30.0 30.0 30.0    ! 충분히 큰 셀
       PERIODIC XYZ              ! 주기경계 유지
     &END
     &COORD
