@@ -7,7 +7,7 @@
  # Source code revision number                                       git:9635df4
  &GLOBAL
    PRINT_LEVEL MEDIUM
-   PROJECT_NAME "BAMOF_TFS"
+   PROJECT_NAME "BAMOF_TFS_GEOOPT_CONST"
    RUN_TYPE GEO_OPT
  &END GLOBAL
  &MOTION

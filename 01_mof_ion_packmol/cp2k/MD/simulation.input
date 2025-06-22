@@ -1,6 +1,6 @@
 &GLOBAL
   PRINT_LEVEL  MEDIUM
-  PROJECT_NAME BAMOF_TFS
+  PROJECT_NAME BAMOF_TFS_MD
   RUN_TYPE     MD          ! ← GEO_OPT → MD
 &END GLOBAL
 
@@ -20,17 +20,20 @@
     &THERMOSTAT
       TYPE     CSVR
       REGION   GLOBAL
-      TIMECON  1000        ! time-constant (fs)
-    &END THERMOSTAT
-    &PRINT
+      &CSVR
+       TIMECON 1000
+      &END CSVR   
+ 
+   &END THERMOSTAT
+  &END MD
+	    &PRINT
       &TRAJECTORY
         FORMAT XYZ
         &EACH
-          MD 100          ! 저장 주기
-        &END
-      &END
+          MD 100
+        &END EACH
+      &END TRAJECTORY
     &END PRINT
-  &END MD
 &END MOTION
 
 &FORCE_EVAL
