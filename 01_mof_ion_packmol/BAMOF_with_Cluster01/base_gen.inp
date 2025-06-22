@@ -1,0 +1,17 @@
+tolerance 2.0
+filetype xyz
+output case_{index}.xyz
+
+structure ../BAMOF_cp2k_opt-1_102.xyz
+  number 1
+  fixed 0. 0. 0. 0. 0. 0.
+end structure
+
+structure ../TFS.xyz
+  number 50
+  inside box -20.14682463545165 -14.594360610291087 -6.40897106810076 29.134396988656558 21.73194258977776 19.519322802708537
+end structure
+
+seed {seed}
+randominitialpoint
+
