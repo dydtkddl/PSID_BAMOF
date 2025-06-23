@@ -1,0 +1,14 @@
+
+ *** Local logger file of MPI task 4 in communicator 1140850688 ***
+ *** PID      = 638
+ *** Hostname = a261d2cd5f0f                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+ ===== Routine Calling Stack ===== 
+
+            7 build_neighbor_lists
+            6 build_fist_neighbor_lists
+            5 topology_generate_bond_3
+            4 topology_generate_bond
+            3 connectivity_control
+            2 topology_control
+            1 CP2K
