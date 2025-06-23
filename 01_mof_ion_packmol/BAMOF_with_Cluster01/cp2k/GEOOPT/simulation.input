@@ -9,6 +9,7 @@
    PRINT_LEVEL MEDIUM
    PROJECT_NAME "BAMOF_CLUSTER_002"
    RUN_TYPE GEO_OPT
+   SAVE_MEM
  &END GLOBAL
  &MOTION
   &CONSTRAINT                     
@@ -33,6 +34,13 @@
 !    CHARGE  1 
      BASIS_SET_FILE_NAME BASIS_MOLOPT
      POTENTIAL_FILE_NAME GTH_POTENTIALS
+    &HF
+      &MEMORY
+        MAX_MEMORY    1024      # 한 MPI 프로세스당 최대 1024 MiB 사용
+        MAX_DISK_SPACE 2048      # (선택) 디스크에 저장할 경우 최대 2048 MiB
+        STORAGE_LOCATION /scratch  # (선택) 디스크 저장 경로
+      &END MEMORY
+    &END HF
      &SCF
        MAX_SCF 200
        EPS_SCF  4.9999999999999998E-007
