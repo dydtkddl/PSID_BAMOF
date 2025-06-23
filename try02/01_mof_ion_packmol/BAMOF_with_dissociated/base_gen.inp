@@ -2,14 +2,14 @@ tolerance 2.0
 filetype xyz
 output case_{index}.xyz
 
-structure ../case_001_000_wrapped.xyz
+structure ../BAMOF_FINAL_CELL_OPT.xyz
   number 1
   fixed 0. 0. 0. 0. 0. 0.
 end structure
 
-structure ../Isolated_BMI-pos-final.xyz
-  number 30
-  inside box -20.14682463545165 -14.594360610291087 -6.40897106810076 29.134396988656558 21.73194258977776 19.519322802708537
+structure ../BMI_FINAL_COORDINATE.xyz
+  number 50
+  inside box -24.288777706449206 -16.346441608667604 -7.500787034 33.27623344 23.484051463524015 20.61106080825451
 end structure
 
 seed {seed}
