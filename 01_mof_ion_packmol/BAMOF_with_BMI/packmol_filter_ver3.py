@@ -139,9 +139,8 @@ def write_cif(path, cell, labels, fracs):
                 sym = ''.join(filter(str.isalpha, lab))  # 'C12' → 'C'
             sym = sym.capitalize()                    # cl → Cl
             # ────────────────────────────────────────────────
-
-
             f.write(f"{lab:6s} {sym:4s} {x:.6f} {y:.6f} {z:.6f}\n")
+
 
 
 # ============================================================
