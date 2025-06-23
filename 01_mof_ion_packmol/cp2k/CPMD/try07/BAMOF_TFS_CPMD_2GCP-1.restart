@@ -92,7 +92,7 @@
        &SE
          &MEMORY
            EPS_STORAGE  9.9999999999999995E-008
-           MAX_MEMORY 2000
+           MAX_MEMORY 500
            COMPRESS T
          &END MEMORY
        &END SE
