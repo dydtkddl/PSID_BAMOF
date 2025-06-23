@@ -1,0 +1,56 @@
+
+     Program POST-PROC v.7.4.1 starts on 14Apr2025 at  1:36:44 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    31 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      31
+     24656 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     ./tmp/MIL125_NH2_convtest.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1349     674    168               179511    63460    7929
+     Max        1350     675    169               179514    63463    7933
+     Sum       41835   20921   5225              5564879  1967325  245841
+
+     Using Slab Decomposition
+
+
+     Calling punch_plot, plot_num =  17
+       Reconstructing all-electron valence charge.
+     Writing data to file  valence_density
+     Reading data from file  valence_density
+
+     Writing data to be plotted to file valence_density.cube
+     Plot Type: 3D                     Output format: Gaussian cube
+
+     POST-PROC    :     23.30s CPU     24.09s WALL
+
+
+   This run was terminated on:   1:37: 8  14Apr2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

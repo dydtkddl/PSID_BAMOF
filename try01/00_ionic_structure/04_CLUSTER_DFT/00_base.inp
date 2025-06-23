@@ -1,0 +1,11 @@
+! Opt B3LYP D4 def2-TZVP TightSCF TightOpt
+
+%maxcore 5000
+
+%pal
+nprocs 15
+end
+
+* xyz 0 1
+{XYZ}
+*

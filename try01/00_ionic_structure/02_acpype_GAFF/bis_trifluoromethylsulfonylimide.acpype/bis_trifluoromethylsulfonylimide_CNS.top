@@ -1,0 +1,109 @@
+Remarks bis_trifluoromethylsulfonylimide_CNS.top created by acpype (v: 2023.10.27) on Tue May 20 11:01:04 2025
+
+set echo=false end
+
+autogenerate angles=True dihedrals=True end
+
+{ atomType  mass }
+MASS s6_     32.060
+MASS sy_     32.060
+MASS f_      19.000
+MASS o_      16.000
+MASS ne_     14.010
+MASS c3_     12.010
+
+RESIdue UNL
+
+GROUP
+
+{ atomName  atomType  Charge }
+ATOM S     TYPE= s6_   CHARGE=   1.4837 END
+ATOM S1    TYPE= sy_   CHARGE=   1.6814 END
+ATOM F     TYPE= f_    CHARGE=  -0.2720 END
+ATOM F1    TYPE= f_    CHARGE=  -0.2720 END
+ATOM F2    TYPE= f_    CHARGE=  -0.2720 END
+ATOM F3    TYPE= f_    CHARGE=  -0.2720 END
+ATOM F4    TYPE= f_    CHARGE=  -0.2720 END
+ATOM F5    TYPE= f_    CHARGE=  -0.2720 END
+ATOM O     TYPE= o_    CHARGE=  -0.6132 END
+ATOM O1    TYPE= o_    CHARGE=  -0.6568 END
+ATOM O2    TYPE= o_    CHARGE=  -0.6568 END
+ATOM O3    TYPE= o_    CHARGE=  -0.6568 END
+ATOM N     TYPE= ne_   CHARGE=  -1.0591 END
+ATOM C     TYPE= c3_   CHARGE=   0.5547 END
+ATOM C1    TYPE= c3_   CHARGE=   0.5547 END
+
+{ Bonds: atomName1  atomName2 }
+BOND S     O    
+BOND S     O1   
+BOND S     N    
+BOND S     C    
+BOND S1    O2   
+BOND S1    O3   
+BOND S1    N    
+BOND S1    C1   
+BOND F     C    
+BOND F1    C    
+BOND F2    C    
+BOND F3    C1   
+BOND F4    C1   
+BOND F5    C1   
+
+{ Angles: atomName1 atomName2 atomName3}
+ANGLe S     N     S1   
+ANGLe S     C     F    
+ANGLe S     C     F1   
+ANGLe S     C     F2   
+ANGLe S1    C1    F3   
+ANGLe S1    C1    F4   
+ANGLe S1    C1    F5   
+ANGLe F     C     F1   
+ANGLe F     C     F2   
+ANGLe F1    C     F2   
+ANGLe F3    C1    F4   
+ANGLe F3    C1    F5   
+ANGLe F4    C1    F5   
+ANGLe O     S     O1   
+ANGLe O     S     N    
+ANGLe O     S     C    
+ANGLe O1    S     N    
+ANGLe O1    S     C    
+ANGLe O2    S1    O3   
+ANGLe O2    S1    N    
+ANGLe O2    S1    C1   
+ANGLe O3    S1    N    
+ANGLe O3    S1    C1   
+ANGLe N     S     C    
+ANGLe N     S1    C1   
+
+{ Proper Dihedrals: name1 name2 name3 name4 }
+DIHEdral S     N     S1    O2   
+DIHEdral S     N     S1    O3   
+DIHEdral S     N     S1    C1   
+DIHEdral O     S     N     S1   
+DIHEdral O1    S     N     S1   
+DIHEdral C     S     N     S1   
+DIHEdral O     S     C     F    
+DIHEdral O1    S     C     F    
+DIHEdral N     S     C     F    
+DIHEdral O     S     C     F1   
+DIHEdral O1    S     C     F1   
+DIHEdral N     S     C     F1   
+DIHEdral O     S     C     F2   
+DIHEdral O1    S     C     F2   
+DIHEdral N     S     C     F2   
+DIHEdral F3    C1    S1    O2   
+DIHEdral F3    C1    S1    O3   
+DIHEdral F3    C1    S1    N    
+DIHEdral F4    C1    S1    O2   
+DIHEdral F4    C1    S1    O3   
+DIHEdral F4    C1    S1    N    
+DIHEdral F5    C1    S1    O2   
+DIHEdral F5    C1    S1    O3   
+DIHEdral F5    C1    S1    N    
+
+{ Improper Dihedrals: aName1 aName2 aName3 aName4 }
+
+END {RESIdue UNL}
+
+set echo=true end

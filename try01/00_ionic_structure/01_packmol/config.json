@@ -1,0 +1,14 @@
+{
+  "center_molecule": "bis_trifluoromethylsulfonylimide.xyz",
+  "solvent_molecules": [
+    {
+      "file": "1-Butyl-3-methylimidazolium.xyz",
+      "count": 1,
+      "ellipsoid_margin": 5.5
+    }
+  ],
+  "output_dir": "packmol_outputs",
+  "input_dir": "packmol_inputs",
+  "base_name": "IONIC_PAIR"
+}
+

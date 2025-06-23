@@ -1,0 +1,16 @@
+tolerance 2.0
+filetype xyz
+output case_001.xyz
+
+structure ../rotated_bis_trifluoromethylsulfonylimide.xyz
+  number 1
+  fixed 0. 0. 0. 0. 0. 0.
+end structure
+
+structure ../1-Butyl-3-methylimidazolium.xyz
+  number 1
+  inside ellipsoid 0.0 0.0 0.0 7.2783 7.8113 10.2975 1.0
+end structure
+
+seed 1001
+randominitialpoint

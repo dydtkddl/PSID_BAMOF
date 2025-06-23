@@ -1,0 +1,20 @@
+; bis_trifluoromethylsulfonylimide_GMX.top created by acpype (v: 2023.10.27) on Tue May 20 11:01:04 2025
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333333333
+
+; Include bis_trifluoromethylsulfonylimide_GMX.itp topology
+#include "bis_trifluoromethylsulfonylimide_GMX.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_bis_trifluoromethylsulfonylimide.itp"
+#endif
+
+[ system ]
+ bis_trifluoromethylsulfonylimide
+
+[ molecules ]
+; Compound        nmols
+ bis_trifluoromethylsulfonylimide 1     

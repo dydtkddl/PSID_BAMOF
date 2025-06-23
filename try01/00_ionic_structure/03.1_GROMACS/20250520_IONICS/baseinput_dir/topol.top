@@ -1,0 +1,28 @@
+
+
+#include "/usr/local/gromacs/share/gromacs/top/amber99sb.ff/forcefield.itp"
+[ atomtypes ]
+; BMI + TFS combined atomtypes
+na       na   0.00000  0.00000   A   3.20581e-01   8.54373e-01
+c3       c3   0.00000  0.00000   A   3.39771e-01   4.51035e-01
+cc       cc   0.00000  0.00000   A   3.31521e-01   4.13379e-01
+cd       cd   0.00000  0.00000   A   3.31521e-01   4.13379e-01
+h1       h1   0.00000  0.00000   A   2.42200e-01   8.70272e-02
+hc       hc   0.00000  0.00000   A   2.60018e-01   8.70272e-02
+h5       h5   0.00000  0.00000   A   2.44730e-01   6.73624e-02
+h4       h4   0.00000  0.00000   A   2.53639e-01   6.73624e-02
+s6       s6   0.00000  0.00000   A   4.05840e-01   2.56898e-01
+sy       sy   0.00000  0.00000   A   4.05840e-01   2.56898e-01
+f        f    0.00000  0.00000   A   3.03422e-01   3.48109e-01
+o        o    0.00000  0.00000   A   3.04812e-01   6.12119e-01
+ne       ne   0.00000  0.00000   A   3.38417e-01   3.93714e-01
+
+#include "BMI.itp"
+#include "TFS.itp"
+
+[ system ]
+Ionic Liquid System
+
+[ molecules ]
+TFS  1
+BMI  1

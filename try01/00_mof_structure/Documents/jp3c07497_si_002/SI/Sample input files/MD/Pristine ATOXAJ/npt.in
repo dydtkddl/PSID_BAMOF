@@ -1,0 +1,64 @@
+units            real
+atom_style	 full
+boundary         p p p
+
+atom_style       full
+
+pair_style	 hybrid/overlay lj/cut/tip4p/long 6 7 8 13 0.1250 10.0 8.5
+
+pair_modify      tail yes 
+
+bond_style       hybrid harmonic
+
+angle_style      hybrid fourier cosine/periodic harmonic
+
+dihedral_style   hybrid harmonic
+
+improper_style   hybrid fourier
+
+dielectric	 1.0
+
+box tilt         large
+
+neighbor         1.0 bin
+neigh_modify     delay 0 every 1 check yes
+
+read_data        data.ATOXAJ.cif  extra/atom/types 2 extra/bond/types 1 extra/angle/types 1 extra/dihedral/types 0 extra/improper/types 0
+read_data        data.adsorbate  add append offset 5 7 12 3 1
+include          data.pair
+
+group            fram     id   1:864
+group            water    id   865:1248
+
+############################ Record thermodynamic data #################################################
+            thermo              10000
+            thermo_style        custom step etotal enthalpy vol press temp cella cellb cellc cellalpha cellbeta cellgamma
+            change_box all triclinic
+            kspace_style     pppm/tip4p 1.0e-6
+
+########################### Minimization #########################################
+            fix freeze fram  setforce 0.0 0.0 0.0
+            min_style   cg
+            min_modify  line quadratic dmax 0.001
+            minimize    1.0e-4 1.0e-6 10000 10000
+
+################################# pre-run setting #####################################################
+            timestep            1
+            run_style           verlet
+            velocity            all create 298 123456 rot yes mom yes dist gaussian
+            fix                 1 water shake 0.0001 20 0 b 8 a 13
+
+############################### NVT ###########################################################
+
+            fix         NVT_ENSEMBLE water nvt temp 298 298 100
+
+            fix         COM fram recenter INIT INIT INIT
+
+            dump        nvt_struc fram xyz 1000000 nvt_framework.xyz
+            dump_modify nvt_struc element Zn H C N O O H
+   
+            dump        water_coord water xyz 1000000 water_coordinates.xyz
+            dump_modify water_coord element Zn H C N O O H
+
+            timestep    1.0
+            run         1000000
