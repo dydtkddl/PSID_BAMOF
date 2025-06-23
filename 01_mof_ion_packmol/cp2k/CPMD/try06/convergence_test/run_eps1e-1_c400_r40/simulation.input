@@ -19,7 +19,7 @@
      CHARGE -1
      &SCF
        MAX_SCF 100
-       EPS_SCF  {EPS_SCF}
+       EPS_SCF  1e-1
 !       EPS_SCF_HISTORY  1.0000000000000000E-004
        SCF_GUESS RESTART
        ADDED_MOS 100
@@ -48,8 +48,8 @@
        &END SE
      &END QS
      &MGRID
-       CUTOFF  {CUTOFF}
-       REL_CUTOFF  {REL_CUTOFF}
+       CUTOFF  400
+       REL_CUTOFF  40
      &END MGRID
      &XC
        DENSITY_CUTOFF  9.9999999999999995E-008

@@ -51,7 +51,7 @@ def main():
             f.write(input_content)
         # run CP2K in container
         cmd = (
-            "mkdir -p cp2k_scratch && sudo podman run --rm "
+            "mkdir -p cp2k_scratch && echo '9582' | sudo -S podman run --rm "
             "-v \"$HOME/cp2k/data\":/opt/cp2k/data:Z "
             f"-v \"{os.path.abspath(dirname)}\":/work:Z -w /work "
             "docker.io/cp2k/cp2k:latest "
