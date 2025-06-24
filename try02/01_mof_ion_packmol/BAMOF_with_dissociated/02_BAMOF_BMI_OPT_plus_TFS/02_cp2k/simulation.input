@@ -324,7 +324,6 @@ C   3.565164  0.144216  2.591420
  0
        &END POTENTIAL
      &END KIND
-          &END KIND
      &KIND "S"
        BASIS_SET "DZVP-MOLOPT-SR-GTH"
        ELEMENT "S"
