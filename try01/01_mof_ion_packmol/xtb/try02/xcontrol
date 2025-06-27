@@ -1,0 +1,4 @@
+$constrain
+  atoms: 1-125       # MOF 프레임
+  rigid=true
+$end

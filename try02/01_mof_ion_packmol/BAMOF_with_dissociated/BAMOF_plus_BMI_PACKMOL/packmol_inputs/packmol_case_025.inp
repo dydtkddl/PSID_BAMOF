@@ -1,0 +1,17 @@
+tolerance 2.0
+filetype xyz
+output case_025.xyz
+
+structure ../BAMOF_FINAL_CELL_OPT.xyz
+  number 1
+  fixed 0. 0. 0. 0. 0. 0.
+end structure
+
+structure ../BMI_FINAL_COORDINATE.xyz
+  number 50
+  inside box -24.288777706449206 -16.346441608667604 -7.500787034 33.27623344 23.484051463524015 20.61106080825451
+end structure
+
+seed 1025
+randominitialpoint
+

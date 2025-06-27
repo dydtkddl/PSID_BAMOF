@@ -1,0 +1,17 @@
+tolerance {tolerance}
+filetype xyz
+output case_{index}.xyz
+
+structure ../{structure}
+  number 50
+  fixed 0. 0. 0. 0. 0. 0.
+end structure
+
+structure ../{molecule}
+  number {number}
+  inside box {x1} {y1} {z1} {x2} {y2} {z2}
+end structure
+
+seed {seed}
+randominitialpoint
+
