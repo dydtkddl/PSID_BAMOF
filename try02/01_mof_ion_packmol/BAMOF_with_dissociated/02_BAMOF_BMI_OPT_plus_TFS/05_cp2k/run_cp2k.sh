@@ -12,7 +12,7 @@ usage() {
 }
 
 # 기본값: 30분
-RUN_SECS=$((30*60))
+RUN_SECS=$((20*60))
 
 # 옵션 파싱
 while getopts ":s:m:" opt; do
