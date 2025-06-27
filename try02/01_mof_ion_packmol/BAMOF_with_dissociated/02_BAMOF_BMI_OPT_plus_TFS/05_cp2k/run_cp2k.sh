@@ -1,74 +1,73 @@
 #!/usr/bin/env bash
+#
 # run_cp2k.sh
-# 사용법: ./run_cp2k.sh [-s seconds] [-m minutes] <RESTART_FILE>
-# 예시:  ./run_cp2k.sh -m 30 MIL125_DISSOCIATED_GEOOPT-1.restart
+# Usage: ./run_cp2k.sh <RESTART_FILE> [KILL_INTERVAL_SECONDS]
+# Example: ./run_cp2k.sh MIL125_DISSOCIATED_GEOOPT-1.restart 1800
 
 set -uo pipefail
-set +e  # 워치독 때문에 -e 끔
+set +e   # watchdog failures shouldn’t kill the script
 
-usage() {
-  echo "Usage: $0 [-s seconds] [-m minutes] <restart_file>"
-  exit 1
-}
-
-# 기본값: 30분
-RUN_SECS=$((20*60))
-
-# 옵션 파싱
-while getopts ":s:m:" opt; do
-  case $opt in
-    s) RUN_SECS="$OPTARG" ;;
-    m) RUN_SECS="$((OPTARG*60))" ;;
-    *) usage ;;
-  esac
-done
-shift $((OPTIND-1))
-
-# 리스타트 파일
 if [ $# -lt 1 ]; then
-  usage
+  echo "Usage: $0 <restart_file> [kill_interval_seconds]"
+  exit 1
 fi
-RESTART_FILE="$1"
 
+RESTART_FILE="$1"
+KILL_INTERVAL="${2:-1800}"   # default 1800 seconds (30 min)
 PASSWORD="9582"
 ITER=0
 
-# 워치독 백그라운드: 지정 초마다 cp2k 프로세스 전부 강제 종료
-(
-  while true; do
-    sleep "$RUN_SECS"
-    echo "▶ [watchdog] $(date '+%H:%M:%S') → pkill -9 cp2k"
-    echo "$PASSWORD" | sudo -S pkill -f -9 cp2k
-  done
-)&
-WATCHDOG_PID=$!
+# Ensure any naked Ctrl+C also kills leftover watchdogs
+cleanup() {
+  [[ -n "${WD_PID:-}" ]] && kill "${WD_PID}" &>/dev/null || true
+}
+trap cleanup EXIT
 
-# 메인 루프
 while true; do
   ITER=$((ITER+1))
+  CONTAINER_NAME="cp2k_run_${ITER}"
+
   echo "============================================================"
   echo "▶ [#${ITER}] START  at $(date '+%Y-%m-%d %H:%M:%S')"
   echo "▶ Restart file: ${RESTART_FILE}"
-  echo "▶ Kill interval: ${RUN_SECS}s"
+  echo "▶ Kill interval: ${KILL_INTERVAL}s"
+  echo "▶ Container name: ${CONTAINER_NAME}"
   echo "============================================================"
 
-  # 컨테이너 실행 (blocking)
-  echo "$PASSWORD" | sudo -S podman run --rm \
-    -v "$HOME/cp2k/data":/opt/cp2k/data:Z \
-    -v "$PWD":/work:Z \
+  # Remove any stale container with the same name
+  echo "$PASSWORD" | sudo -S podman rm -f "${CONTAINER_NAME}" &>/dev/null || true
+
+  # 1) Watchdog: every $KILL_INTERVAL seconds, kill only this container
+  (
+    while true; do
+      sleep "${KILL_INTERVAL}"
+      echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"
+      echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &>/dev/null
+    done
+  ) &> /dev/null &
+  WD_PID=$!
+
+  # 2) Run the container (blocking)
+  echo "$PASSWORD" | sudo -S podman run --name "${CONTAINER_NAME}" --rm \
+    -v "${HOME}/cp2k/data":/opt/cp2k/data:Z \
+    -v "${PWD}":/work:Z \
     -w /work docker.io/cp2k/cp2k:latest \
     mpirun -n 7 -genv OMP_NUM_THREADS=4 \
       cp2k -i "${RESTART_FILE}" \
            -o simulation.input.out \
     > simulation.input.log 2>&1
-
   EXIT_CODE=$?
-  echo "▶ [#${ITER}] FINISHED (exit code: ${EXIT_CODE})"
+
+  # 3) Stop the watchdog for this iteration
+  kill "${WD_PID}" &>/dev/null || true
+
+  # 4) Report results
+  echo "▶ [#${ITER}] END    at $(date '+%Y-%m-%d %H:%M:%S') (exit code: ${EXIT_CODE})"
   echo "----- Last 5 lines of simulation.input.log -----"
   tail -n 5 simulation.input.log
   echo "-----------------------------------------------"
 
-  # 워닝 메시지 검사
+  # 5) Check for warning message to break
   if tail -n 30 simulation.input.out \
      | grep -q "The number of warnings for this run is"; then
     echo "▶ [#${ITER}] Warning 메시지 발견 – 루프 종료"
@@ -79,6 +78,5 @@ while true; do
   sleep 3
 done
 
-# 워치독 정리
-kill $WATCHDOG_PID &>/dev/null
 echo "✅ 전체 완료. 총 반복 횟수: ${ITER}"
+
