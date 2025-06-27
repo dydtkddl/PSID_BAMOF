@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Three.js + TransformControls (ES Modules)</title>
+  <style>
+    body { margin:0; overflow:hidden; }
+  </style>
+</head>
+<body>
+<script type="module">
+  import * as THREE from './three.module.js';
+  import { OrbitControls } from './OrbitControls.js';
+  import { TransformControls } from './TransformControls.js';
+
+    // 2) Scene, camera, renderer
+    const scene    = new THREE.Scene();
+    const camera   = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 100);
+    camera.position.set(0,0,5);
+    const renderer = new THREE.WebGLRenderer({antialias:true});
+    renderer.setSize(innerWidth, innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // 3) Controls
+    const orbit = new OrbitControls(camera, renderer.domElement);
+    orbit.enableDamping = true;
+    const transform = new TransformControls(camera, renderer.domElement);
+
+    // 4) Lights
+    scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+    const pt = new THREE.PointLight(0xffffff, 0.8);
+    pt.position.set(5,5,5);
+    scene.add(pt);
+
+    // 5) Simple H2O model
+    const molecule = new THREE.Group();
+    const matO = new THREE.MeshPhongMaterial({color:0xff0000});
+    const matH = new THREE.MeshPhongMaterial({color:0xffffff});
+    const geoSphere = new THREE.SphereGeometry(0.2, 32, 32);
+    const geoBond   = new THREE.CylinderGeometry(0.05, 0.05, 1, 16);
+
+    const atomO = new THREE.Mesh(geoSphere, matO);
+    molecule.add(atomO);
+
+    const atomH1 = new THREE.Mesh(geoSphere, matH);
+    atomH1.position.set(0.96,0,0);
+    molecule.add(atomH1);
+
+    const atomH2 = new THREE.Mesh(geoSphere, matH);
+    atomH2.position.set(-0.24,0.93,0);
+    molecule.add(atomH2);
+
+    function addBond(p1,p2) {
+      const bond = new THREE.Mesh(geoBond, new THREE.MeshPhongMaterial({color:0xaaaaaa}));
+      const mid = new THREE.Vector3().addVectors(p1,p2).multiplyScalar(0.5);
+      bond.position.copy(mid);
+      bond.lookAt(p2);
+      bond.scale.set(1, p1.distanceTo(p2), 1);
+      molecule.add(bond);
+    }
+    addBond(atomO.position, atomH1.position);
+    addBond(atomO.position, atomH2.position);
+
+    scene.add(molecule);
+
+    // attach transform controls
+    transform.attach(molecule);
+    scene.add(transform);
+    transform.addEventListener('dragging-changed', e => orbit.enabled = !e.value);
+
+    // key to switch mode
+    window.addEventListener('keydown', e => {
+      if (e.key === 't') transform.setMode('translate');
+      if (e.key === 'r') transform.setMode('rotate');
+      if (e.key === 's') transform.setMode('scale');
+    });
+
+    // render loop
+    function animate() {
+      requestAnimationFrame(animate);
+      orbit.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    window.addEventListener('resize', () => {
+      camera.aspect = innerWidth/innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+    });
+  </script>
+</body>
+</html>
