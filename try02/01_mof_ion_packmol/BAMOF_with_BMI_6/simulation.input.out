@@ -58763,3 +58763,4 @@
 
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
+     9 Broy./Diag. 0.15E+00    2.9     0.00000445     -1376.2723329464  1.06E-05
