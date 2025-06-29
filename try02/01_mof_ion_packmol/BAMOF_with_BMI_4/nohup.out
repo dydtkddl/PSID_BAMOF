@@ -1,0 +1,396 @@
+============================================================
+▶ [#1] START  at 2025-06-28 23:35:52
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-06-28 23:35:52 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679482 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-06-28 23:35:55
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#2] END    at 2025-06-28 23:35:55 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679494 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-06-28 23:35:58
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_3
+============================================================
+▶ [#3] END    at 2025-06-28 23:35:58 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679629 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#3] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#4] START  at 2025-06-28 23:36:01
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_4
+============================================================
+▶ [#4] END    at 2025-06-28 23:36:01 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679641 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#4] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#5] START  at 2025-06-28 23:36:04
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_5
+============================================================
+▶ [#5] END    at 2025-06-28 23:36:04 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679653 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#5] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#6] START  at 2025-06-28 23:36:07
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_6
+============================================================
+▶ [#6] END    at 2025-06-28 23:36:07 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679665 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#6] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#7] START  at 2025-06-28 23:36:10
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_7
+============================================================
+▶ [#7] END    at 2025-06-28 23:36:10 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679686 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#7] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#8] START  at 2025-06-28 23:36:13
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_8
+============================================================
+▶ [#8] END    at 2025-06-28 23:36:13 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679698 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#8] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#9] START  at 2025-06-28 23:36:16
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_9
+============================================================
+▶ [#9] END    at 2025-06-28 23:36:16 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679710 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#9] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#10] START  at 2025-06-28 23:36:19
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_10
+============================================================
+▶ [#10] END    at 2025-06-28 23:36:19 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679722 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#10] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#11] START  at 2025-06-28 23:36:22
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_11
+============================================================
+▶ [#11] END    at 2025-06-28 23:36:22 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679734 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#11] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#12] START  at 2025-06-28 23:36:25
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_12
+============================================================
+▶ [#12] END    at 2025-06-28 23:36:25 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679747 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#12] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#13] START  at 2025-06-28 23:36:28
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_13
+============================================================
+▶ [#13] END    at 2025-06-28 23:36:28 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679759 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#13] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#14] START  at 2025-06-28 23:36:31
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_14
+============================================================
+▶ [#14] END    at 2025-06-28 23:36:31 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679771 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#14] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#15] START  at 2025-06-28 23:36:34
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_15
+============================================================
+▶ [#15] END    at 2025-06-28 23:36:35 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679783 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#15] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#16] START  at 2025-06-28 23:36:38
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_16
+============================================================
+▶ [#16] END    at 2025-06-28 23:36:38 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679795 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#16] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#17] START  at 2025-06-28 23:36:41
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_17
+============================================================
+▶ [#17] END    at 2025-06-28 23:36:41 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679808 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#17] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#18] START  at 2025-06-28 23:36:44
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_18
+============================================================
+▶ [#18] END    at 2025-06-28 23:36:44 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679829 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#18] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#19] START  at 2025-06-28 23:36:47
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_19
+============================================================
+▶ [#19] END    at 2025-06-28 23:36:47 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679841 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#19] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#20] START  at 2025-06-28 23:36:50
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_20
+============================================================
+▶ [#20] END    at 2025-06-28 23:36:50 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k.sh: line 79: 1679853 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#20] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#1] START  at 2025-06-28 23:37:21
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-06-28 23:37:21 (exit code: 125)
+----- Last 5 lines of simulation.input.log -----
+Trying to pull podman.io/cp2k/cp2k:latest...
+Error: initializing source docker://podman.io/cp2k/cp2k:latest: pinging container registry podman.io: Get "https://podman.io/v2/": dial tcp: lookup podman.io on [::1]:53: read udp [::1]:53999->[::1]:53: read: connection refused
+run_cp2k.sh: line 79: 1680045 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-06-28 23:37:24
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#2] END    at 2025-06-28 23:37:24 (exit code: 125)
+----- Last 5 lines of simulation.input.log -----
+Trying to pull podman.io/cp2k/cp2k:latest...
+Error: initializing source docker://podman.io/cp2k/cp2k:latest: pinging container registry podman.io: Get "https://podman.io/v2/": dial tcp: lookup podman.io on [::1]:53: read udp [::1]:41632->[::1]:53: read: connection refused
+run_cp2k.sh: line 79: 1680109 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-06-28 23:37:27
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_3
+============================================================
+▶ [#3] END    at 2025-06-28 23:37:27 (exit code: 125)
+----- Last 5 lines of simulation.input.log -----
+Trying to pull podman.io/cp2k/cp2k:latest...
+Error: initializing source docker://podman.io/cp2k/cp2k:latest: pinging container registry podman.io: Get "https://podman.io/v2/": dial tcp: lookup podman.io on [::1]:53: read udp [::1]:41778->[::1]:53: read: connection refused
+run_cp2k.sh: line 79: 1680186 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#3] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#4] START  at 2025-06-28 23:37:30
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_4
+============================================================
+▶ [#4] END    at 2025-06-28 23:37:31 (exit code: 125)
+----- Last 5 lines of simulation.input.log -----
+Trying to pull podman.io/cp2k/cp2k:latest...
+Error: initializing source docker://podman.io/cp2k/cp2k:latest: pinging container registry podman.io: Get "https://podman.io/v2/": dial tcp: lookup podman.io on [::1]:53: read udp [::1]:56677->[::1]:53: read: connection refused
+run_cp2k.sh: line 79: 1680263 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#4] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#5] START  at 2025-06-28 23:37:34
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_5
+============================================================
+▶ [#5] END    at 2025-06-28 23:37:34 (exit code: 125)
+----- Last 5 lines of simulation.input.log -----
+Trying to pull podman.io/cp2k/cp2k:latest...
+Error: initializing source docker://podman.io/cp2k/cp2k:latest: pinging container registry podman.io: Get "https://podman.io/v2/": dial tcp: lookup podman.io on [::1]:53: read udp [::1]:60487->[::1]:53: read: connection refused
+run_cp2k.sh: line 79: 1680338 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#5] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#6] START  at 2025-06-28 23:37:37
+▶ Restart file: BAMOF_BMI-1.restart
+▶ Kill interval: 1200s
+▶ Container name: cp2k_run_6
+============================================================
+▶ [#6] END    at 2025-06-28 23:37:37 (exit code: 125)
+----- Last 5 lines of simulation.input.log -----
+Trying to pull podman.io/cp2k/cp2k:latest...
+Error: initializing source docker://podman.io/cp2k/cp2k:latest: pinging container registry podman.io: Get "https://podman.io/v2/": dial tcp: lookup podman.io on [::1]:53: read udp [::1]:41888->[::1]:53: read: connection refused
+run_cp2k.sh: line 79: 1680417 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#6] Warning 없음 → 3초 후 재시작

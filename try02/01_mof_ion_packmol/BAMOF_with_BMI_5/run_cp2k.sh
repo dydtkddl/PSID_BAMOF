@@ -51,7 +51,7 @@ while true; do
   echo "$PASSWORD" | sudo -S podman run --name "${CONTAINER_NAME}" --rm \
     -v "${HOME}/cp2k/data":/opt/cp2k/data:Z \
     -v "${PWD}":/work:Z \
-    -w /work podman.io/cp2k/cp2k:latest \
+    -w /work docker.io/cp2k/cp2k:latest \
     mpirun -n 7 -genv OMP_NUM_THREADS=4 \
       cp2k -i "${RESTART_FILE}" \
            -o simulation.input.out \
