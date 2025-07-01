@@ -1,0 +1,29 @@
+============================================================
+▶ [#1] START  at 2025-06-30 23:09:26
+▶ Restart file: BAMOF_BMI_TFS_CLUSTER-1.restart
+▶ Kill interval: 2800s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-06-30 23:56:08 (exit code: 137)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+run_cp2k.sh: line 79: 2811380 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-06-30 23:56:11
+▶ Restart file: BAMOF_BMI_TFS_CLUSTER-1.restart
+▶ Kill interval: 2800s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#2] END    at 2025-06-30 23:57:31 (exit code: 0)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+run_cp2k.sh: line 79: 2840141 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#2] Warning 메시지 발견 – 루프 종료
+✅ 전체 완료. 총 반복 횟수: 2
