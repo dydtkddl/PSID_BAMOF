@@ -8,26 +8,28 @@
  &GLOBAL
    PRINT_LEVEL MEDIUM
    PROJECT "BAMOF_NEB"
-     RUN_TYPE ENERGY
+     RUN_TYPE BAND 
    SAVE_MEM T
  &END GLOBAL
  &MOTION
-   &NEB
-    NBRANCH       1          ! 단일 경로
-    NIMAGE        8          ! 총 이미지 수 (초기+최종 포함)
-    SPRING        0.1        ! 스프링 상수 (Ha/Å² 단위)
-    &CLIMB
-      ENABLED     .TRUE.     ! Climbing Image 활성화 (안장점 정밀탐색)
-    &END CLIMB
-  &END NEB
+&BAND
+  NUMBER_OF_REPLICA 8       ! initial + final + 6 images
+  K_SPRING           0.10
+  BAND_TYPE          CI-NEB  ! climbing‐image variant
+  &REPLICA            ! only initial and final here
+    COORD_FILE_NAME 00.xyz
+  &END REPLICA
+  &REPLICA
+    COORD_FILE_NAME 07.xyz
+  &END REPLICA
+  &OPTIMIZE_BAND     ! optimizer for the band
+    OPT_TYPE DIIS
+    &DIIS
+      MAX_STEPS 1000
+    &END DIIS
+  &END OPTIMIZE_BAND
+&END BAND 
   
-  &PRINT
-    &NEB
-      &ENERGY
-        ADD_LAST .TRUE.
-      &END ENERGY
-    &END NEB
-  &END PRINT
  &END MOTION
  &FORCE_EVAL
    METHOD QS
@@ -94,10 +96,6 @@
        PERIODIC XYZ
        MULTIPLE_UNIT_CELL 1 1 1
      &END CELL
-         &TOPOLOGY
-      COORD_FILE_NAME  ${IMAGE}.xyz
-      COORD_FILE_FORMAT XYZ
-    &END TOPOLOGY
      &KIND "Ti"
        BASIS_SET "DZVP-MOLOPT-SR-GTH"
        ELEMENT "Ti"
@@ -184,6 +182,9 @@
  1.8615608000000000E-001 0
        &END POTENTIAL
      &END KIND
-
+    &TOPOLOGY
+      COORD_FILE_NAME   00.xyz
+      COORD_FILE_FORMAT XYZ
+    &END TOPOLOGY
    &END SUBSYS
  &END FORCE_EVAL
