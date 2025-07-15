@@ -1,0 +1,30 @@
+
+ Possible matches for unknown subsection 
+
+ FIX
+
+   subsection COORD in section %__ROOT__%MOTION%BAND%REPLICA score:  105
+   subsection VELOCITY in section %__ROOT__%MOTION%BAND%REPLICA score:  103
+   keyword COLLECTIVE in section %__ROOT__%MOTION%BAND%REPLICA score:  101
+   enum FIT in section %__ROOT__%MOTION%GEO_OPT%CG%LINE_SEARCH for keyword TYPE score:  99
+   enum FIT in section %__ROOT__%MOTION%GEO_OPT%TRANSITION_STATE%DIMER%ROT_OPT%CG%LINE_SEARCH for keyword TYPE score:  99
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/                unknown subsection FIX of section REPLICA             *
+ *    |                                                                        *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                               input/input_parsing.F:192 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            5 section_vals_parse
+            4 section_vals_parse
+            3 section_vals_parse
+            2 section_vals_parse
+            1 read_input

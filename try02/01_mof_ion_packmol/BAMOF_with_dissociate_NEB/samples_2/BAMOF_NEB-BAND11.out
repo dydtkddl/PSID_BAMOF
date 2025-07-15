@@ -611,3 +611,116 @@
  *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
 
     40 Broy./Diag. 0.15E+00   10.8     0.01587771      -732.6800736749  3.99E-05
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    41 Broy./Diag. 0.15E+00   10.8     0.01063785      -732.6802079200 -1.34E-04
+
+ *******************************************************************************
+ **                 BAND EVALUATION OF ENERGIES AND FORCES                    **
+ *******************************************************************************
+ **                                                                           **
+ **                                                                           **
+ ** Replica Env Nr. :    3              Replica Band Nr. :   11               **
+ ** Band  Step  Nr. :    1                                                    **
+ *******************************************************************************
+
+ Number of electrons:                                                        674
+ Number of occupied orbitals:                                                374
+ Number of molecular orbitals:                                               437
+
+ Number of orbital functions:                                               1844
+ Number of independent orbital functions:                                   1844
+
+ Parameters for the always stable predictor-corrector (ASPC) method:
+
+  ASPC order: 3
+
+  B(1) =   3.000000
+  B(2) =  -3.428571
+  B(3) =   1.928571
+  B(4) =  -0.571429
+  B(5) =   0.071429
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+
+ Extrapolation method: ASPC
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     1 Broy./Diag. 0.15E+00    9.3  7971.42737870      -654.6679202904 -6.55E+02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     2 Broy./Diag. 0.15E+00   13.0  4082.28062723      -434.4675249882  2.20E+02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     3 Broy./Diag. 0.15E+00   13.1   591.79326416      -614.5644977638 -1.80E+02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     4 Broy./Diag. 0.15E+00   13.4   366.49201138      -681.8834068200 -6.73E+01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     5 Broy./Diag. 0.15E+00   13.3   268.32311938      -726.9679388100 -4.51E+01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     6 Broy./Diag. 0.15E+00   13.2   285.77369727      -724.4492963084  2.52E+00
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     7 Broy./Diag. 0.15E+00   12.3   125.72828706      -731.5271543929 -7.08E+00
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     8 Broy./Diag. 0.15E+00   11.9    18.11357580      -731.3698967076  1.57E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+     9 Broy./Diag. 0.15E+00   12.5    14.30263089      -734.3320354323 -2.96E+00
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    10 Broy./Diag. 0.15E+00   12.6   143.56850960      -734.2836977285  4.83E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    11 Broy./Diag. 0.15E+00   12.0    21.93034581      -734.7096551424 -4.26E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    12 Broy./Diag. 0.15E+00   12.0    54.55995899      -733.5649409080  1.14E+00
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    13 Broy./Diag. 0.15E+00   12.1     6.47415110      -732.8699083011  6.95E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    14 Broy./Diag. 0.15E+00   11.1    10.46082239      -732.5288287615  3.41E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    15 Broy./Diag. 0.15E+00   11.0     4.51098876      -732.4092398342  1.20E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    16 Broy./Diag. 0.15E+00   11.5     1.27683036      -732.5278612000 -1.19E-01
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    17 Broy./Diag. 0.15E+00   11.2     5.42614450      -732.6105841675 -8.27E-02
+
+ *** WARNING in fm/cp_fm_elpa.F:521 :: Setting real_kernel for ELPA failed ***
+
+    18 Broy./Diag. 0.15E+00   10.8     2.76796057      -732.7299809731 -1.19E-01
