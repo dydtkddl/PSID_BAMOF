@@ -1,0 +1,1125 @@
+============================================================
+▶ [#1] START  at 2025-07-15 23:28:09
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-07-15 23:40:37 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1353828 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-07-15 23:40:40
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#2] END    at 2025-07-15 23:50:04 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1360534 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-07-15 23:50:07
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_3
+============================================================
+▶ [#3] END    at 2025-07-15 23:59:26 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1365792 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#3] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#4] START  at 2025-07-15 23:59:29
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_4
+============================================================
+▶ [#4] END    at 2025-07-16 00:08:48 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1371505 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#4] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#5] START  at 2025-07-16 00:08:51
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_5
+============================================================
+▶ [#5] END    at 2025-07-16 00:18:13 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1376838 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#5] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#6] START  at 2025-07-16 00:18:16
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_6
+============================================================
+▶ [#6] END    at 2025-07-16 00:27:38 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1382362 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#6] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#7] START  at 2025-07-16 00:27:41
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_7
+============================================================
+▶ [#7] END    at 2025-07-16 00:37:02 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1387883 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#7] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#8] START  at 2025-07-16 00:37:05
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_8
+============================================================
+▶ [#8] END    at 2025-07-16 00:46:27 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1393327 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#8] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#9] START  at 2025-07-16 00:46:30
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_9
+============================================================
+▶ [#9] END    at 2025-07-16 00:55:51 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1398405 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#9] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#10] START  at 2025-07-16 00:55:54
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_10
+============================================================
+▶ [#10] END    at 2025-07-16 01:05:15 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1403946 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#10] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#11] START  at 2025-07-16 01:05:18
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_11
+============================================================
+▶ [#11] END    at 2025-07-16 01:14:39 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1409418 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#11] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#12] START  at 2025-07-16 01:14:42
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_12
+============================================================
+▶ [#12] END    at 2025-07-16 01:24:03 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1414489 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#12] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#13] START  at 2025-07-16 01:24:06
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_13
+============================================================
+▶ [#13] END    at 2025-07-16 01:33:26 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1419715 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#13] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#14] START  at 2025-07-16 01:33:29
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_14
+============================================================
+▶ [#14] END    at 2025-07-16 01:42:50 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1425493 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#14] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#15] START  at 2025-07-16 01:42:53
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_15
+============================================================
+▶ [#15] END    at 2025-07-16 01:52:18 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1430548 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#15] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#16] START  at 2025-07-16 01:52:21
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_16
+============================================================
+▶ [#16] END    at 2025-07-16 02:01:37 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1435827 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#16] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#17] START  at 2025-07-16 02:01:40
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_17
+============================================================
+▶ [#17] END    at 2025-07-16 02:11:05 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1441578 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#17] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#18] START  at 2025-07-16 02:11:08
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_18
+============================================================
+▶ [#18] END    at 2025-07-16 02:20:31 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1446787 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#18] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#19] START  at 2025-07-16 02:20:34
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_19
+============================================================
+▶ [#19] END    at 2025-07-16 02:29:53 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1451858 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#19] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#20] START  at 2025-07-16 02:29:56
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_20
+============================================================
+▶ [#20] END    at 2025-07-16 02:39:17 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1457561 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#20] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#21] START  at 2025-07-16 02:39:20
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_21
+============================================================
+▶ [#21] END    at 2025-07-16 02:48:41 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1462839 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#21] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#22] START  at 2025-07-16 02:48:44
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_22
+============================================================
+▶ [#22] END    at 2025-07-16 02:58:04 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1467868 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#22] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#23] START  at 2025-07-16 02:58:07
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_23
+============================================================
+▶ [#23] END    at 2025-07-16 03:07:24 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1473667 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#23] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#24] START  at 2025-07-16 03:07:27
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_24
+============================================================
+▶ [#24] END    at 2025-07-16 03:16:47 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1478908 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#24] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#25] START  at 2025-07-16 03:16:50
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_25
+============================================================
+▶ [#25] END    at 2025-07-16 03:26:11 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1484022 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#25] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#26] START  at 2025-07-16 03:26:14
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_26
+============================================================
+▶ [#26] END    at 2025-07-16 03:35:34 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1489718 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#26] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#27] START  at 2025-07-16 03:35:37
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_27
+============================================================
+▶ [#27] END    at 2025-07-16 03:45:04 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1494977 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#27] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#28] START  at 2025-07-16 03:45:07
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_28
+============================================================
+▶ [#28] END    at 2025-07-16 03:54:27 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1500213 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#28] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#29] START  at 2025-07-16 03:54:30
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_29
+============================================================
+▶ [#29] END    at 2025-07-16 04:03:52 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1505320 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#29] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#30] START  at 2025-07-16 04:03:55
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_30
+============================================================
+▶ [#30] END    at 2025-07-16 04:13:16 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1511035 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#30] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#31] START  at 2025-07-16 04:13:19
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_31
+============================================================
+▶ [#31] END    at 2025-07-16 04:22:41 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1516269 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#31] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#32] START  at 2025-07-16 04:22:44
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_32
+============================================================
+▶ [#32] END    at 2025-07-16 04:32:08 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1521376 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#32] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#33] START  at 2025-07-16 04:32:11
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_33
+============================================================
+▶ [#33] END    at 2025-07-16 04:41:30 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1527316 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#33] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#34] START  at 2025-07-16 04:41:33
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_34
+============================================================
+▶ [#34] END    at 2025-07-16 04:50:56 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1532383 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#34] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#35] START  at 2025-07-16 04:50:59
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_35
+============================================================
+▶ [#35] END    at 2025-07-16 05:00:21 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1537461 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#35] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#36] START  at 2025-07-16 05:00:24
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_36
+============================================================
+▶ [#36] END    at 2025-07-16 05:09:43 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1543377 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#36] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#37] START  at 2025-07-16 05:09:46
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_37
+============================================================
+▶ [#37] END    at 2025-07-16 05:19:08 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1548479 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#37] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#38] START  at 2025-07-16 05:19:11
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_38
+============================================================
+▶ [#38] END    at 2025-07-16 05:28:34 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1553663 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#38] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#39] START  at 2025-07-16 05:28:37
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_39
+============================================================
+▶ [#39] END    at 2025-07-16 05:37:53 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1559377 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#39] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#40] START  at 2025-07-16 05:37:56
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_40
+============================================================
+▶ [#40] END    at 2025-07-16 05:47:12 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1564457 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#40] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#41] START  at 2025-07-16 05:47:15
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_41
+============================================================
+▶ [#41] END    at 2025-07-16 05:56:41 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1569697 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#41] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#42] START  at 2025-07-16 05:56:44
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_42
+============================================================
+▶ [#42] END    at 2025-07-16 06:06:04 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1575237 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#42] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#43] START  at 2025-07-16 06:06:07
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_43
+============================================================
+▶ [#43] END    at 2025-07-16 06:15:32 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1580691 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#43] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#44] START  at 2025-07-16 06:15:35
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_44
+============================================================
+▶ [#44] END    at 2025-07-16 06:24:56 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1585771 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#44] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#45] START  at 2025-07-16 06:24:59
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_45
+============================================================
+▶ [#45] END    at 2025-07-16 06:34:21 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1590842 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#45] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#46] START  at 2025-07-16 06:34:24
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_46
+============================================================
+▶ [#46] END    at 2025-07-16 06:43:45 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1596766 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#46] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#47] START  at 2025-07-16 06:43:48
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_47
+============================================================
+▶ [#47] END    at 2025-07-16 06:53:11 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1601836 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#47] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#48] START  at 2025-07-16 06:53:14
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_48
+============================================================
+▶ [#48] END    at 2025-07-16 07:02:36 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1607070 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#48] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#49] START  at 2025-07-16 07:02:39
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_49
+============================================================
+▶ [#49] END    at 2025-07-16 07:12:01 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1612808 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#49] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#50] START  at 2025-07-16 07:12:04
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_50
+============================================================
+▶ [#50] END    at 2025-07-16 07:21:21 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1618074 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#50] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#51] START  at 2025-07-16 07:21:24
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_51
+============================================================
+▶ [#51] END    at 2025-07-16 07:30:48 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1623160 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#51] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#52] START  at 2025-07-16 07:30:51
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_52
+============================================================
+▶ [#52] END    at 2025-07-16 07:40:04 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1628904 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#52] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#53] START  at 2025-07-16 07:40:07
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_53
+============================================================
+▶ [#53] END    at 2025-07-16 07:49:27 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1634186 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#53] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#54] START  at 2025-07-16 07:49:30
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_54
+============================================================
+▶ [#54] END    at 2025-07-16 07:58:55 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1639262 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#54] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#55] START  at 2025-07-16 07:58:58
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_55
+============================================================
+▶ [#55] END    at 2025-07-16 08:08:21 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1644987 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#55] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#56] START  at 2025-07-16 08:08:24
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_56
+============================================================
+▶ [#56] END    at 2025-07-16 08:17:45 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1650256 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#56] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#57] START  at 2025-07-16 08:17:48
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_57
+============================================================
+▶ [#57] END    at 2025-07-16 08:27:07 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1655365 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#57] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#58] START  at 2025-07-16 08:27:10
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_58
+============================================================
+▶ [#58] END    at 2025-07-16 08:36:32 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1661097 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#58] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#59] START  at 2025-07-16 08:36:35
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_59
+============================================================
+▶ [#59] END    at 2025-07-16 08:45:55 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1666375 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#59] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#60] START  at 2025-07-16 08:45:58
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_60
+============================================================
+▶ [#60] END    at 2025-07-16 08:55:19 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1671457 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#60] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#61] START  at 2025-07-16 08:55:22
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_61
+============================================================
+▶ [#61] END    at 2025-07-16 09:04:40 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1677163 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#61] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#62] START  at 2025-07-16 09:04:43
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_62
+============================================================
+▶ [#62] END    at 2025-07-16 09:14:03 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1682480 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#62] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#63] START  at 2025-07-16 09:14:06
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_63
+============================================================
+▶ [#63] END    at 2025-07-16 09:23:28 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1687707 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#63] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#64] START  at 2025-07-16 09:23:31
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_64
+============================================================
+▶ [#64] END    at 2025-07-16 09:32:49 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1692781 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#64] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#65] START  at 2025-07-16 09:32:52
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_65
+============================================================
+▶ [#65] END    at 2025-07-16 09:42:15 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1698526 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#65] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#66] START  at 2025-07-16 09:42:18
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_66
+============================================================
+▶ [#66] END    at 2025-07-16 09:51:43 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1703750 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#66] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#67] START  at 2025-07-16 09:51:46
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_67
+============================================================
+▶ [#67] END    at 2025-07-16 10:01:05 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1708822 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#67] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#68] START  at 2025-07-16 10:01:08
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_68
+============================================================
+▶ [#68] END    at 2025-07-16 10:10:31 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1714747 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#68] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#69] START  at 2025-07-16 10:10:34
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_69
+============================================================
+▶ [#69] END    at 2025-07-16 10:19:54 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1719824 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#69] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#70] START  at 2025-07-16 10:19:57
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_70
+============================================================
+▶ [#70] END    at 2025-07-16 10:29:21 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1724920 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#70] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#71] START  at 2025-07-16 10:29:24
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_71
+============================================================
+▶ [#71] END    at 2025-07-16 10:38:48 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1730831 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#71] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#72] START  at 2025-07-16 10:38:51
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_72
+============================================================
+▶ [#72] END    at 2025-07-16 10:48:13 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1735898 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#72] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#73] START  at 2025-07-16 10:48:16
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_73
+============================================================
+▶ [#73] END    at 2025-07-16 10:57:40 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1741152 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#73] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#74] START  at 2025-07-16 10:57:43
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_74
+============================================================
+============================================================
+▶ [#1] START  at 2025-07-16 11:08:06
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 20000s
+▶ Container name: cp2k_run_1
+============================================================
+============================================================
+▶ [#1] START  at 2025-07-16 11:08:31
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 20000s
+▶ Container name: cp2k_run_1
+============================================================
+============================================================
+▶ [#1] START  at 2025-07-16 11:34:37
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 20000s
+▶ Container name: cp2k_run_1
+============================================================
+============================================================
+▶ [#1] START  at 2025-07-16 11:40:06
+▶ Restart file: BAMOF_EMIM-1.restart
+▶ Kill interval: 122000s
+▶ Container name: cp2k_run_1
+============================================================
