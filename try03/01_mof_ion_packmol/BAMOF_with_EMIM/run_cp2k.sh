@@ -14,7 +14,7 @@ fi
 
 RESTART_FILE="$1"
 KILL_INTERVAL="${2:-1800}"   # default 1800 seconds (30 min)
-PASSWORD="9582"
+PASSWORD="psid1234!@"
 ITER=0
 
 # Ensure any naked Ctrl+C also kills leftover watchdogs
@@ -35,24 +35,24 @@ while true; do
   echo "============================================================"
 
   # Remove any stale container with the same name
-  echo "$PASSWORD" | sudo -S podman rm -f "${CONTAINER_NAME}" &>/dev/null || true
+  echo "$PASSWORD" | sudo -S docker rm -f "${CONTAINER_NAME}" &>/dev/null || true
 
   # 1) Watchdog: every $KILL_INTERVAL seconds, kill only this container
   (
     while true; do
       sleep "${KILL_INTERVAL}"
-      echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"
-      echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &>/dev/null
+      echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"
+      echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &>/dev/null
     done
   ) &> /dev/null &
   WD_PID=$!
 
   # 2) Run the container (blocking)
-  echo "$PASSWORD" | sudo -S podman run --name "${CONTAINER_NAME}" --rm \
+  echo "$PASSWORD" | sudo -S docker run --name "${CONTAINER_NAME}" --rm \
     -v "${HOME}/cp2k/data":/opt/cp2k/data:Z \
     -v "${PWD}":/work:Z \
     -w /work docker.io/cp2k/cp2k:latest \
-    mpirun -n 7 -genv OMP_NUM_THREADS=4 \
+    mpirun -n 10 -genv OMP_NUM_THREADS=4 \
       cp2k -i "${RESTART_FILE}" \
            -o simulation.input.out \
     > simulation.input.log 2>&1
