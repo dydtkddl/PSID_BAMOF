@@ -1,0 +1,81 @@
+============================================================
+▶ [#1] START  at 2025-07-15 23:27:41
+▶ Restart file: MIL125_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-07-15 23:27:44 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+[sudo] password for yongsang: [sudo] password for yongsang: 
+sudo: no password was provided
+sudo: 1 incorrect password attempt
+run_cp2k_psid.sh: line 79: 615208 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-07-15 23:27:47
+▶ Restart file: MIL125_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#2] END    at 2025-07-15 23:27:50 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+[sudo] password for yongsang: [sudo] password for yongsang: 
+sudo: no password was provided
+sudo: 1 incorrect password attempt
+run_cp2k_psid.sh: line 79: 615235 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-07-15 23:27:53
+▶ Restart file: MIL125_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_3
+============================================================
+▶ [#3] END    at 2025-07-15 23:27:57 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+[sudo] password for yongsang: [sudo] password for yongsang: 
+sudo: no password was provided
+sudo: 1 incorrect password attempt
+run_cp2k_psid.sh: line 79: 615255 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#3] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#4] START  at 2025-07-15 23:28:00
+▶ Restart file: MIL125_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_4
+============================================================
+▶ [#4] END    at 2025-07-15 23:28:01 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+sudo: docker: command not found
+run_cp2k_psid.sh: line 79: 615378 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → docker kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S docker kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+tail: cannot open 'simulation.input.out' for reading: No such file or directory
+▶ [#4] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#1] START  at 2025-07-15 23:28:22
+▶ Restart file: MIL125_EMIM-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-07-16 01:19:41 (exit code: 0)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+run_cp2k_psid.sh: line 79: 615705 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 메시지 발견 – 루프 종료
+✅ 전체 완료. 총 반복 횟수: 1
