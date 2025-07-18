@@ -1,0 +1,20 @@
+============================================================
+▶ [#1] START  at 2025-07-18 16:37:06
+▶ Restart file: MIL125_EMIM_TFSI_dissociate-1.restart
+▶ Kill interval: 20000s
+▶ Container name: cp2k_run_1
+============================================================
+============================================================
+▶ [#1] START  at 2025-07-18 16:37:34
+▶ Restart file: MIL125_EMIM_TFSI_dissociate-1.restart
+▶ Kill interval: 20000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-07-18 17:29:03 (exit code: 0)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+run_cp2k.sh: line 79: 288291 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 메시지 발견 – 루프 종료
