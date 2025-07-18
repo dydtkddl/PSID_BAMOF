@@ -1,5 +1,5 @@
  # Version information for this restart file 
- # current date 2025-07-16 14:39:12.071
+ # current date 2025-07-16 14:39:11.973
  # current working dir /work
  # Program compiled at                              Tue Jan 14 12:16:35 UTC 2025
  # Program compiled on                                              7282285e16d1
@@ -240,8 +240,6 @@
        H  1.4045737837106906E+000  4.8347496580506535E+000  1.5827921214216882E+001
        H  2.7116291294536250E+000  2.7733592586084983E+000  1.4603713456597360E+001
        H  4.0075696677913477E+000  1.6290446003746575E+000  1.2837583829802863E+001
-       UNIT "angstrom"
-       SCALED F
      &END COORD
      &KIND "Ti"
        BASIS_SET "DZVP-MOLOPT-SR-GTH"
