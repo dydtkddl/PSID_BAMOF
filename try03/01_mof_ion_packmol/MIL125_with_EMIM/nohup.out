@@ -79,3 +79,8 @@ done ) &> /dev/null
 -----------------------------------------------
 ▶ [#1] Warning 메시지 발견 – 루프 종료
 ✅ 전체 완료. 총 반복 횟수: 1
+[1] Created temp folder: /mnt/d/PSID_BAMOF/try03/01_mof_ion_packmol/MIL125_with_EMIM/MIL125_EMIM-pos-1_3x3x3
+[2] Converting 112 frames in parallel using 16 CPUs...
+  File "/home/dydtkddhkdwk/d/PSID_SIMULATION_TOOLS/make_pymol_trj_from_xyz.py", line 70
+    pdb_frames = pool.map(convert_xyz_to_pdb_with_obabel, xyz_frames)
+TabError: inconsistent use of tabs and spaces in indentation
