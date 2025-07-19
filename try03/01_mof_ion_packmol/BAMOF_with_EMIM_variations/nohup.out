@@ -555,3 +555,653 @@ exactly when Open MPI kills them.
 ▶ Kill interval: 200000s
 ▶ Container name: cp2k_run_1
 ============================================================
+▶ Entering EMIM01
+🚀 Running: sh run_cp2k_docker.sh EMIM01-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:19:12
+▶ Restart file: EMIM01-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ Entering EMIM04
+🚀 Running: sh run_cp2k.sh EMIM04-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:21:17
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ Entering EMIM07
+🚀 Running: sh run_cp2k.sh EMIM07-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:20:58
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all1.sh: line 4: 530158 Killed                  sh run_cp2k_docker.sh "$restart_file" 200000
+▶ Entering EMIM02
+🚀 Running: sh run_cp2k_docker.sh EMIM02-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:21:42
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all1.sh: line 4: 533250 Killed                  sh run_cp2k_docker.sh "$restart_file" 200000
+▶ Entering EMIM03
+🚀 Running: sh run_cp2k_docker.sh EMIM03-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:21:43
+▶ Restart file: EMIM03-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all1.sh: line 4: 533899 Killed                  sh run_cp2k_docker.sh "$restart_file" 200000
+▶ Entering EMIM01
+🚀 Running: sh run_cp2k.sh EMIM01-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:27:49
+▶ Restart file: EMIM01-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-07-18 23:33:34 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 385416 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-07-18 23:33:37
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#1] END    at 2025-07-18 23:33:11 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1185321 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-07-18 23:33:14
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_2
+============================================================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ▶ [#2] END    at 2025-07-18 23:45:19 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 1192860 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-07-18 23:45:22
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_3
+============================================================
+▶ [#2] END    at 2025-07-18 23:52:31 (exit code: 1)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+run_cp2k.sh: line 79: 943215 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-07-18 23:52:34
+▶ Restart file: EMIM01-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_3
+============================================================
+run_all1.sh: line 4: 934323 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM02
+🚀 Running: sh run_cp2k.sh EMIM02-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 00:00:04
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all1.sh: line 4: 958264 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM03
+🚀 Running: sh run_cp2k.sh EMIM03-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 00:00:06
+▶ Restart file: EMIM03-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all1.sh: line 4: 958343 Killed                  sh run_cp2k.sh "$restart_file" 200000
+run_all2.sh: line 4: 385386 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM05
+🚀 Running: sh run_cp2k.sh EMIM05-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:56:02
+▶ Restart file: EMIM05-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all2.sh: line 4: 404713 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM06
+🚀 Running: sh run_cp2k.sh EMIM06-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:56:03
+▶ Restart file: EMIM06-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all2.sh: line 4: 404801 Killed                  sh run_cp2k.sh "$restart_file" 200000
+run_all3.sh: line 4: 1185234 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM08
+🚀 Running: sh run_cp2k.sh EMIM08-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:55:13
+▶ Restart file: EMIM08-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all3.sh: line 4: 1205788 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM09
+🚀 Running: sh run_cp2k.sh EMIM09-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-18 23:55:15
+▶ Restart file: EMIM09-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all3.sh: line 4: 1206659 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM01
+🚀 Running: sh run_cp2k.sh EMIM01-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 00:02:12
+▶ Restart file: EMIM01-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all1.sh: line 4: 959294 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM02
+🚀 Running: sh run_cp2k.sh EMIM02-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 00:05:41
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all1.sh: line 4: 962767 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM03
+🚀 Running: sh run_cp2k.sh EMIM03-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 00:05:42
+▶ Restart file: EMIM03-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_all1.sh: line 4: 962868 Killed                  sh run_cp2k.sh "$restart_file" 200000
+▶ Entering EMIM01
+🚀 Running: sh run_cp2k.sh EMIM01-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 00:40:48
+▶ Restart file: EMIM01-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ Entering EMIM04
+🚀 Running: sh run_cp2k.sh EMIM04-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 00:36:52
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ Entering EMIM07
+🚀 Running: sh run_cp2k.sh EMIM07-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 00:36:15
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+▶ [#1] END    at 2025-07-19 02:48:05 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1217606 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-07-19 02:48:08
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#1] END    at 2025-07-19 02:49:29 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 414415 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-07-19 02:49:32
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#1] END    at 2025-07-19 02:57:15 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 986232 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-07-19 02:57:18
+▶ Restart file: EMIM01-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#2] END    at 2025-07-19 04:33:25 (exit code: 0)
+----- Last 5 lines of simulation.input.log -----
+SIRIUS 7.6.1, git hash: https://api.github.com/repos/electronic-structure/SIRIUS/git/ref/tags/v7.6.1
+run_cp2k.sh: line 79: 1071871 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#2] Warning 메시지 발견 – 루프 종료
+✅ 전체 완료. 총 반복 횟수: 2
+▶ Entering EMIM02
+🚀 Running: sh run_cp2k.sh EMIM02-1.restart 200000
+============================================================
+▶ [#1] START  at 2025-07-19 04:33:25
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_1
+============================================================
+run_cp2k.sh: line 66: 1296002 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+▶ [#2] END    at 2025-07-19 04:59:52 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+-----------------------------------------------
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-07-19 04:59:55
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_3
+============================================================
+run_cp2k.sh: line 66: 473137 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+▶ [#2] END    at 2025-07-19 05:03:12 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+-----------------------------------------------
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-07-19 05:03:15
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_3
+============================================================
+▶ [#1] END    at 2025-07-19 06:52:15 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1132639 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#1] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#2] START  at 2025-07-19 06:52:18
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_2
+============================================================
+▶ [#3] END    at 2025-07-19 07:11:20 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1375396 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#3] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#4] START  at 2025-07-19 07:11:23
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_4
+============================================================
+▶ [#3] END    at 2025-07-19 07:14:52 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 533266 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#3] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#4] START  at 2025-07-19 07:14:55
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_4
+============================================================
+▶ [#2] END    at 2025-07-19 09:05:52 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1218265 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#2] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#3] START  at 2025-07-19 09:05:55
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_3
+============================================================
+run_cp2k.sh: line 66: 1453966 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+▶ [#4] END    at 2025-07-19 09:22:53 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+-----------------------------------------------
+▶ [#4] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#5] START  at 2025-07-19 09:22:56
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_5
+============================================================
+run_cp2k.sh: line 66: 591820 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+▶ [#4] END    at 2025-07-19 09:25:43 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+-----------------------------------------------
+▶ [#4] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#5] START  at 2025-07-19 09:25:46
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_5
+============================================================
+▶ [#3] END    at 2025-07-19 11:19:31 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1303486 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#3] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#4] START  at 2025-07-19 11:19:34
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_4
+============================================================
+▶ [#5] END    at 2025-07-19 11:33:47 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1532265 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#5] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#6] START  at 2025-07-19 11:33:50
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_6
+============================================================
+▶ [#5] END    at 2025-07-19 11:35:29 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 650336 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#5] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#6] START  at 2025-07-19 11:35:32
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_6
+============================================================
+▶ [#4] END    at 2025-07-19 13:34:46 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1388081 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#4] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#5] START  at 2025-07-19 13:34:49
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_5
+============================================================
+run_cp2k.sh: line 66: 1610945 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+▶ [#6] END    at 2025-07-19 13:44:19 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+-----------------------------------------------
+▶ [#6] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#7] START  at 2025-07-19 13:44:22
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_7
+============================================================
+run_cp2k.sh: line 66: 708785 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+▶ [#6] END    at 2025-07-19 13:45:31 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+-----------------------------------------------
+▶ [#6] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#7] START  at 2025-07-19 13:45:34
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_7
+============================================================
+▶ [#5] END    at 2025-07-19 15:51:07 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1474193 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#5] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#6] START  at 2025-07-19 15:51:10
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_6
+============================================================
+▶ [#7] END    at 2025-07-19 15:54:36 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 765249 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#7] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#8] START  at 2025-07-19 15:54:39
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_8
+============================================================
+▶ [#7] END    at 2025-07-19 15:54:50 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1688816 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#7] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#8] START  at 2025-07-19 15:54:53
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_8
+============================================================
+▶ [#6] END    at 2025-07-19 18:05:57 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1559907 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#6] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#7] START  at 2025-07-19 18:06:00
+▶ Restart file: EMIM02-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_7
+============================================================
+▶ [#8] END    at 2025-07-19 18:03:21 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 821396 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#8] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#9] START  at 2025-07-19 18:03:24
+▶ Restart file: EMIM04-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_9
+============================================================
+▶ [#8] END    at 2025-07-19 18:05:30 (exit code: 9)
+----- Last 5 lines of simulation.input.log -----
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+run_cp2k.sh: line 79: 1766528 Terminated              ( while true; do
+    sleep "${KILL_INTERVAL}"; echo "▶ [watchdog] $(date '+%H:%M:%S') → podman kill ${CONTAINER_NAME}"; echo "$PASSWORD" | sudo -S podman kill "${CONTAINER_NAME}" &> /dev/null;
+done ) &> /dev/null
+-----------------------------------------------
+▶ [#8] Warning 없음 → 3초 후 재시작
+============================================================
+▶ [#9] START  at 2025-07-19 18:05:33
+▶ Restart file: EMIM07-1.restart
+▶ Kill interval: 200000s
+▶ Container name: cp2k_run_9
+============================================================
