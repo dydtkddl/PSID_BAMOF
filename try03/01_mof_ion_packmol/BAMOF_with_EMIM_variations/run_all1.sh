@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 대상 디렉토리 목록
-for dir in EMIM01 EMIM02 EMIM03; do
+for dir in EMIM02 EMIM03; do
   echo "▶ Entering $dir"
   cd "$dir" || { echo "❌ Failed to enter $dir"; exit 1; }
 
