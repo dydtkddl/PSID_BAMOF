@@ -52,7 +52,7 @@ while true; do
     -v "${HOME}/cp2k/data":/opt/cp2k/data:Z \
     -v "${PWD}":/work:Z \
     -w /work docker.io/cp2k/cp2k:latest \
-    mpirun -n 10 -genv OMP_NUM_THREADS=6 \
+    mpirun -n 8 -genv OMP_NUM_THREADS=4 \
       cp2k -i "${RESTART_FILE}" \
            -o simulation.input.out \
     > simulation.input.log 2>&1
