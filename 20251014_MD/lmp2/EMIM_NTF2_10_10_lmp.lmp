@@ -11,9 +11,9 @@ Untitled
 580 angle types
 700 dihedral types
 
- -0.0100000 14.99900000 xlo xhi
- -0.0200000 14.99800000 ylo yhi
- -0.0100000 14.99900000 zlo zhi
+ -0.0100000  14.9900000 xlo xhi
+ -0.0200000  14.9800000 ylo yhi
+ -0.0100000  14.9900000 zlo zhi
   0.0000000   0.0000000   0.0000000 xy xz yz
 
 Masses
