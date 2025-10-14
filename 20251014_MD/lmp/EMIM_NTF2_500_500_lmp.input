@@ -1,0 +1,89 @@
+units real
+atom_style full
+
+dimension 3
+boundary p p p
+
+bond_style hybrid harmonic
+angle_style hybrid harmonic
+dihedral_style hybrid multi/harmonic
+special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 0.5
+
+read_data EMIM_NTF2_500_500_lmp.lmp
+
+pair_style lj/cut/coul/long 9.0 9.0
+pair_modify tail yes
+kspace_style pppm 1e-8
+
+pair_coeff 1 1   0.0700000   3.5500000
+pair_coeff 2 2   0.0700000   3.5500000
+pair_coeff 3 3   0.0300000   2.4200000
+pair_coeff 4 4   0.0300000   2.4200000
+pair_coeff 5 5   0.0660000   3.5000000
+pair_coeff 6 6   0.0300000   2.5000000
+pair_coeff 7 7   0.1700000   3.2500000
+pair_coeff 8 8   0.0660000   3.5000000
+pair_coeff 9 9   0.0300000   2.5000000
+pair_coeff 10 10   0.0660000   3.5000000
+pair_coeff 11 11   0.0300000   2.5000000
+pair_coeff 12 12   0.1700000   3.2500000
+pair_coeff 13 13   0.2500000   3.5500000
+pair_coeff 14 14   0.2100000   2.9600000
+pair_coeff 15 15   0.0659990   3.5000000
+pair_coeff 16 16   0.0529995   2.9500000
+
+pair_modify mix geometric
+
+
+# ======================================================
+# Stage 1. Energy minimization
+# ======================================================
+minimize 1.0e-4 1.0e-6 100 1000
+reset_timestep 0
+
+# ======================================================
+# Stage 2. Initial velocities and NVT equilibration
+# ======================================================
+velocity all create 450.0 12345 dist gaussian rot yes
+fix mynvt all nvt temp 450.0 450.0 100.0
+
+thermo 200
+thermo_style custom step temp pe etotal press density
+
+run 5000  # short pre-equilibration
+
+# ======================================================
+# Stage 3. Box deformation & density monitoring
+# Target: density = 1.52 g/cm^3
+# ======================================================
+unfix mynvt
+fix mynvt all nvt temp 450.0 450.0 100.0
+fix mydef all deform 1 y erate -0.0001 z erate -0.0001
+variable rho equal density
+fix myhalt all halt 10 v_rho > 1.52 error continue
+
+thermo 500
+thermo_style custom step temp pe press density
+
+run 20000  # compression run until density reaches ~1.52
+
+# ======================================================
+# Stage 4. Release deformation & recenter
+# ======================================================
+unfix mydef
+unfix myhalt
+reset_timestep 0
+fix myrec all recenter NULL 0 0 units box shift all
+
+# ======================================================
+# Stage 5. Production NVT (2nd MD run)
+# ======================================================
+thermo 1000
+thermo_style custom step temp pe etotal press density
+run 10000
+
+# ======================================================
+# Stage 6. Final data output
+# ======================================================
+write_data EMIM_NTF2_equilibrated.data
+
