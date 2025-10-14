@@ -3,11 +3,11 @@ filetype pdb
 output EMIM_NTF2.pdb
 
 structure EMIM.pdb
-  number 500
-  inside cube 0. 0. 0. 80.
+  number 10
+  inside cube 0 0 0 15 
 end structure
 
 structure NTF2.pdb
-  number 500
-  inside cube 0. 0. 0. 80.
+  number 10
+  inside cube 0 0 0 15 
 end structure

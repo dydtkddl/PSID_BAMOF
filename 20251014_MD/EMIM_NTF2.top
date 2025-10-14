@@ -36,6 +36,6 @@
 Neat EMI NSC
 
 [ molecules]
-EMI  500
-NSC  500
+EMI  10 
+NSC  10
 
