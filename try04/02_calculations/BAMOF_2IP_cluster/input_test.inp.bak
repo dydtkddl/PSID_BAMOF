@@ -5,7 +5,7 @@
 ! Method: PBE-D3/DZVP-MOLOPT-SR-GTH, GPW, 640 Ry cutoff
 ! All parameters identical to try03 except:
 !   - 192 atoms (was 158)
-!   - 
+!   - ADDED_MOS 170 (was 100)
 !   - External XYZ file (was inline COORD)
 !   - Fresh input (was restart)
 ! ============================================================
@@ -62,17 +62,24 @@
     &SCF
       MAX_SCF 300
       EPS_SCF 5.0E-7
-    &OT
-      MINIMIZER DIIS
-      PRECONDITIONER FULL_ALL
-      ENERGY_GAP 0.01
-    &END OT
-    &OUTER_SCF
-      MAX_SCF 20
-      EPS_SCF 5.0E-7
-    &END OUTER_SCF
       SCF_GUESS ATOMIC
-      
+      ADDED_MOS 170
+      &DIAGONALIZATION T
+        ALGORITHM STANDARD
+      &END DIAGONALIZATION
+      &SMEAR T
+        METHOD FERMI_DIRAC
+        ELECTRONIC_TEMPERATURE 300
+      &END SMEAR
+      &MIXING T
+        METHOD BROYDEN_MIXING
+        ALPHA 0.05
+        NBUFFER 8
+      &END MIXING
+      &OUTER_SCF T
+        MAX_SCF 10
+        EPS_SCF 5.0E-7
+      &END OUTER_SCF
 
 
       &PRINT

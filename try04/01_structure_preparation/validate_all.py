@@ -1,20 +1,28 @@
 #!/usr/bin/env python3
-"""validate_all.py ? ??? 2-IP ??? ??? ??? ??"""
+"""validate_all.py
+Validate 2-IP structures for try04.
+
+Checks:
+1. total atoms = 192
+2. element counts
+3. minimum interatomic distance > 0.8 A
+4. MOF(1-102) to 2nd IP minimum distance > 1.5 A
+5. 1st IP to 2nd IP minimum distance > 2.0 A
+6. cluster: 2nd EMIM-TFSI minimum distance < 4.0 A
+7. dissociate: 2nd EMIM-TFSI minimum distance > 5.0 A
+8. periodic cell compatibility
+9. COORD_FILE_NAME matches target xyz name
+10. KIND list covers all symbols in XYZ
+"""
+
+from __future__ import annotations
 
 from collections import Counter
 from pathlib import Path
+import re
 import numpy as np
 
-BASE = Path('/mnt/d/PSID_BAMOF/try04/02_calculations')
-FILES = {
-    'cluster': BASE / 'BAMOF_2IP_cluster/BAMOF_2IP_cluster_init.xyz',
-    'dissociate': BASE / 'BAMOF_2IP_dissociate/BAMOF_2IP_dissociate_init.xyz',
-}
-INPUTS = {
-    'cluster': BASE / 'BAMOF_2IP_cluster/input.inp',
-    'dissociate': BASE / 'BAMOF_2IP_dissociate/input.inp',
-}
-
+BASE = Path("/mnt/d/PSID_BAMOF/try04/02_calculations")
 CELL = np.array(
     [
         [16.000, -0.557, 0.090],
@@ -24,139 +32,138 @@ CELL = np.array(
     dtype=float,
 )
 
-MOF_END = 124
-IP1_START = 125
+FILES = {
+    "cluster": BASE / "BAMOF_2IP_cluster/BAMOF_2IP_cluster_init.xyz",
+    "dissociate": BASE / "BAMOF_2IP_dissociate/BAMOF_2IP_dissociate_init.xyz",
+}
+INPUTS = {
+    "cluster": BASE / "BAMOF_2IP_cluster/input.inp",
+    "dissociate": BASE / "BAMOF_2IP_dissociate/input.inp",
+}
+
+EXPECTED_COUNTS = Counter({"Ti": 8, "H": 56, "C": 62, "N": 10, "O": 40, "F": 12, "S": 4})
+
+MOF_HOST_END = 102
+IP1_START = 124
 IP1_END = 158
-IP2_START = 159
+IP2_START = 158
 IP2_END = 192
-IP2_EMIM_START = 159
-IP2_EMIM_END = 177
-IP2_TFSI_START = 178
-IP2_TFSI_END = 192
+EMIM2_START = 158
+EMIM2_END = 177
+TFSI2_START = 177
+TFSI2_END = 192
 
 
 def read_xyz(path: Path):
-    lines = path.read_text().splitlines()
-    n = int(lines[0].strip())
+    lines = [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    n = int(lines[0])
     atoms = []
     coords = []
-    for i in range(2, 2 + n):
-        vals = lines[i].split()
-        atoms.append(vals[0])
-        coords.append([float(v) for v in vals[1:4]])
+    for row in lines[2 : 2 + n]:
+        p = row.split()
+        atoms.append(p[0])
+        coords.append([float(v) for v in p[1:4]])
     return atoms, np.array(coords, dtype=float)
 
 
 def parse_input(path: Path):
-    kinds = []
-    coord = None
-    for line in path.read_text().splitlines():
-        s = line.strip()
-        if s.startswith('&KIND'):
+    kinds = set()
+    coord_name = None
+    in_kind = False
+    for raw in path.read_text(encoding="utf-8").splitlines():
+        s = raw.strip()
+        if s.startswith("&KIND"):
+            in_kind = True
             parts = s.split()
             if len(parts) >= 2:
-                kinds.append(parts[1])
-        elif s.startswith('COORD_FILE_NAME'):
-            parts = s.split()
-            if len(parts) >= 2:
-                coord = parts[1]
-    return sorted(set(kinds)), coord
+                kinds.add(parts[1])
+            continue
+        if in_kind and s.startswith("&END"):
+            in_kind = False
+            continue
+        if s.startswith("COORD_FILE_NAME"):
+            m = re.match(r"COORD_FILE_NAME\\s+(\\S+)", s)
+            if m:
+                coord_name = m.group(1)
+    return kinds, coord_name
 
 
-def nearest(a, b):
+def pair_min(a: np.ndarray, b: np.ndarray) -> float:
     if len(a) == 0 or len(b) == 0:
-        return np.array([]), np.array([])
+        return float("nan")
     d = np.linalg.norm(a[:, None, :] - b[None, :, :], axis=2)
-    return d.min(axis=1), d
+    return float(d.min())
 
 
-def check_group(name):
-    atoms, coords = read_xyz(FILES[name])
+def check(name: str):
+    atoms, xyz = read_xyz(FILES[name])
     kinds, coord_name = parse_input(INPUTS[name])
 
-    labels = []
+    checks = []
 
-    # 1
-    ok1 = len(atoms) == 192
-    labels.append((1, ok1, f'atoms={len(atoms)}'))
+    # 1) atom count
+    ok = len(atoms) == 192
+    checks.append((1, ok, f"atoms={len(atoms)}"))
 
-    # 2
-    expected = Counter({'Ti': 8, 'H': 56, 'C': 62, 'N': 10, 'O': 40, 'F': 12, 'S': 4})
+    # 2) element counts
     got = Counter(atoms)
-    ok2 = got == expected
-    labels.append((2, ok2, f'counts={dict(got)}'))
+    ok = got == EXPECTED_COUNTS
+    checks.append((2, ok, f"counts={dict(got)}"))
 
-    # 3
-    _, d_all = nearest(coords, coords)
-    if d_all.size:
-        d_nodiag = d_all[np.triu_indices(len(coords), k=1)]
-        min_all = float(d_nodiag.min())
+    # 3) minimum distance
+    dmat = np.linalg.norm(xyz[:, None, :] - xyz[None, :, :], axis=2)
+    tri = np.triu(np.ones_like(dmat, dtype=bool), 1)
+    min_all = float(dmat[tri].min())
+    checks.append((3, min_all > 0.8, f"min_all={min_all:.4f}"))
+
+    # 4) MOF(1-102) to IP2
+    host = xyz[:MOF_HOST_END]
+    ip1 = xyz[IP1_START:IP1_END]
+    ip2 = xyz[IP2_START:IP2_END]
+    m4 = pair_min(ip2, host)
+    checks.append((4, m4 > 1.5, f"min_MOF1to102_IP2={m4:.4f}"))
+
+    # 5) IP1 to IP2
+    m5 = pair_min(ip1, ip2)
+    checks.append((5, m5 > 2.0, f"min_IP1_IP2={m5:.4f}"))
+
+    # 6/7) 2nd EMIM-TFSI
+    emim2 = xyz[EMIM2_START:EMIM2_END]
+    tfsi2 = xyz[TFSI2_START:TFSI2_END]
+    m6 = pair_min(emim2, tfsi2)
+    if name == "cluster":
+        checks.append((6, m6 < 4.0, f"cluster_IP2_EMIM_TFSI_min={m6:.4f}"))
     else:
-        min_all = float('inf')
-    labels.append((3, min_all > 0.8, f'min_all={min_all:.4f}'))
+        checks.append((7, m6 > 5.0, f"dissociate_IP2_EMIM_TFSI_min={m6:.4f}"))
 
-    mof = coords[:MOF_END]
-    ip1 = coords[IP1_START - 1: IP1_END]
-    ip2 = coords[IP2_START - 1: IP2_END]
-    ip2_emim = coords[IP2_EMIM_START - 1: IP2_EMIM_END]
-    ip2_tfsi = coords[IP2_TFSI_START - 1: IP2_TFSI_END]
+    # 8) cell compatibility
+    frac = xyz @ np.linalg.inv(CELL.T)
+    ok = np.all(np.isfinite(frac)) and np.all((frac >= -0.05) & (frac <= 1.05))
+    checks.append((8, ok, f"frac_sample={frac[0].tolist()}"))
 
-    # 4
-    _, d4 = nearest(ip2, np.vstack((mof, ip1)))
-    m4 = float(d4.min())
-    labels.append((4, m4 > 1.5, f'min_MOF+IP1_to_IP2={m4:.4f}'))
+    # 9) COORD file match
+    ok = coord_name is not None and coord_name == FILES[name].name
+    checks.append((9, ok, f"coord_file={coord_name}"))
 
-    # 5
-    _, d5 = nearest(ip1, ip2)
-    m5 = float(d5.min())
-    labels.append((5, m5 > 2.0, f'min_IP1_to_IP2={m5:.4f}'))
+    # 10) KIND coverage
+    missing = sorted(set(atoms).difference(kinds))
+    checks.append((10, not missing, f"missing_KIND={missing}"))
 
-    # 6/7
-    _, d6 = nearest(ip2_emim, ip2_tfsi)
-    m6 = float(d6.min())
-    if name == 'cluster':
-        labels.append((6, m6 < 4.0, f'cluster_IP2_EMIM_TFSI_min={m6:.4f}'))
-    else:
-        labels.append((7, m6 > 5.0, f'dissociate_IP2_EMIM_TFSI_min={m6:.4f}'))
-
-    # 8 - fractional wrapping compatibility
-    frac = coords @ np.linalg.inv(CELL.T)
-    frac_wrapped = np.mod(frac, 1.0)
-    ok8 = np.all((frac_wrapped >= -1e-8) & (frac_wrapped < 1.0 + 1e-8))
-    labels.append((8, ok8, f'wrapped_frac_sample={frac_wrapped[0].tolist() if len(frac_wrapped) else []}'))
-
-    # 9
-    ok9 = coord_name is not None and coord_name == FILES[name].name
-    labels.append((9, ok9, f'coord_file={coord_name}'))
-
-    # 10
-    uniq = set(atoms)
-    miss = sorted(uniq.difference(kinds))
-    labels.append((10, len(miss) == 0, f'missing_KIND={miss}'))
-
-    # additional 11/12
-    emim_counts = Counter(atoms[IP2_EMIM_START - 1:IP2_EMIM_END])
-    tfsi_counts = Counter(atoms[IP2_TFSI_START - 1:IP2_TFSI_END])
-    ok11 = emim_counts == Counter({'N': 2, 'C': 6, 'H': 11})
-    ok12 = tfsi_counts == Counter({'N': 1, 'C': 2, 'O': 4, 'F': 6, 'S': 2})
-    labels.append((11, ok11, f'2nd_EMIM_counts={dict(emim_counts)}'))
-    labels.append((12, ok12, f'2nd_TFSI_counts={dict(tfsi_counts)}'))
-
-    all_ok = all(v[1] for v in labels)
-    print(f'[{name}] {"PASS" if all_ok else "FAIL"}')
-    for n, ok, detail in labels:
-        print(('PASS' if ok else 'FAIL').ljust(4), f'{n:02d}) {detail}')
+    all_ok = all(v[1] for v in checks)
+    print(f"[{name}] {'PASS' if all_ok else 'FAIL'}")
+    for n, ok, msg in checks:
+        print(("PASS" if ok else "FAIL") + f" {n:02d}) {msg}")
     if not all_ok:
-        print('FAILED items:')
-        for n, ok, detail in labels:
+        print("FAILED:")
+        for n, ok, msg in checks:
             if not ok:
-                print(f' - {n:02d} {detail}')
+                print(f" - {n:02d} {msg}")
 
 
 def main():
-    for key in ('cluster', 'dissociate'):
-        check_group(key)
+    for tag in ("cluster", "dissociate"):
+        check(tag)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

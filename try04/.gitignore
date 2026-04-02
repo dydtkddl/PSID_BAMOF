@@ -1,0 +1,15 @@
+*.wfn
+*.wfn.bak-*
+*.Hessian
+*-RESTART.wfn*
+simulation.input.log
+simulation.input.out
+test_output.out
+test.log
+*.pyc
+__pycache__/
+monitor.log
+*.log
+*-pos-1.xyz
+simulation.input.out
+.worktmp_*
