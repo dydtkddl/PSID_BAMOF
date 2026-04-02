@@ -1,0 +1,128 @@
+name: ${PROJECT_NAME}
+
+x-common-env: &common-env
+  TZ: ${TZ}
+  PYTHONUNBUFFERED: "1"
+  NVIDIA_VISIBLE_DEVICES: ${NVIDIA_VISIBLE_DEVICES}
+  NVIDIA_DRIVER_CAPABILITIES: ${NVIDIA_DRIVER_CAPABILITIES}
+  PROJECT_ROOT: ${PROJECT_ROOT}
+  DATA_ROOT: ${DATA_ROOT}
+  INPUT_ROOT: ${INPUT_ROOT}
+  RUN_ROOT: ${RUN_ROOT}
+  RESULTS_ROOT: ${RESULTS_ROOT}
+  LOG_ROOT: ${LOG_ROOT}
+  STUDY_LOCK_FILE: ${STUDY_LOCK_FILE}
+  DEFAULT_VERBOSE: ${DEFAULT_VERBOSE}
+  DEFAULT_QUIET: ${DEFAULT_QUIET}
+  DEFAULT_NO_PROGRESS: ${DEFAULT_NO_PROGRESS}
+  STALL_WARNING_MINUTES: ${STALL_WARNING_MINUTES}
+  HEARTBEAT_SECONDS: ${HEARTBEAT_SECONDS}
+  PYSCF_MAX_MEMORY_MB: ${PYSCF_MAX_MEMORY_MB}
+  PYSCF_NUM_THREADS: ${PYSCF_NUM_THREADS}
+  OMP_NUM_THREADS: ${PYSCF_NUM_THREADS}
+
+x-common-volumes: &common-volumes
+  - ./:/workspace
+
+services:
+  base:
+    build:
+      context: .
+      dockerfile: containers/base/Dockerfile
+      args:
+        UID: ${UID}
+        GID: ${GID}
+        USER_NAME: ${USER_NAME}
+        PYTHON_VERSION: ${PYTHON_VERSION}
+    image: ${BASE_IMAGE_TAG}
+    container_name: keti-base
+    environment: *common-env
+    volumes: *common-volumes
+    working_dir: /workspace
+    command: ["bash", "-lc", "sleep infinity"]
+
+  gmx:
+    build:
+      context: .
+      dockerfile: containers/gmx/Dockerfile
+      args:
+        UID: ${UID}
+        GID: ${GID}
+        USER_NAME: ${USER_NAME}
+        CUDA_VERSION: ${CUDA_VERSION}
+        ACPYPE_VERSION: ${ACPYPE_VERSION}
+        PACKMOL_VERSION: ${PACKMOL_VERSION}
+    image: ${GMX_IMAGE_TAG}
+    container_name: keti-gmx
+    environment:
+      <<: *common-env
+      GMX_GPU_ID: ${GMX_GPU_ID}
+      GMX_NTOMP: ${GMX_NTOMP}
+      GMX_PIN: ${GMX_PIN}
+      GMX_PME_GPU: ${GMX_PME_GPU}
+      GMX_UPDATE_GPU: ${GMX_UPDATE_GPU}
+    volumes: *common-volumes
+    working_dir: /workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    # <!-- REVIEW-FIX M-08 --> use deploy.resources.reservations.devices only
+    command: ["bash", "-lc", "sleep infinity"]
+
+  analysis:
+    build:
+      context: .
+      dockerfile: containers/analysis/Dockerfile
+      args:
+        UID: ${UID}
+        GID: ${GID}
+        USER_NAME: ${USER_NAME}
+        PYTHON_VERSION: ${PYTHON_VERSION}
+        PYSCF_VERSION: ${PYSCF_VERSION}
+        GPU4PYSCF_VERSION: ${GPU4PYSCF_VERSION}
+        MDA_VERSION: ${MDA_VERSION}
+        ASE_VERSION: ${ASE_VERSION}
+        GEOMETRIC_VERSION: ${GEOMETRIC_VERSION}
+    image: ${ANALYSIS_IMAGE_TAG}
+    container_name: keti-analysis
+    environment: *common-env
+    volumes: *common-volumes
+    working_dir: /workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    # <!-- REVIEW-FIX M-08 --> use deploy.resources.reservations.devices only
+    ports:
+      - "8888:8888"
+    command: ["bash", "-lc", "sleep infinity"]
+
+  cp2k:
+    build:
+      context: .
+      dockerfile: containers/cp2k/Dockerfile
+      args:
+        UID: ${UID}
+        GID: ${GID}
+        USER_NAME: ${USER_NAME}
+        CP2K_BASE_IMAGE: ${CP2K_BASE_IMAGE}
+    image: ${CP2K_IMAGE_TAG}
+    container_name: keti-cp2k
+    environment:
+      <<: *common-env
+      CP2K_MPI_RANKS: ${CP2K_MPI_RANKS}
+      CP2K_OMP_THREADS: ${CP2K_OMP_THREADS}
+      OMP_NUM_THREADS: ${CP2K_OMP_THREADS}
+    volumes: *common-volumes
+    working_dir: /workspace
+    shm_size: "8g"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    # <!-- REVIEW-FIX M-08 --> use deploy.resources.reservations.devices only
+    command: ["bash", "-lc", "sleep infinity"]
