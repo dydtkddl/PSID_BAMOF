@@ -1,0 +1,40 @@
+latest: Pulling from cp2k/cp2k
+741977fcefbb: Pulling fs layer
+1265da4fe553: Pulling fs layer
+a81cf1bc55a4: Pulling fs layer
+edac73338f57: Pulling fs layer
+60d693c7fd89: Pulling fs layer
+14a01df72eca: Pulling fs layer
+2dcaa3798d5e: Pulling fs layer
+71ab372860fc: Pulling fs layer
+8d57d162fc55: Pulling fs layer
+94f1b0007578: Pulling fs layer
+f73acaccd45e: Pulling fs layer
+5b3760b77edb: Pulling fs layer
+1265da4fe553: Download complete
+8d57d162fc55: Download complete
+94f1b0007578: Download complete
+71ab372860fc: Download complete
+741977fcefbb: Download complete
+5b3760b77edb: Download complete
+f73acaccd45e: Download complete
+edac73338f57: Download complete
+2dcaa3798d5e: Download complete
+14a01df72eca: Download complete
+60d693c7fd89: Download complete
+a81cf1bc55a4: Download complete
+edac73338f57: Pull complete
+a81cf1bc55a4: Pull complete
+60d693c7fd89: Pull complete
+14a01df72eca: Pull complete
+1265da4fe553: Pull complete
+2dcaa3798d5e: Pull complete
+8d57d162fc55: Pull complete
+94f1b0007578: Pull complete
+71ab372860fc: Pull complete
+5b3760b77edb: Pull complete
+741977fcefbb: Pull complete
+f73acaccd45e: Pull complete
+Digest: sha256:fc3c7a360691a3cf1f6f75a54733f9ed013e28ed976d42e2386b6d6519077ef3
+Status: Downloaded newer image for cp2k/cp2k:latest
+docker.io/cp2k/cp2k:latest

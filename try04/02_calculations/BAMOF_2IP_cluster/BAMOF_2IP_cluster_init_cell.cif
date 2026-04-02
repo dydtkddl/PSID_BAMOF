@@ -1,0 +1,7 @@
+data_cell
+_cell_length_a    16.000
+_cell_length_b    16.000
+_cell_length_c    16.000
+_cell_angle_alpha 90.00
+_cell_angle_beta  90.00
+_cell_angle_gamma 90.00

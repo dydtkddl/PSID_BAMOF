@@ -1,0 +1,112 @@
+[cluster] 2nd IP to MOF/1stIP nearest distance
+atom  159: N     4.37456 ?
+atom  160: N     3.96131 ?
+atom  161: C     3.86319 ?
+atom  162: C     4.46691 ?
+atom  163: C     3.65619 ?
+atom  164: C     5.11227 ?
+atom  165: C     3.50167 ?
+atom  166: C     3.71561 ?
+atom  167: H     3.31851 ?
+atom  168: H     3.43204 ?
+atom  169: H     4.77669 ?
+atom  170: H     4.35957 ?
+atom  171: H     3.16136 ?
+atom  172: H     3.14918 ?
+atom  173: H     4.02830 ?
+atom  174: H     4.11120 ?
+atom  175: H     3.06045 ?
+atom  176: H     5.73673 ?
+atom  177: H     3.18800 ?
+atom  178: N     5.66270 ?
+atom  179: C     4.26477 ?
+atom  180: C     7.06179 ?
+atom  181: O     5.30831 ?
+atom  182: O     4.24424 ?
+atom  183: O     6.71102 ?
+atom  184: O     5.68469 ?
+atom  185: F     3.49867 ?
+atom  186: F     6.13086 ?
+atom  187: F     5.05158 ?
+atom  188: F     3.50612 ?
+atom  189: F     7.29224 ?
+atom  190: F     7.54141 ?
+atom  191: S     6.70168 ?
+atom  192: S     5.12853 ?
+2nd EMIM-Ti min distance: 5.62433 ?
+2nd TFSI to nearest 2nd EMIM:
+atom  178: N     2.75569 ?
+atom  179: C     3.51976 ?
+atom  180: C     4.47197 ?
+atom  181: O     2.15455 ?
+atom  182: O     3.01896 ?
+atom  183: O     2.43611 ?
+atom  184: O     3.25111 ?
+atom  185: F     2.65569 ?
+atom  186: F     4.23866 ?
+atom  187: F     3.98652 ?
+atom  188: F     4.68995 ?
+atom  189: F     5.07552 ?
+atom  190: F     5.06644 ?
+atom  191: S     2.71943 ?
+atom  192: S     3.26813 ?
+2nd EMIM-TFSI min distance: 2.15455 ?
+
+[dissociate] 2nd IP to MOF/1stIP nearest distance
+atom  159: N     4.37456 ?
+atom  160: N     3.96131 ?
+atom  161: C     3.86319 ?
+atom  162: C     4.46691 ?
+atom  163: C     3.65619 ?
+atom  164: C     5.11227 ?
+atom  165: C     3.50167 ?
+atom  166: C     3.71561 ?
+atom  167: H     3.31851 ?
+atom  168: H     3.43204 ?
+atom  169: H     4.77669 ?
+atom  170: H     4.35957 ?
+atom  171: H     3.16136 ?
+atom  172: H     3.14918 ?
+atom  173: H     4.02830 ?
+atom  174: H     4.11120 ?
+atom  175: H     3.06045 ?
+atom  176: H     5.73673 ?
+atom  177: H     3.18800 ?
+atom  178: N     9.60871 ?
+atom  179: C     9.41397 ?
+atom  180: C    12.28273 ?
+atom  181: O    10.54534 ?
+atom  182: O     8.11460 ?
+atom  183: O    11.51545 ?
+atom  184: O    10.56355 ?
+atom  185: F     8.31432 ?
+atom  186: F    12.08565 ?
+atom  187: F    10.45910 ?
+atom  188: F     9.77444 ?
+atom  189: F    13.40333 ?
+atom  190: F    12.62674 ?
+atom  191: S    10.90354 ?
+atom  192: S     9.40064 ?
+2nd EMIM-Ti min distance: 5.62433 ?
+2nd TFSI to nearest 2nd EMIM:
+atom  178: N     9.84880 ?
+atom  179: C    11.10767 ?
+atom  180: C    11.86241 ?
+atom  181: O     9.55929 ?
+atom  182: O     9.11492 ?
+atom  183: O     9.78935 ?
+atom  184: O    10.82311 ?
+atom  185: F    10.23949 ?
+atom  186: F    12.05781 ?
+atom  187: F    11.88370 ?
+atom  188: F    11.98130 ?
+atom  189: F    12.25815 ?
+atom  190: F    12.55792 ?
+atom  191: S    10.00673 ?
+atom  192: S    10.12532 ?
+2nd EMIM-TFSI min distance: 9.11492 ?
+
+[Comparison]
+ip2->host min: cluster=3.06045, dissociate=3.06045
+2nd emim-tfsi min: cluster=2.15455, dissociate=9.11492
+2nd emim-t i min: cluster=5.62433, dissociate=5.62433
